@@ -15,12 +15,19 @@
 
       <h1 class="govuk-heading-xl">Reservoir details</h1>
 
-      <form class="form" action="/contact-details" method="post">
+      <form class="form" action="/reservoir-info-select" method="post">
 
         <p>Provide the name or grid reference of reservoir</p>
+        <div id="grid ref hint" class="govuk-hint">
+          You can find the gird reference of your reservoir using Ordanance Survey maps
+        </div>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
-
+        <div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+    </label>
+  </h1>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
       </form>
