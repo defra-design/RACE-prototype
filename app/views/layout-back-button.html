@@ -33,8 +33,6 @@
 
 {% block head %}
   {% include "includes/head.html" %}
-
-
 {% endblock %}
 
 {% block pageTitle %}
@@ -42,14 +40,18 @@
 {% endblock %}
 
 {% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
 
-{# Set serviceName in config.js. #}
-{{ govukHeader({
-  homepageUrl: "/",
-  serviceName: serviceName,
-  serviceUrl: "/"
-  })
-}}
+{% block beforeContent %}
+  
+  <a class="govuk-back-link" href="javascript:history.back()">Back</a>
 
 {% endblock %}
 
@@ -60,27 +62,6 @@
     {{ govukFooter({
       meta: {
         items: [
-        {
-          href: "accessibility",
-          text: "Accessibility statement"
-        },
-        {
-          href: "cookies",
-          text: "Cookies"
-        },
-        {
-          href: "help",
-          text: "Help"
-        },
-        {
-          href: "privacy",
-          text: "Privacy"
-        },
-        {
-          href: "terms",
-          text: "Terms"
-        },
-
           {
             href: "https://govuk-prototype-kit.herokuapp.com/",
             text: "GOV.UK Prototype Kit " + releaseVersion
