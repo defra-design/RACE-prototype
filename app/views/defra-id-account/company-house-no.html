@@ -12,11 +12,11 @@ Defra account
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-two-thirds">
 
-      <form action="org-choice" method="post">
+    <form action="/defra-id-account/company-house-no-answer" method="post">
 
-        <div class="govuk-form-group">
+      <!-- <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
               <h1 class="govuk-fieldset__heading">
@@ -38,18 +38,42 @@ Defra account
               </div>
             </div>
           </fieldset>
-        </div>
+        </div> -->
 
-        
+      {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
-<button class="govuk-button" data-module="govuk-button">
-  Continue
-</button>
+      {{ govukRadios({
+      idPrefix: "are-you-a-sole-trader-or-charity",
+      name: "are-you-a-sole-trader-or-charity",
+      fieldset: {
+      legend: {
+      text: "Is this organisation a sole trader or a charity?",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--xl"
+      }
+      },
+      items: [
+      {
+      value: "Sole trader",
+      text: "Sole trader"
+      },
+      {
+      value: "Charity",
+      text: "Charity"
+      }
+      ]
+      }) }}
 
 
-      </form>
 
-    </div>
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+
+    </form>
+
+  </div>
 </div>
 
 {% endblock %}

@@ -15,33 +15,61 @@ Defra account
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="companieshouse-choice" method="post">
+        <form action="/defra-id-account/org-in-uk-answer" method="post">
 
             <div class="govuk-form-group">
+
                 <fieldset class="govuk-fieldset">
+
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
                         <h1 class="govuk-fieldset__heading">
                             Is your organisation registered with Companies House?
                         </h1>
+
                     </legend>
-                    <div class="govuk-radios">
+
+
+                    <div class="govuk-radios" data-module="govuk-radios">
+
+
+
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="field1" name="defraIdCompaniesHouse" type="radio"
-                                value="companies-house-yes">
-                            <label class="govuk-label govuk-radios__label" for="field1">
+                            <input class="govuk-radios__input" id="registered-with-companies-house"
+                                name="registered-with-companies-house" type="radio"
+                                value="Yes, the organisation is registered at Companies House">
+                            <label class="govuk-label govuk-radios__label"
+                                for="registered-with-companies-house">
                                 Yes, the organisation is registered at Companies House
                             </label>
+
                         </div>
+
+
+
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="field2" name="defraIdCompaniesHouse" type="radio"
-                                value="companies-house-no">
-                            <label class="govuk-label govuk-radios__label" for="field2">
+                            <input class="govuk-radios__input" id="registered-with-companies-house-2"
+                                name="registered-with-companies-house" type="radio"
+                                value="No, the organisation is not registered at Companies House">
+                            <label class="govuk-label govuk-radios__label"
+                                for="registered-with-companies-house-2">
                                 No, the organisation is not registered at Companies House
                             </label>
+
                         </div>
+
+
+
+
                     </div>
+
+
                 </fieldset>
+
+
             </div>
+
+
 
             <details class="govuk-details" data-module="govuk-details">
                 <summary class="govuk-details__summary">

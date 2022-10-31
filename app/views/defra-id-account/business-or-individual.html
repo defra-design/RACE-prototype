@@ -15,45 +15,60 @@ Defra account
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="organisation-type-choice" method="post">
+        <form action="/defra-id-account/business-or-individual-answer" method="post">
 
             <div class="govuk-form-group">
+
                 <fieldset class="govuk-fieldset">
+
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
                         <h1 class="govuk-fieldset__heading">
                             Are you registering as a business or an individual?
                         </h1>
+
                     </legend>
-                    <div class="govuk-radios">
+
+
+                    <div class="govuk-radios" data-module="govuk-radios">
+
+
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="type1" name="defraIdType" type="radio"
-                                value="organisation">
-                            <label class="govuk-label govuk-radios__label" for="type1">
-                                <strong>A business or organisation</strong>
+                            <input class="govuk-radios__input" id="business-or-individual" name="business-or-individual"
+                                type="radio" value="A business or organisation"
+                                aria-describedby="business-or-individual-item-hint">
+                            <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold" for="business-or-individual">
+                                A business or organisation
                             </label>
-                            <div class="govuk-hint govuk-radios__hint">You represent a business or organisation that
-                                wants to use this service (including sole traders and charities) and you have permission
-                                to create an account for them</div>
+
+                            <div id="business-or-individual-item-hint" class="govuk-hint govuk-radios__hint">
+                                You represent a business or organisation that wants to use this service (including sole
+                                traders and charities) and you have permission to create an account for them
+                            </div>
+
                         </div>
+
+
+
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="type2" name="defraIdType" type="radio"
-                                value="individual">
-                            <label class="govuk-label govuk-radios__label" for="type2">
-                                <strong>An individual</strong>
+                            <input class="govuk-radios__input" id="business-or-individual-2"
+                                name="business-or-individual" type="radio" value="An individual"
+                                aria-describedby="business-or-individual-2-item-hint">
+                            <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold" for="business-or-individual-2">
+                                An individual
                             </label>
-                            <div class="govuk-hint govuk-radios__hint">You want to use this service for your own
-                                personal use</div>
+
+                            <div id="business-or-individual-2-item-hint" class="govuk-hint govuk-radios__hint">
+                                You want to use this service for your own personal use
+                            </div>
+
                         </div>
                     </div>
                 </fieldset>
             </div>
 
-            <button class="govuk-button" data-module="govuk-button">
-                Continue
-            </button>
-
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
         </form>
-
     </div>
 </div>
 
