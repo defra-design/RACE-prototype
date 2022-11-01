@@ -1,0 +1,39 @@
+{% extends "layout-back-button.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+Reservoir Act Compiance Enforcement
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Choose a reservoir</h1>
+
+
+        <div class="govuk-form-group">
+
+            <select class="govuk-select" id="sort" name="sort">
+                <option value="#"></option>
+                <option value="published">Recently published</option>
+                <option value="updated">Recently updated</option>
+                <option value="views">Most views</option>
+                <option value="comments">Most comments</option>
+                <option value="comments">Most comments</option>
+            </select>
+        </div>
+
+        <div class="govuk-!-margin-top-8">
+            <p><a href="#">Reservoir not listed?</a></p>
+        </div>
+
+
+    </div>
+
+    {% endblock %}
