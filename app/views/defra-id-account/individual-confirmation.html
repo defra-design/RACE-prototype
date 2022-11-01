@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+                Your Defra identify account has been created
+            </h1>
+        </div>
+
+        <p class="govuk-body">We have sent it to <strong>samwoods@company.co.uk.</strong></p>
+
+        <p class="govuk-body">
+            TBC?
+        </p>
+
+        <a href="/defra-id-account/your-defra-account" role="button" draggable="false"
+            class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
+            View my account
+        </a>
+
+        {% include "includes/get-help.html" %}
+
+    </div>
+</div>
+
+{% endblock %}
