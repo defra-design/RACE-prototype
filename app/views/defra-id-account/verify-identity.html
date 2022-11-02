@@ -15,9 +15,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/defra-id-account/org-uk-or-not-answer" method="post">
+        <form action="/defra-id-account/verify-identity-answer" method="post">
 
             <div class="govuk-form-group">
+
 
                 <fieldset class="govuk-fieldset">
 
@@ -25,7 +26,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
                         <h1 class="govuk-fieldset__heading">
                             Verify your identity
-
                         </h1>
 
                     </legend>
@@ -33,30 +33,34 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
                     <div class="govuk-radios" data-module="govuk-radios">
 
+
+
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="Where is the organisation registered"
-                                name="Where is the organisation registered" type="radio" value="UK">
-                            <label class="govuk-label govuk-radios__label" for="Where is the organisation registered">
+                            <input class="govuk-radios__input" id="Verify identity" name="Verify identity"
+                                type="radio" value="Send a code to xxxxxxxx478">
+                            <label class="govuk-label govuk-radios__label" for="Verify identity">
                                 Send a code to xxxxxxxx478
                             </label>
 
                         </div>
 
 
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="Where is the organisation registered-2"
-                                name="Where is the organisation registered" type="radio"
-                                value="Non-UK (Organisation that is not registered in the UK)">
-                            <label class="govuk-label govuk-radios__label" for="Where is the organisation registered-2">
-                                Send a code to my email address
 
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="Verify identity 2" name="Verify identity"
+                                type="radio" value="Send a code to my email address">
+                            <label class="govuk-label govuk-radios__label" for="Verify identity 2">
+                                Send a code to my email address
                             </label>
 
                         </div>
 
+
                     </div>
 
+
                 </fieldset>
+
 
             </div>
 
