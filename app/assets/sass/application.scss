@@ -145,3 +145,21 @@ $govuk-assets-path: '/govuk/assets/';
     padding-bottom: 20px;
     float: right;
 }
+
+.govuk-select-alt {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    box-sizing: border-box;
+    Width: 500px !important;
+    height: 40px;
+    height: 2.5rem;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    color: #0b0c0c;
+    background-color: #ffffff;
+}
