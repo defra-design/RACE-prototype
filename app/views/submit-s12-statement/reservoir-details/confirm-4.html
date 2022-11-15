@@ -26,7 +26,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <p class="govuk-body" id="reservoir-name-old" name="reservoir-name-old">Rockingham reservoir</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-name">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-name">
                         Change<span class="govuk-visually-hidden">postcode</span>
                     </a>
                 </dd>
@@ -37,10 +37,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Postcode
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">PO10 1AB</p>
+                    <p class="govuk-body">{{ data['reservoir-postcode'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-postcode">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-postcode-3">
                         Change<span class="govuk-visually-hidden">postcode</span>
                     </a>
                 </dd>
@@ -51,10 +51,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     National Grid reference
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">SU106951</p>
+                    <p class="govuk-body">{{ data['reservoir-grid-ref'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-grid-ref">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-grid-ref-2">
                         Change<span class="govuk-visually-hidden"> grid-reference</span>
                     </a>
                 </dd>
@@ -65,7 +65,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Dam category
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">A</p>
+                    <p class="govuk-body">{{ data['reservoir-dam-category'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-dam-cat">
@@ -77,7 +77,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </dl>
 
 
-        <a href="/submit-s12-statement/operator-details/confirm-details" role="button" draggable="false"
+        <a href="/submit-s12-statement/operator-details/confirm" role="button" draggable="false"
             class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-6" data-module="govuk-button">
             Save and continue
         </a>
