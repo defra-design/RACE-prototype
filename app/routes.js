@@ -94,8 +94,39 @@ router.post('/defra-id-account/verify-identity-answer', function (req, res) {
 
 })
 
+// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-reservoir-name-answer'
+router.post('/submit-s12-statement/reservoir-details/change-reservoir-name-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'changed-name'
+  var changedname = req.session.data['changed-name']
+
+  // Check whether the variable matches a condition
+  if (changedname == "Yes"){
+    // Send user to new-reservoir-name
+    res.redirect('/submit-s12-statement/reservoir-details/new-reservoir-name')
+  } else {
+    // Send user to ?????
+    res.redirect('/submit-s12-statement/reservoir-details/confirm-details')
+  }
+
+})
+
+// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-operator-name-answer'
+router.post('/submit-s12-statement/reservoir-details/change-operator-name-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'operator-name'
+  var operatorname = req.session.data['operator-name']
+
+  // Check whether the variable matches a condition
+  if (operatorname == "Yes"){
+    // Send user to change-operator-name-yes
+    res.redirect('/submit-s12-statement/operator-details/change-operator-name-yes')
+  } else {
+    // Send user to confirm-details
+    res.redirect('/submit-s12-statement/operator-details/confirm-details')
+  }
+
+})
+
 
 module.exports = router
-
-
-
