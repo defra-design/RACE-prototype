@@ -5,7 +5,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% set serviceName %}
-Service name
+
 {% endset%}
 
 {% block content %}
@@ -29,9 +29,16 @@ Service name
             </select>
         </div>
 
+        <a href="/submit-s12-statement/reservoir-details/confirm-details" role="button" draggable="false"
+            class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6" data-module="govuk-button">
+            Confirm
+        </a>
+
 
         <div class="govuk-!-margin-top-8">
-            <p><a href="#">Reservoir not listed?</a></p>
+            <p><a class="govuk-link govuk-link--no-visited-state"
+                    href="/submit-s12-statement/reservoir-details/new-reservoir">Reservoir
+                    not listed?</a></p>
         </div>
 
 
