@@ -103,10 +103,10 @@ router.post('/submit-s12-statement/reservoir-details/change-reservoir-name-answe
   // Check whether the variable matches a condition
   if (changedname == "Yes"){
     // Send user to new-reservoir-name
-    res.redirect('/submit-s12-statement/reservoir-details/new-reservoir-name')
+    res.redirect('/submit-s12-statement/reservoir-details/new-name')
   } else {
     // Send user to ?????
-    res.redirect('/submit-s12-statement/reservoir-details/confirm-details')
+    res.redirect('/submit-s12-statement/reservoir-details/confirm')
   }
 
 })

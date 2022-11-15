@@ -22,8 +22,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 <dt class="govuk-summary-list__key">
                     Name
                 </dt>
-                <dd class="govuk-summary-list__value" for="reservoir-name-old">
-                    <p class="govuk-body" id="reservoir-name-old" name="reservoir-name-old">Rockingham reservoir</p>
+                <dd class="govuk-summary-list__value">
+                    <p class="govuk-body">{{ data['reservoir-name'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-name">
@@ -40,7 +40,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <p class="govuk-body">PO10 1AB</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-reservoir-postcode">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/reservoir-details/change-postcode-2">
                         Change<span class="govuk-visually-hidden">postcode</span>
                     </a>
                 </dd>
