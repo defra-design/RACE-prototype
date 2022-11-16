@@ -38,10 +38,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Address
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    Rockingham Estate<br>Hampshire<br>PO10 1AB
+                    <p class="govuk-body">Rockingham Estate<br>Hampshire<br>PO10 1AB</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-address">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-address-2">
                         Change<span class="govuk-visually-hidden">address</span>
                     </a>
                 </dd>
@@ -52,10 +52,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Email
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">NRoberts@hotmail.com</p>
+                    <p class="govuk-body">{{ data['operator-email-1'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-email-1">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-email-2">
                         Change<span class="govuk-visually-hidden">operator's email address</span>
                     </a>
                 </dd>
@@ -66,10 +66,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Phone
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">02392 123-456</p>
+                    <p class="govuk-body">{{ data['operator-phone-1'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-operator-phone">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-phone-1">
                         Change<span class="govuk-visually-hidden">operator's phone number</span>
                     </a>
                 </dd>
