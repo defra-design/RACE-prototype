@@ -38,9 +38,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Address
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body"> {{ data['operator-address-4'] }}<br>
-                        {{ data['operator-address-5'] }}<br>
-                        {{ data['operator-address-6'] }}</p>
+                    <p class="govuk-body"> {{ data['operator-address-1'] }}<br>
+                        {{ data['operator-address-2'] }}<br>
+                        {{ data['operator-address-3'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-address-2">
@@ -54,7 +54,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Email
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">NRoberts@hotmail.com</p>
+                    <p class="govuk-body">{{ data['operator-email'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-email-2">
@@ -68,7 +68,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Phone
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">02392 123-456</p>
+                    <p class="govuk-body">{{ data['operator-phone-2'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-operator-phone">
