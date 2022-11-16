@@ -120,10 +120,10 @@ router.post('/submit-s12-statement/reservoir-details/change-operator-name-answer
   // Check whether the variable matches a condition
   if (operatorname == "Yes"){
     // Send user to change-operator-name-yes
-    res.redirect('/submit-s12-statement/operator-details/change-operator-name-yes')
+    res.redirect('/submit-s12-statement/operator-details/change-name-yes')
   } else {
     // Send user to confirm-details
-    res.redirect('/submit-s12-statement/operator-details/confirm-details')
+    res.redirect('/submit-s12-statement/operator-details/confirm')
   }
 
 })
