@@ -24,7 +24,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Name
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">Naomi Roberts</p>
+                    <p class="govuk-body">{{ data['operator-name'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-name">
@@ -38,8 +38,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Address
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">Rockingham Estate<br>Hampshire<br>PO10 1AB
-
+                    <p class="govuk-body"> {{ data['operator-address-1'] }}<br>
+                        {{ data['operator-address-2'] }}<br>
+                        {{ data['operator-address-3'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-address-2">
@@ -54,10 +55,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 </dt>
                 <dd class="govuk-summary-list__value">
                     <p class="govuk-body">{{ data['operator-email'] }}</p>
-                    </p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-email">
+                    <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-email-2">
                         Change<span class="govuk-visually-hidden">operator's email address</span>
                     </a>
                 </dd>
@@ -68,7 +68,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Phone
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    <p class="govuk-body">{{ data['operator-phone'] }}</p>
+                    <p class="govuk-body">{{ data['operator-phone-2'] }}</p>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                     <a class="govuk-link govuk-link--no-visited-state" href="/submit-s12-statement/operator-details/change-operator-phone">
