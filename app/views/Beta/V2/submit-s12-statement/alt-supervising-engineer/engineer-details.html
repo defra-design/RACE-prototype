@@ -14,46 +14,55 @@ Defra account
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form method="post" action="/defra-id-account/company-check-info">
 
+        <form class="form" action="/#" method="post">
 
 
             <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper">
-                    <label class="govuk-label govuk-label--xl" for="defraIdPersonalPhone">
+                    <label class="govuk-label govuk-label--xl" for="altsuperengineercontactdetails">
                         What are the alternative supervising engineer's details?
                     </label>
                 </h1>
-
-
-
-                <div id="defraIdPersonalPhone-hint" class="govuk-hint">
-                    We ask for this in case we need to call you directly with any queries about your registration.
-                </div>
-
-                <input class="govuk-input govuk-!-width-one-half" id="defraIdPersonalPhone" name="defraIdPersonalPhone"
-                    type="tel" aria-describedby="defraIdPersonalPhone-hint">
-
             </div>
 
 
-            <div class="govuk-inset-text">
-                We may also contact you by email, using the address registered with your Government Gateway account:
-                <span class="govuk-!-font-weight-bold">samwoods@company.co.uk</span>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="altsuperengineerName">
+                    Name
+                </label>
+
+                <input class="govuk-input govuk-!-width-three-quarters" id="altsuperengineerName" name="altsuperengineerName"
+                    type="text"  aria-describedby="altsuperengineerName-hint">
             </div>
 
 
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="altsuperengineerEmail">
+                    Email
+                </label>
+
+                <input class="govuk-input govuk-!-width-three-quarters" id="altsuperengineerEmail" name="altsuperengineerEmail"
+                    type="text"  aria-describedby="altsuperengineerEmail-hint">
+            </div>
+
+            
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="altsuperengineerPhone">
+                    Phone
+                </label>
+
+                <input class="govuk-input govuk-!-width-one-half" id="altsuperengineerPhone" name="altsuperengineerPhone"
+                    type="tel" aria-describedby="altsuperengineerPhone-hint">
+            </div>
 
 
-
-
-
-            <button class="govuk-button" data-module="govuk-button">
+            <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
                 Continue
             </button>
 
-
         </form>
+
 
     </div>
 </div>
