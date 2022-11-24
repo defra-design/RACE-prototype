@@ -14,25 +14,49 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Is there an alternative supervising engineer?</h1>
+        <form action="/alt-supervising-engineer/super-engineer-answer" method="post">
 
-        <div class="govuk-form-group">
+            <div class="govuk-form-group">
 
-            <select class="govuk-select-alt" id="sort" name="sort">
-                <option value="#"></option>
-                <option value="published">David Richardson</option>
-                <option value="updated">Stephen Hall</option>
-                <option value="views">Helen Jackson</option>
-                <option value="comments">George Edwards</option>
-                <option value="comments">Jennifer Young</option>
-            </select>
-        </div>
+                <fieldset class="govuk-fieldset">
 
-        <a href="#" role="button" draggable="false"
-            class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6" data-module="govuk-button">
-            Confirm
-        </a>
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
 
+                        <h1 class="govuk-fieldset__heading">
+                            Is there an alternative supervising engineer?
+                        </h1>
+
+                    </legend>
+
+
+                    <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="alt-super-engineer" name="alt-super-engineer"
+                                type="radio" value="Yes"
+                                aria-describedby="yes-or-no-item-hint">
+                            <label class="govuk-label govuk-radios__label"
+                                for="alt-super-engineer">
+                                Yes
+                            </label>
+                        </div>
+
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="alt-super-engineer-2"
+                                name="alt-super-engineer" type="radio" value="No"
+                                aria-describedby="yes-or-no-item-2-item-hint">
+                            <label class="govuk-label govuk-radios__label"
+                                for="alt-super-engineer-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <button class="govuk-button govuk-!-margin-top-2" data-module="govuk-button">Confirm</button>
+        </form>
 
     </div>
 </div>
