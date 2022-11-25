@@ -128,5 +128,22 @@ router.post('/submit-s12-statement/reservoir-details/change-operator-name-answer
 
 })
 
+// Run this code when a form is submitted to '/alt-supervising-engineer/super-engineer-answer'
+// router.post('/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+
+//   // Make a variable and give it the value from 'alt-super-engineer'
+//   var altsuperengineer = req.session.data['alt-super-engineer']
+
+//   // Check whether the variable matches a condition
+//   if (altsuperengineer == "Yes"){
+//     // Send user to engineer-details
+//     res.redirect('/alt-supervising-engineer/engineer-details')
+//   } else {
+//     // Send user to inspection-date
+//     res.redirect('/submit-s12-statement/questions/inspection-date')
+//   }
+
+// })
+
 
 module.exports = router
