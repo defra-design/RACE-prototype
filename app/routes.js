@@ -9,13 +9,6 @@ router.use('Beta/V2/_routes', (req, res, next) => {
   return require(`./views/Beta/V2/_routes`)(req, res, next);
 })
 
-// Import Beta V1 routes 
-router.use('Beta/V1/_routes', (req, res, next) => {
-  //req.session.data["entered-criteria"] = undefined;
-  return require(`./views/Beta/V1/_routes`)(req, res, next);
-})
-
-
 // Run this code when a form is submitted to '/business-or-individual-answer'
 router.post('/defra-id-account/business-or-individual-answer', function (req, res) {
 
