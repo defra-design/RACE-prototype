@@ -3,11 +3,11 @@ const router = express.Router()
 
 // Add your routes here - above the module.exports line
 
-// Import Beta V2 routes 
-router.use('Beta/V2/_routes', (req, res, next) => {
-  //req.session.data["entered-criteria"] = undefined;
-  return require(`./views/Beta/V2/_routes`)(req, res, next);
-})
+// // Import Beta V1 routes 
+// router.use('Beta/V1/_routes.js', (req, res, next) => {
+//   //req.session.data["entered-criteria"] = undefined;
+//   return require(`./views/Beta/V1/_routes.js`)(req, res, next);
+// })
 
 // Run this code when a form is submitted to '/business-or-individual-answer'
 router.post('/defra-id-account/business-or-individual-answer', function (req, res) {
@@ -128,6 +128,29 @@ router.post('/submit-s12-statement/reservoir-details/change-operator-name-answer
   } else {
     // Send user to confirm-details
     res.redirect('/submit-s12-statement/operator-details/confirm')
+  }
+
+})
+
+
+
+// New Beta V2 routes //
+
+
+// Run this code when a form is submitted to '/alt-supervising-engineer/super-engineer-answer'
+
+router.post('/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var altsuperengineer = req.session.data['alt-super-engineer']
+
+  // Check whether the variable matches a condition
+  if (altsuperengineer == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/alt-supervising-engineer/engineer-details')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/submit-s12-statement/questions/inspection-date')
   }
 
 })
