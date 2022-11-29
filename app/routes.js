@@ -136,6 +136,23 @@ router.post('/Beta/V1/submit-s12-statement/operator-details/change-name-answer',
 
 // New Beta V2 routes //
 
+// Run this code when a form is submitted to '/defra-id-account/verify-identity-answer'
+router.post('/Beta/V2/defra-id-account/verify-identity-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'Verify identity'
+  var verifyidentity = req.session.data['Verify identity']
+
+  // Check whether the variable matches a condition
+  if (verifyidentity == "Send a code to xxxxxxxx478"){
+    // Send user to verify-get-code
+    res.redirect('/Beta/V2/defra-id-account/verify-get-code')
+  } else {
+    // Send user to cverify-confirm-security-word
+    res.redirect('/Beta/V2/defra-id-account/verify-confirm-security-word')
+  }
+
+})
+
 
 // Run this code when a form is submitted to '/alt-supervising-engineer/super-engineer-answer'
 
