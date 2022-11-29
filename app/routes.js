@@ -156,7 +156,7 @@ router.post('/Beta/V2/defra-id-account/verify-identity-answer', function (req, r
 
 // Run this code when a form is submitted to '/alt-supervising-engineer/super-engineer-answer'
 
-router.post('/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+router.post('/Beta/V2/submit-s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
 
   // Make a variable and give it the value from 'alt-super-engineer'
   var altsuperengineer = req.session.data['alt-super-engineer']
@@ -164,10 +164,10 @@ router.post('/alt-supervising-engineer/super-engineer-answer', function (req, re
   // Check whether the variable matches a condition
   if (altsuperengineer == "Yes"){
     // Send user to engineer-details
-    res.redirect('/alt-supervising-engineer/engineer-details')
+    res.redirect('/Beta/V2/submit-s12-statement/alt-supervising-engineer/engineer-details')
   } else {
     // Send user to inspection-date
-    res.redirect('/submit-s12-statement/questions/inspection-date')
+    res.redirect('#')
   }
 
 })
