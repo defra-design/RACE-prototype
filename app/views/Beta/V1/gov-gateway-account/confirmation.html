@@ -15,25 +15,33 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <div class="govuk-panel govuk-panel--confirmation">
-            <h1 class="govuk-panel__title">
-                Your Government Gateway user ID is
-            </h1>
-            <div class="govuk-panel__body">
-                49 21 78 79 24 96
+
+        <form method="post" action="/Beta/V1/defra-id-account/your-defra-account">
+
+            <div class="govuk-panel govuk-panel--confirmation">
+                <h1 class="govuk-panel__title">
+                    Your Government Gateway user ID is
+                </h1>
+                <div class="govuk-panel__body">
+                    49 21 78 79 24 96
+                </div>
             </div>
-        </div>
 
-        <p class="govuk-body">We have sent it to <strong>samwoods@company.co.uk.</strong></p>
+            <p class="govuk-body">We have sent it to <strong>samwoods@company.co.uk.</strong></p>
 
-        <p class="govuk-body">
-            You will need this ID and your password each time you sign in to Government Gateway.
-        </p>
+            <p class="govuk-body">
+                You will need this ID and your password each time you sign in to Government Gateway.
+            </p>
 
-        <a href="/defra-id-account/your-defra-account" role="button" draggable="false"
-            class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
-            Continue
-        </a>
+
+
+            <button class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-88" data-module="govuk-button"
+                role="button" draggable="false">
+                Continue
+            </button>
+
+        </form>
+
 
         {% include "includes/get-help.html" %}
 
