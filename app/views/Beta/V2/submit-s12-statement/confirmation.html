@@ -12,21 +12,26 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <div class="govuk-panel govuk-panel--confirmation">
-            <h1 class="govuk-panel__title">
-                You have completed your Section 12 Annual Statement
-            </h1>
-            <div class="govuk-panel__body">
-                Your ref is:<br>49 21 78 79 24 96
+
+        <form action="#" method="post" novalidate>
+
+            <div class="govuk-panel govuk-panel--confirmation">
+                <h1 class="govuk-panel__title">
+                    You have completed your Section 12 Annual Statement
+                </h1>
+                <div class="govuk-panel__body">
+                    Your ref is:<br>49 21 78 79 24 96
+                </div>
             </div>
-        </div>
 
-        <p class="govuk-body">We have sent it to <strong>samwoods@company.co.uk.</strong></p>
+            <p class="govuk-body">We have sent it to <strong>samwoods@company.co.uk.</strong></p>
 
-        <a href="/defra-id-account/your-defra-account" role="button" draggable="false"
-            class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
-            Continue
-        </a>
+            <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+                data-module="govuk-button">
+                Continue
+                </button>
+
+        </form>
 
         {% include "includes/get-help.html" %}
 
