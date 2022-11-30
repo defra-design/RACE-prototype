@@ -13,7 +13,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
 
-    <h1 class="govuk-heading-xl">Check your answers before sending your Section 12 annual statement</h1>
+    <h1 class="govuk-heading-xl">Check your answers and submit</h1>
 
     <h2 class="govuk-heading-m">Reservoir flood plan details</h2>
 
@@ -152,17 +152,16 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 
-    <h2 class="govuk-heading-m">Now send your application</h2>
+    <h2 class="govuk-heading-m">Submit your annual statement</h2>
 
-    <p>By submitting this application you are confirming that, to the best of your knowledge, the details you are
-      providing are correct.</p>
+
 
       <form action="/Beta/V2/submit-s12-statement/confirmation" method="post" novalidate>
 
       <input type="hidden" name="answers-checked" value="true">
 
       <button type="submit" class="govuk-button" data-module="govuk-button">
-        Accept and send
+        Submit
       </button>
 
     </form>
