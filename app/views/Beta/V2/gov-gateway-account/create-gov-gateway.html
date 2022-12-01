@@ -15,6 +15,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
+        <form action="/Beta/V2/defra-id-account/your-defra-account" method="post">
+
         {% set html %}
         <p>Do not share your Government Gateway user ID and password with anyone else.</p>
         {% endset %}
@@ -51,12 +53,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="govGatePwassword">
+                <label class="govuk-label" for="govGatePwassword" type="password" value="true">
                     Password
                 </label>
 
-                <input class="govuk-input govuk-!-width-three-quarters" id="govGatePwassword" name="govGatePwassword"
-                    type="text">
+                <input type="password" name="password" id="password" class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
 
             </div>
 
@@ -67,7 +68,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </form>
 
         <p class="govuk-body">
-            <a href="enter-email.html" class="govuk-link govuk-link--no-visited-state">
+            
+            <a href="/Beta/V2/gov-gateway-account/enter-email.html" class="govuk-link govuk-link--no-visited-state">
                 Create sign in details
             </a>
         </p>

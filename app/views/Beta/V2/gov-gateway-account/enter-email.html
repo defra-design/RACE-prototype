@@ -15,34 +15,38 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Enter your email address</h1>
+        <form action="/Beta/V2/gov-gateway-account/check-email" method="post">
 
-        <p class="govuk-body">This will only be used to send you security updates or if you need to recover your sign in
-            details.</p>
 
-        <p class="govuk-body">To confirm it is your email address we will send you a code.</p>
+            <h1 class="govuk-heading-xl">Enter your email address</h1>
 
-        <form method="post" action="check-email" class="form">
+            <p class="govuk-body">This will only be used to send you security updates or if you need to recover your
+                sign in
+                details.</p>
 
-            <input type="hidden" name="returnUrl" value="">
+            <p class="govuk-body">To confirm it is your email address we will send you a code.</p>
 
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="govGateEmail">
-                    Email address
-                </label>
+            <form method="post" action="check-email" class="form">
 
-                <input class="govuk-input govuk-!-width-three-quarters" id="govGateEmail" name="govGateEmail"
-                    type="text">
-            </div>
+                <input type="hidden" name="returnUrl" value="">
 
-            <a href="check-email.html" role="button" draggable="false"
-                class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
-                Continue
-            </a>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="govGateEmail">
+                        Email address
+                    </label>
 
-        </form>
+                    <input class="govuk-input govuk-!-width-three-quarters" id="govGateEmail" name="govGateEmail"
+                        type="text">
+                </div>
 
-        {% include "includes/get-help.html" %}
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
+                    Continue
+                </button>
+
+            </form>
+
+            {% include "includes/get-help.html" %}
 
 
     </div>

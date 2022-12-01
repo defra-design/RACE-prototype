@@ -5,71 +5,55 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% set serviceName %}
-Defra account
+
 {% endset%}
 
 {% block content %}
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
 
-        <form method="post" action="/Beta/V2/submit-s12-statement/questions/recommended-inspection">
+  <div class="govuk-grid-column-two-thirds">
 
+    <form method="post" action="/Beta/V2/submit-s12-statement/questions/recommended-inspection">
 
-            <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                        <h1 class="govuk-fieldset__heading">
-                            What is the date of the certificate?
-                        </h1>
-                    </legend>
-                    <div id="passport-issued-hint" class="govuk-hint govuk-!-margin-top-2">
-                        For example, 27 3 2007
-                    </div>
-                    <div class="govuk-date-input" id="passport-issued">
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                                    Day
-                                </label>
-                                <input class="govuk-input govuk-date-input__input govuk-input--width-2"
-                                    id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                            </div>
-                        </div>
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                                    Month
-                                </label>
-                                <input class="govuk-input govuk-date-input__input govuk-input--width-2"
-                                    id="passport-issued-month" name="passport-issued-month" type="text"
-                                    inputmode="numeric">
-                            </div>
-                        </div>
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                                    Year
-                                </label>
-                                <input class="govuk-input govuk-date-input__input govuk-input--width-4"
-                                    id="passport-issued-year" name="passport-issued-year" type="text"
-                                    inputmode="numeric">
-                            </div>
-                        </div>
-                    </div>
+      <h1 class="govuk-heading-xl">Confirm the date of next scheduled periodic inspection
+      </h1>
 
-                </fieldset>
-            </div>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-font-size-24">Inspection</th>
+            <th scope="col" class="govuk-table__header"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header govuk-!-width-one-quarter">Date</th>
+            <td class="govuk-table__cell">07 September 2022</td>
+          </tr>
+        </tbody>
+      </table>
 
 
-            <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
-                Confirm
-            </button>
 
-        </form>
+      <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">Confirm</button>
 
-    </div>
+    </form>
+
+      <details class="govuk-details govuk-!-padding-top-6" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What to do if these details are not correct
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          You can contact Comply with UK REACH on 0330 159 1985 for advice.
+        </div>
+      </details>
+
+
 </div>
 
 {% endblock %}
+

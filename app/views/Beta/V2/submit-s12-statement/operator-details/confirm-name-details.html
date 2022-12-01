@@ -14,10 +14,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V2/submit-s12-statement/inspecting-engineer/confirm" method="post">
+        <form action="/Beta/V2/submit-s12-statement/inspecting-engineer/confirm" method="post" class="form">
 
 
-            <h1 class="govuk-heading-xl">Are these the operator's details in the reservoir records?</h1>
+            <h1 class="govuk-heading-xl">Are these the new operator details?</h1>
 
 
             <dl class="govuk-summary-list govuk-summary-list--no-border">
@@ -27,11 +27,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Name
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">Naomi Roberts</p>
+                        {{ data['new-operator-name'] }}
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V2/submit-s12-statement/operator-details/change-name">
+                            href="/submit-s12-statement/operator-details/change-name">
                             Change<span class="govuk-visually-hidden">name</span>
                         </a>
                     </dd>
@@ -42,11 +42,13 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Address
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        Rockingham Estate<br>Hampshire<br>PO10 1AB
+                        {{ data['new-operator-address-1'] }}<br>
+                        {{ data['new-operator-address-2'] }}<br>
+                        {{ data['new-operator-address-3'] }}
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/submit-s12-statement/operator-details/change-address">
+                            href="/submit-s12-statement/operator-details/change-address-2">
                             Change<span class="govuk-visually-hidden">address</span>
                         </a>
                     </dd>
@@ -57,11 +59,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Email
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">NRoberts@hotmail.com</p>
+                        {{ data['new-operator-email'] }}
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/submit-s12-statement/operator-details/change-email-1">
+                            href="/submit-s12-statement/operator-details/change-email-2">
                             Change<span class="govuk-visually-hidden">operator's email address</span>
                         </a>
                     </dd>
@@ -72,11 +74,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Phone
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">02392 123-456</p>
+                        {{ data['new-operator-phone'] }}
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/submit-s12-statement/operator-details/change-phone">
+                            href="/submit-s12-statement/operator-details/change-operator-phone">
                             Change<span class="govuk-visually-hidden">operator's phone number</span>
                         </a>
                     </dd>
@@ -93,11 +95,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
         </form>
 
-        <div class="govuk-!-margin-top-8">
-            <p><a class="govuk-link govuk-link--no-visited-state"
-                    href="/Beta/V2/submit-s12-statement/operator-details/add-operator">Add another operator</a></p>
-        </div>
-        
     </div>
 </div>
 

@@ -15,37 +15,39 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Set up a recovery word</h1>
+        <form action="/Beta/V2/gov-gateway-account/confirmation" method="post">
 
-        <p class="govuk-body">Make a note of this word in case you need it in the future.</p>
+            <h1 class="govuk-heading-xl">Set up a recovery word</h1>
 
-        <p class="govuk-body">The word must:</p>
-        <ul class="govuk-list govuk-list--bullet">
-            <li>be between 6 and 12 characters</li>
-            <li>not contain spaces or special characters</li>
-            <li>not contain numbers</li>
-        </ul>
+            <p class="govuk-body">Make a note of this word in case you need it in the future.</p>
 
-        <form action="confirmation" method="post">
+            <p class="govuk-body">The word must:</p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>be between 6 and 12 characters</li>
+                <li>not contain spaces or special characters</li>
+                <li>not contain numbers</li>
+            </ul>
 
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="govGateRecovery">
-                    Recovery word
-                </label>
+            <form action="confirmation" method="post">
 
-                <input class="govuk-input govuk-!-width-one-half" id="govGateRecovery" name="govGateRecovery"
-                    type="text">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="govGateRecovery">
+                        Recovery word
+                    </label>
 
-            </div>
+                    <input class="govuk-input govuk-!-width-one-half" id="govGateRecovery" name="govGateRecovery"
+                        type="text">
 
-            <a href="confirmation.html" role="button" draggable="false"
-                class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
-                Continue
-            </a>
+                </div>
 
-        </form>
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" data-module="govuk-button">
+                    Continue
+                </button>
 
-        {% include "includes/get-help.html" %}
+            </form>
+
+            {% include "includes/get-help.html" %}
 
 
     </div>
