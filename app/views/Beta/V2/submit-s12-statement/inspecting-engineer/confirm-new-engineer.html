@@ -14,11 +14,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V2/submit-s12-statement/inspecting-engineer/confirm" method="post">
+        <form action="/Beta/V2/submit-s12-statement/alt-supervising-engineer/super-engineer" method="post" class="form">
 
-
-            <h1 class="govuk-heading-xl">Are these the operator's details in the reservoir records?</h1>
-
+            <h1 class="govuk-heading-xl">Are these the new inspecting engineer's details?</h1>
 
             <dl class="govuk-summary-list govuk-summary-list--no-border">
 
@@ -27,11 +25,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Name
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">Naomi Roberts</p>
+                        <p class="govuk-body">{{ data['new-inspecting-engineer-name'] }}</p>
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V2/submit-s12-statement/operator-details/change-name">
+                            href="/Beta/V1/submit-s12-statement/operator-details/change-name">
                             Change<span class="govuk-visually-hidden">name</span>
                         </a>
                     </dd>
@@ -42,14 +40,15 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Address
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        Rockingham Estate<br>Hampshire<br>PO10 1AB
+                        <p class="govuk-body">{{ data['new-inspecting-engineer-address-1'] }}<br>{{ data['new-inspecting-engineer-address-2'] }}<br>{{
+                            data['new-inspecting-engineer-address-3'] }}</p>
                     </dd>
-                    <dd class="govuk-summary-list__actions">
+                    <!-- <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/submit-s12-statement/operator-details/change-address">
+                            href="/Beta/V1/submit-s12-statement/operator-details/change-address-2">
                             Change<span class="govuk-visually-hidden">address</span>
                         </a>
-                    </dd>
+                    </dd> -->
                 </div>
 
                 <div class="govuk-summary-list__row">
@@ -57,14 +56,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Email
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">NRoberts@hotmail.com</p>
+                        <p class="govuk-body">{{ data['new-inspecting-engineer-email'] }}</p>
                     </dd>
-                    <dd class="govuk-summary-list__actions">
+                    <!-- <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/submit-s12-statement/operator-details/change-email-1">
+                            href="/Beta/V1/submit-s12-statement/operator-details/change-email-2">
                             Change<span class="govuk-visually-hidden">operator's email address</span>
                         </a>
-                    </dd>
+                    </dd> -->
                 </div>
 
                 <div class="govuk-summary-list__row">
@@ -72,32 +71,34 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Phone
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">02392 123-456</p>
+                        <p class="govuk-body">{{ data['new-inspecting-engineer-phone'] }}</p>
                     </dd>
-                    <dd class="govuk-summary-list__actions">
+                    <!-- <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/submit-s12-statement/operator-details/change-phone">
+                            href="/Beta/V1/submit-s12-statement/operator-details/change-operator-phone">
                             Change<span class="govuk-visually-hidden">operator's phone number</span>
                         </a>
-                    </dd>
+                    </dd> -->
                 </div>
 
 
             </dl>
 
-
-            <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-6"
+            <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6"
                 data-module="govuk-button">
                 Confirm
             </button>
 
         </form>
 
-        <div class="govuk-!-margin-top-8">
-            <p><a class="govuk-link govuk-link--no-visited-state"
-                    href="/Beta/V2/submit-s12-statement/operator-details/add-operator">Add another operator</a></p>
+
+        <div>
+            <a href="/Beta/V1/submit-s12-statement/operator-details/add-operator" role="button" draggable="false"
+                class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-6"
+                data-module="govuk-button">
+                Add another operator
+            </a>
         </div>
-        
     </div>
 </div>
 
