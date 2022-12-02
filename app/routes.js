@@ -333,5 +333,212 @@ router.post('/Beta/V2/submit-s12-statement/alt-supervising-engineer/super-engine
 
 })
 
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/recommended-inspection-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/recommended-inspection-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var recommendedinspection = req.session.data['recommended-inspection-yes']
+
+  // Check whether the variable matches a condition
+  if (recommendedinspection == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/inspection-forward')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/need-inspection')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/need-inspection-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/need-inspection-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var operatorspecific = req.session.data['operator-specific-yes']
+
+  // Check whether the variable matches a condition
+  if (operatorspecific == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/need-inspection-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-safety-action')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/operator-safety-action-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/operator-safety-action-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var safetymeasuresyes = req.session.data['safety-measures-yes']
+
+  // Check whether the variable matches a condition
+  if (safetymeasuresyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-safety-action-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/issues-to-watch')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/issues-to-watch-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/issues-to-watch-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var issueswatchyes = req.session.data['issues-to-watch-yes']
+
+  // Check whether the variable matches a condition
+  if (issueswatchyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/issues-to-watch-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-specific-action')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/operator-specific-action-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/operator-specific-action-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var operatorspecificaction = req.session.data['operator-specific-action-yes']
+
+  // Check whether the variable matches a condition
+  if (operatorspecificaction == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-specific-action-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/owner-records')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/owner-records-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/owner-records-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var recordsyes = req.session.data['records-yes']
+
+  // Check whether the variable matches a condition
+  if (recordsyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/owner-records-no')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/flood-plan-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var floodplanyes = req.session.data['flood-plan-yes']
+
+  // Check whether the variable matches a condition
+  if (floodplanyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-tested-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/flood-plan-tested-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var plantestedyes = req.session.data['plan-tested-yes']
+
+  // Check whether the variable matches a condition
+  if (plantestedyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan-tested-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-revise-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/flood-plan-revise-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var reviseplanyes = req.session.data['revise-plan-yes']
+
+  // Check whether the variable matches a condition
+  if (reviseplanyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan-revise')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var neworreuseyes = req.session.data['new-or-re-use-yes']
+
+  // Check whether the variable matches a condition
+  if (neworreuseyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-yes')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-yes-answer'
+
+router.post('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-yes-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var operatorcertactionsyes = req.session.data['operator-cert-actions-yes']
+
+  // Check whether the variable matches a condition
+  if (operatorcertactionsyes == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-cert-actions')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V2/submit-s12-statement/questions/upload-support-docs')
+  }
+
+})
+
 
 module.exports = router

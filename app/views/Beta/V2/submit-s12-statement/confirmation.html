@@ -13,27 +13,30 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="#" method="post" novalidate>
-
             <div class="govuk-panel govuk-panel--confirmation">
                 <h1 class="govuk-panel__title">
-                    You have completed your Section 12 annual statement
+                    Annual statement submitted
                 </h1>
                 <div class="govuk-panel__body">
-                    Your ref is:<br>49 21 78 79 24 96
+                    Your reference number is<br>12 34 56 78
                 </div>
             </div>
 
             <p class="govuk-body">We have sent it to <strong>samwoods@company.co.uk.</strong></p>
 
-            <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"
-                data-module="govuk-button">
-                Continue
-                </button>
+            <h2 class="govuk-heading-m govuk-!-padding-top-6">What happens next</h2>
 
-        </form>
+            <p class="govuk-body">The Reservoir Safety team at the Environment Agency might contact you for more information.
+            </p>
 
-        {% include "includes/get-help.html" %}
+            <p class="govuk-body">You can go to your [Defra account][link] to manage your account or use other services. 
+            </p>
+
+            <p class="govuk-body">The Reservoir Safety team at the Environment Agency might contact you for more information.
+            </p>
+
+            <p class="govuk-!-margin-top-8"><a href="#" class="govuk-link govuk-link--no-visited-state">What did you think of this service?</a> (takes 30 seconds)</p>
+
 
     </div>
 </div>
