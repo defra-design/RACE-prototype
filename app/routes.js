@@ -137,6 +137,24 @@ router.post('/Beta/V1/submit-s12-statement/operator-details/change-name-answer',
 
 // New Beta V2 routes //
 
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/reservoir-details/change-name-answer'
+router.post('/Beta/V2/submit-s12-statement/reservoir-details/change-name-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'business-or-individual'
+  var changedname = req.session.data['changed-name']
+
+  // Check whether the variable matches a condition
+  if (changedname == "Yes"){
+    // Send user to next page
+    res.redirect('/Beta/V2/submit-s12-statement/reservoir-details/new-name')
+  } else {
+    // Send user to individual-name
+    res.redirect('/Beta/V2/submit-s12-statement/reservoir-details/confirm')
+  }
+
+})
+
+
 
 // Run this code when a form is submitted to '/business-or-individual-answer'
 router.post('/Beta/V2/defra-id-account/business-or-individual-answer', function (req, res) {

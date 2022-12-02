@@ -15,15 +15,17 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Change the postcode of the reservoir</h1>
+        <h1 class="govuk-heading-xl">Change the email address of the operator in the prescribed form of record</h1>
 
-        <form class="form" action="/Beta/V2/submit-s12-statement/reservoir-details/confirm-10" method="post">
+        <form class="form" action="/Beta/V2/submit-s12-statement/alt-supervising-engineer/confirm-email-details" method="post">
+
 
             <div class="govuk-form-group">
-                <label class="govuk-label govuk-label--m" for="reservoir-postcode-">
-                    Postcode
+
+                <label class="govuk-label govuk-label--m" for="alt-super-engineer-email-2">
+                    Email address
                 </label>
-                <input class="govuk-input govuk-!-width-one-quarter" id="reservoir-postcode-3" name="reservoir-postcode-3" type="text" value="PO10 1AB">
+                <input class="govuk-input govuk-!-width-two-thirds" id="alt-super-engineer-email-2" name="alt-super-engineer-email-2" type="text" value="{{ data['alt-super-engineer-email'] }}">
             </div>
 
 

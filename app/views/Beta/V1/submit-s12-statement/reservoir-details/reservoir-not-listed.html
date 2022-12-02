@@ -14,14 +14,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-l">What reservoir are you looking for?</h1>
+        <h1 class="govuk-heading-l">What are the name and location of the reservoir you're looking for?</h1>
 
         <form class="form" action="/Beta/V1/submit-s12-statement/reservoir-details/confirm-new-details" method="post">
 
             <div class="govuk-form-group">
 
                 <label class="govuk-label govuk-label--m" for="new-name">
-                    Reservoir name
+                    Name
                 </label>
                <input class="govuk-input" id="new-name" name="new-name" type="text">
             </div>
@@ -42,20 +42,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                <input class="govuk-input govuk-!-width-one-third" id="new-grid-ref" name="new-grid-ref" type="text">
             </div>
 
-            <div class="govuk-form-group">
-
-                <label class="govuk-label govuk-label--m" for="new-dam-category">
-                    Dam category
-                </label>
-                <input class="govuk-input govuk-!-width-one-quarter" id="new-dam-category" name="new-dam-category" type="text">
-            </div>
-
-            <button class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6" data-module="govuk-button">Save and continue</button>
-
+            <button class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6" data-module="govuk-button">Send</button>
 
         </form>
-
-
 
     </div>
 </div>

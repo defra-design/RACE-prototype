@@ -14,11 +14,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V2/submit-s12-statement/questions/last-inspection-date" method="post" class="form">
+        <form action="/Beta/V2/submit-s12-statement/operator-details/?" method="post">
 
-
-            <h1 class="govuk-heading-xl">Are these the new alternative supervising engineer's details?</h1>
-
+            <h1 class="govuk-heading-xl">Confirm the reservoir details</h1>
 
             <dl class="govuk-summary-list govuk-summary-list--no-border">
 
@@ -26,47 +24,46 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <dt class="govuk-summary-list__key">
                         Name
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        {{ data['alt-super-engineer-name'] }}
+                    <dd class="govuk-summary-list__value" for="reservoir-name-old">
+                        <p class="govuk-body" id="reservoir-name-old" name="reservoir-name-old">{{ data['new-reservoir-name'] }}</p>
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V2/submit-s12-statement/alt-supervising-engineer/engineer-name-change">
-                            Change<span class="govuk-visually-hidden">name</span>
+                            href="/Beta/V2/submit-s12-statement/reservoir-details/change-name">
+                            Change<span class="govuk-visually-hidden">postcode</span>
                         </a>
                     </dd>
                 </div>
 
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
-                        Email
+                        Postcode
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        {{ data['alt-super-engineer-email'] }}
+                        <p class="govuk-body">PO10 1AB</p>
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V2/submit-s12-statement/alt-supervising-engineer/engineer-email-change">
-                            Change<span class="govuk-visually-hidden">operator's email address</span>
+                            href="/Beta/V2/submit-s12-statement/reservoir-details/change-postcode">
+                            Change<span class="govuk-visually-hidden">postcode</span>
                         </a>
                     </dd>
                 </div>
 
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
-                        Phone
+                        National Grid reference
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        {{ data['alt-super-engineer-phone'] }}
+                        <p class="govuk-body">SU106951</p>
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V2/submit-s12-statement/alt-supervising-engineer/engineer-phone-change">
-                            Change<span class="govuk-visually-hidden">operator's phone number</span>
+                            href="/submit-s12-statement/reservoir-details/change-grid-ref-3">
+                            Change<span class="govuk-visually-hidden"> grid-reference</span>
                         </a>
                     </dd>
                 </div>
-
 
             </dl>
 

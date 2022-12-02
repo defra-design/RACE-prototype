@@ -15,17 +15,16 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Change the dam category of the reservoir</h1>
+        <h1 class="govuk-heading-xl">Change the phone number of the operator in the prescribed form of record</h1>
 
-        <form class="form" action="/Beta/V2/submit-s12-statement/reservoir-details/confirm-8" method="post">
-
+        <form class="form" action="/Beta/V2/submit-s12-statement/alt-supervising-engineer/confirm-phone-details" method="post">
 
             <div class="govuk-form-group">
 
-                <label class="govuk-label govuk-label--m" for="dam-category">
-                    Dam category
+                <label class="govuk-label govuk-label--m" for="alt-super-engineer-phone-2">
+                    Phone number
                 </label>
-                <input class="govuk-input govuk-!-width-one-quarter" id="dam-category" name="dam-category" type="text" value="A">
+                <input class="govuk-input govuk-!-width-one-third" id="alt-super-engineer-phone-2" name="alt-super-engineer-phone-2" type="text" value="{{ data['alt-super-engineer-phone'] }}">
             </div>
 
 
