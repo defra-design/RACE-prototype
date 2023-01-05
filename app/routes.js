@@ -577,5 +577,22 @@ router.post('/Beta/V3/submit-s12-statement/stat-non-stat-answer', function (req,
 
 })
 
+// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-reservoir-name-answer'
+router.post('/Beta/V3/submit-s12-statement/reservoir-details/change-name-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'changed-name'
+  var changedname = req.session.data['changed-name']
+
+  // Check whether the variable matches a condition
+  if (changedname == "Yes"){
+    // Send user to new-reservoir-name
+    res.redirect('/Beta/V3/submit-s12-statement/reservoir-details/new-name')
+  } else {
+    // Send user to confirm
+    res.redirect('/Beta/V3/submit-s12-statement/reservoir-details/confirm')
+  }
+
+})
+
 
 module.exports = router
