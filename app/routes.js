@@ -594,5 +594,23 @@ router.post('/Beta/V3/submit-s12-statement/reservoir-details/change-name-answer'
 
 })
 
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/change-name'
+
+router.post('/Beta/V3/submit-s12-statement/operator-details/change-name-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'operaotor-name'
+  var operatorname = req.session.data['operator-name']
+
+  // Check whether the variable matches a condition
+  if (operatorname == "Yes"){
+    // Send user to ?
+    res.redirect('/Beta/V3/submit-s12-statement/operator-details/change-name-yes')
+  } else {
+    // Send user to ?
+    res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
+  }
+
+})
+
 
 module.exports = router
