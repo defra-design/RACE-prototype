@@ -612,5 +612,23 @@ router.post('/Beta/V3/submit-s12-statement/operator-details/change-name-answer',
 
 })
 
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-answer'
+
+router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'operaotor-name'
+  var inspectingengineer = req.session.data['inspecting-engineer']
+
+  // Check whether the variable matches a condition
+  if (inspectingengineer == "Yes"){
+    // Send user to ?
+    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-yes')
+  } else {
+    // Send user to ?
+    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
+  }
+
+})
+
 
 module.exports = router
