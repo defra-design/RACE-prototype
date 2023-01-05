@@ -558,5 +558,24 @@ router.post('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-
 
 })
 
+// New Beta V3 routes //
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/stat-non-stat-answer'
+router.post('/Beta/V3/submit-s12-statement/stat-non-stat-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'stat-non-stat'
+  var statnonstat = req.session.data['stat-non-stat']
+
+  // Check whether the variable matches a condition
+  if (statnonstat == "Statutory"){
+    // Send user to next page
+    res.redirect('/Beta/V3/submit-s12-statement/choose-a-reservoir')
+  } else {
+    // Send user to non stat
+    res.redirect('/Beta/V3/submit-s12-statement/non-stat')
+  }
+
+})
+
 
 module.exports = router
