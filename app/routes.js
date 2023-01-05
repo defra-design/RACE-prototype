@@ -630,5 +630,23 @@ router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-answe
 
 })
 
+// Run this code when a form is submitted to '/Beta/V3/alt-supervising-engineer/super-engineer-answer'
+
+router.post('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var altsuperengineer = req.session.data['alt-super-engineer']
+
+  // Check whether the variable matches a condition
+  if (altsuperengineer == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/engineer-details')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V3/submit-s12-statement/questions/last-inspection-date')
+  }
+
+})
+
 
 module.exports = router
