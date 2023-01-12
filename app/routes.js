@@ -665,4 +665,23 @@ router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, r
 
 })
 
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/recommended-inspection-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/recommended-inspection-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var recommendedinspection = req.session.data['recommended-inspection-yes']
+
+  // Check whether the variable matches a condition
+  if (recommendedinspection == "Yes"){
+    // Send user to engineer-details
+    res.redirect('/Beta/V3/submit-s12-statement/questions/reason-for-inspection-1')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
+  }
+
+})
+
 module.exports = router
