@@ -666,9 +666,9 @@ router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, r
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/recommended-inspection-answer'
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/reason-for-inspection-1-answer'
 
-router.post('/Beta/V3/submit-s12-statement/questions/recommended-inspection-answer', function (req, res) {
+router.post('/Beta/V3/submit-s12-statement/questions/reason-for-inspection-1-answer', function (req, res) {
 
   // Make a variable and give it the value from 'alt-super-engineer'
   var recommendedinspection = req.session.data['recommended-inspection-yes']
@@ -677,6 +677,44 @@ router.post('/Beta/V3/submit-s12-statement/questions/recommended-inspection-answ
   if (recommendedinspection == "Yes"){
     // Send user to engineer-details
     res.redirect('/Beta/V3/submit-s12-statement/questions/reason-for-inspection-1')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var anotherreason = req.session.data['another-reason']
+
+  // Check whether the variable matches a condition
+  if (anotherreason == "yes"){
+    // Send user to reason for inspection
+    res.redirect('/Beta/V3/submit-s12-statement/questions/reason-for-inspection-2')
+  } else {
+    // Send user to inspection-date
+    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-2-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-2-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var anotherreason2 = req.session.data['another-reason-2']
+
+  // Check whether the variable matches a condition
+  if (anotherreason2 == "yes"){
+    // Send user to reason for inspection
+    res.redirect('/Beta/V3/submit-s12-statement/questions/reason-for-inspection-3')
   } else {
     // Send user to inspection-date
     res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
