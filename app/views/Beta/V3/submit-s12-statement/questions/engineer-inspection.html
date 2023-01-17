@@ -12,10 +12,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 <div class="govuk-grid-row">
-
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V2/submit-s12-statement/questions/operator-safety-action-answer" method="post">
+        <form method="post" action="/Beta/V3/submit-s12-statement/questions/engineer-inspection-answer">
 
             <div class="govuk-form-group">
 
@@ -24,7 +23,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
 
                         <h1 class="govuk-fieldset__heading">
-                            Are there any measures to be taken in the interest of safety?
+                            Have you recommended an inspection by an engineer before 7 September 2022?
                         </h1>
 
                     </legend>
@@ -33,18 +32,18 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="safety-measures-yes" name="safety-measures-yes"
+                            <input class="govuk-radios__input" id="engineer-inspection-1" name="engineer-inspection"
                                 type="radio" value="Yes" aria-describedby="yes-or-no-item-hint">
-                            <label class="govuk-label govuk-radios__label" for="safety-measures-yes">
+                            <label class="govuk-label govuk-radios__label" for="engineer-inspection-1">
                                 Yes
                             </label>
                         </div>
 
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="safety-measures-yes-2" name="safety-measures-yes"
+                            <input class="govuk-radios__input" id="engineer-inspection-2" name="engineer-inspection"
                                 type="radio" value="No" aria-describedby="yes-or-no-item-2-item-hint">
-                            <label class="govuk-label govuk-radios__label" for="safety-measures-yes-2">
+                            <label class="govuk-label govuk-radios__label" for="engineer-inspection-2">
                                 No
                             </label>
                         </div>
