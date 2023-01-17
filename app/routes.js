@@ -819,7 +819,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action-1')
   } else {
 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/owner-records')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-records')
   }
 
 })
@@ -836,7 +836,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-maintenanc
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action-2')
   } else {
 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/owner-records')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-records')
   }
 
 })
@@ -852,9 +852,60 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-maintenanc
     res.redirect('/Beta/V3/submit-s12-statement/questions/#')
   } else {
 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/owner-records')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-records')
   }
 
 })
 
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-records-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-records-answer', function (req, res) {
+
+  var updaterecords = req.session.data['update-records']
+
+  if (updaterecords == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-1')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-1-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-1-answer', function (req, res) {
+
+  var anotherrecord1 = req.session.data['another-record']
+
+  if (anotherrecord1 == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-2')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-2-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-2-answer', function (req, res) {
+
+  var anotherrecord1 = req.session.data['another-record-2']
+
+  if (anotherrecord1 == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+  }
+
+})
 module.exports = router
