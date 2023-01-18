@@ -956,4 +956,56 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-4-answ
   }
 
 })
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/flood-plan-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-answer', function (req, res) {
+
+  var floodplanyes = req.session.data['flood-plan-yes']
+
+  if (floodplanyes == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-yes')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-tested-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-answer', function (req, res) {
+
+  var plantestedyes3 = req.session.data['plan-tested-yes-3']
+
+  if (plantestedyes3 == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
+
+  var reviseplanyes = req.session.data['revise-plan-yes']
+
+  if (reviseplanyes == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-revise')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+  }
+
+})
+
 module.exports = router
