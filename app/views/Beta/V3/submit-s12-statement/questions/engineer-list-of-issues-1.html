@@ -17,13 +17,13 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <form action="/Beta/V3/submit-s12-statement/questions/engineer-list-of-issues-1-answer" method="post">
 
 
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">The specific issues to inspect</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">Issues for the engineer to watch</h1>
 
 
             <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
 
                 <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Reason 1</h3>
+                    <h3 class="govuk-heading-m">Issue 1</h3>
 
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -43,7 +43,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <div class="govuk-grid-column-full">
                         <div class="govuk-grid-row">
                             <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Name</p>
+                                <p class="govuk-body govuk-!-font-weight-bold">Issue to watch</p>
                             </div>
                             <div class="govuk-grid-column-one-half">
                                 <p class="govuk-body">{{ data['title-reason-1'] }}</p>
@@ -68,20 +68,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 <div class="govuk-summary-list govuk-summary-list--no-border">
 
                     <p class="govuk-body govuk-!-font-weight-bold govuk-!-width-one-third"></p>
-                </div>
-
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-                    <dt class="govuk-summary-list__key">Status</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['status'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-                    <dt class="govuk-summary-list__key">Compliant</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['operator-compliant'] }}</p>
-                    </dd>
                 </div>
 
                 <div class="govuk-summary-list govuk-summary-list--no-border heading-underline">
