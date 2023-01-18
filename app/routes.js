@@ -721,7 +721,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection-
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-measure-to-take-1')
   } else {
  
-    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-actions')
   }
 
 })
@@ -905,6 +905,54 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-2-answ
   } else {
 
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+  }
+
+})
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-monitoring-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-monitoring-answer', function (req, res) {
+
+  var updatemonitoring = req.session.data['update-monitoring']
+
+  if (updatemonitoring == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-3')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan')
+  }
+
+})
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-3-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-3-answer', function (req, res) {
+
+  var anothermonitoring = req.session.data['another-monitoring']
+
+  if (anothermonitoring == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-4')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan')
+  }
+
+})
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-4-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-4-answer', function (req, res) {
+
+  var anothermonitoring2 = req.session.data['another-monitoring-2']
+
+  if (anothermonitoring2 == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan')
   }
 
 })

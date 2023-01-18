@@ -14,16 +14,18 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-1-answer" method="post">
+        <form action="/Beta/V3/submit-s12-statement/questions/operator-action-list-3-answer" method="post">
 
 
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">What the operator needs to inspect</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">
+                What does the operator need to do?
+            </h1>
 
 
             <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
 
                 <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Item 1</h3>
+                    <h3 class="govuk-heading-m">Reason 1</h3>
 
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -41,55 +43,67 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
                 <div class="govuk-summary-list  govuk-!-margin-top-3">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to inspect</dt>
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Name</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['title-reason-1'] }}</p>
+                        <p class="govuk-body">{{ data['title-monitoring-1'] }}</p>
                     </dd>
                 </div>
 
                 <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to do</dt>
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Description</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['frequency-reason-1'] }}</p>
+                        <p class="govuk-body">{{ data['description-monitoring-1'] }}</p>
                     </dd>
                 </div>
 
+
                 <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">How often</dt>
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Deadline</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['description-reason-1'] }}</p>
+                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['deadline-day-monitoring'] }} {{ data['deadline-month-monitoring'] }} {{ data['deadline-year-monitoring'] }}</p>
                     </dd>
                 </div>
+
+
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key">Status</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['mandatory-advisory-monitoring'] }}</p>
+                    </dd>
+                </div>
+
 
                 <div class="govuk-summary-list heading-underline">
                     <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason'] }}</p>
+                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-monitoring'] }}</p>
                     </dd>
                 </div>
+
 
             </div>
 
 
-            <div class="govuk-form-group govuk-!-margin-top-4 govuk-!-padding-top-6">
+
+            <div class="govuk-form-group govuk-!-margin-top-3">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h2 class="govuk-fieldset__heading">
-                            Do you want to add another item?
+                            Do you want to add another action?
                         </h2>
                     </legend>
                     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="another-reason" name="another-reason" type="radio"
+                            <input class="govuk-radios__input" id="another-monitoring-1" name="another-monitoring" type="radio"
                                 value="Yes">
-                            <label class="govuk-label govuk-radios__label" for="another-reason">
+                            <label class="govuk-label govuk-radios__label" for="another-monitoring-1">
                                 Yes
                             </label>
                         </div>
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="another-reason-2" name="another-reason" type="radio"
+                            <input class="govuk-radios__input" id="another-monitoring-2" name="another-monitoring" type="radio"
                                 value="no">
-                            <label class="govuk-label govuk-radios__label" for="another-reason-2">
+                            <label class="govuk-label govuk-radios__label" for="another-monitoring-2">
                                 No
                             </label>
                         </div>
