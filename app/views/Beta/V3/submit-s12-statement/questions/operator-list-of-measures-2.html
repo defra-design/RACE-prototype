@@ -19,8 +19,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
             <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">What the operator needs to inspect</h1>
 
-            <!-- <h3 class="govuk-heading-m govuk-!-font-weight-bold govuk-!-padding-top-8">You have added one reason</h3> -->
-
 
             <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
 
@@ -41,48 +39,32 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     </dd>
                 </div>
 
-                <div class="govuk-grid-row govuk-!-margin-top-3">
-                    <div class="govuk-grid-column-full">
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">What to inspect</p>
-                            </div>
-                            <div class="govuk-grid-column-one-half">
-                                <p class="govuk-body">{{ data['title-reason-1'] }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="govuk-grid-row govuk-!-margin-top-3">
-                    <div class="govuk-grid-column-full">
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">What to do</p>
-                            </div>
-                            <div class="govuk-grid-column-two-thirds">
-                                <p class="govuk-body">{{ data['description-reason-1'] }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-
-                    <p class="govuk-body govuk-!-font-weight-bold govuk-!-width-one-third"></p>
-                </div>
-
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-                    <dt class="govuk-summary-list__key">How often</dt>
+                <div class="govuk-summary-list  govuk-!-margin-top-3">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to inspect</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['status'] }}</p>
+                        <p class="govuk-body">{{ data['title-reason-1'] }}</p>
                     </dd>
                 </div>
 
-                <div class="govuk-summary-list govuk-summary-list--no-border heading-underline">
-                    <dt class="govuk-summary-list__key">Comments</dt>
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to do</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason'] }}</p>
+                        <p class="govuk-body">{{ data['description-reason-1'] }}</p>
+                    </dd>
+                </div>
+
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">How often</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['how-often-reason-1'] }}</p>
+                    </dd>
+                </div>
+
+                <div class="govuk-summary-list heading-underline">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason-1'] }}</p>
                     </dd>
                 </div>
 
@@ -91,7 +73,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
 
                 <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Reason 2</h3>
+                    <h3 class="govuk-heading-m">Item 2</h3>
 
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -107,46 +89,30 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     </dd>
                 </div>
 
-                <div class="govuk-grid-row govuk-!-margin-top-3">
-                    <div class="govuk-grid-column-full">
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">What to inspect</p>
-                            </div>
-                            <div class="govuk-grid-column-one-half">
-                                <p class="govuk-body">{{ data['title-reason-2'] }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="govuk-grid-row govuk-!-margin-top-3">
-                    <div class="govuk-grid-column-full">
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">What to do</p>
-                            </div>
-                            <div class="govuk-grid-column-two-thirds">
-                                <p class="govuk-body">{{ data['description-reason-2'] }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-
-                    <p class="govuk-body govuk-!-font-weight-bold govuk-!-width-one-third"></p>
-                </div>
-
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-                    <dt class="govuk-summary-list__key">How often</dt>
+                <div class="govuk-summary-list  govuk-!-margin-top-3">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to inspect</dt>
                     <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['status-2'] }}</p>
+                        <p class="govuk-body">{{ data['title-reason-2'] }}</p>
                     </dd>
                 </div>
 
-                <div class="govuk-summary-list govuk-summary-list--no-border heading-underline">
-                    <dt class="govuk-summary-list__key">Comments</dt>
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to do</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['description-reason-2'] }}</p>
+                    </dd>
+                </div>
+
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">How often</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['how-often-reason-2'] }}</p>
+                    </dd>
+                </div>
+
+                <div class="govuk-summary-list heading-underline">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
                     <dd class="govuk-summary-list__value">
                         <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason-2'] }}</p>
                     </dd>
@@ -156,7 +122,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 
-            <div class="govuk-form-group govuk-!-margin-top-3">
+            <div class="govuk-form-group govuk-!-margin-top-4">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h2 class="govuk-fieldset__heading">
