@@ -17,7 +17,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <form action="/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-2-answer" method="post">
 
 
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">Measures in the interest of safety</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">What the operator needs to inspect</h1>
 
             <!-- <h3 class="govuk-heading-m govuk-!-font-weight-bold govuk-!-padding-top-8">You have added one reason</h3> -->
 
@@ -25,7 +25,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
 
                 <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Reason 1</h3>
+                    <h3 class="govuk-heading-m">Item 1</h3>
 
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -45,7 +45,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <div class="govuk-grid-column-full">
                         <div class="govuk-grid-row">
                             <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Name</p>
+                                <p class="govuk-body govuk-!-font-weight-bold">What to inspect</p>
                             </div>
                             <div class="govuk-grid-column-one-half">
                                 <p class="govuk-body">{{ data['title-reason-1'] }}</p>
@@ -58,7 +58,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <div class="govuk-grid-column-full">
                         <div class="govuk-grid-row">
                             <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Description</p>
+                                <p class="govuk-body govuk-!-font-weight-bold">What to do</p>
                             </div>
                             <div class="govuk-grid-column-two-thirds">
                                 <p class="govuk-body">{{ data['description-reason-1'] }}</p>
@@ -118,7 +118,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <div class="govuk-grid-column-full">
                         <div class="govuk-grid-row">
                             <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Name</p>
+                                <p class="govuk-body govuk-!-font-weight-bold">What to inspect</p>
                             </div>
                             <div class="govuk-grid-column-one-half">
                                 <p class="govuk-body">{{ data['title-reason-2'] }}</p>
@@ -131,7 +131,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <div class="govuk-grid-column-full">
                         <div class="govuk-grid-row">
                             <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Description</p>
+                                <p class="govuk-body govuk-!-font-weight-bold">What to do</p>
                             </div>
                             <div class="govuk-grid-column-two-thirds">
                                 <p class="govuk-body">{{ data['description-reason-2'] }}</p>
@@ -152,13 +152,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     </dd>
                 </div>
 
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-                    <dt class="govuk-summary-list__key">Compliant</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['operator-compliant-2'] }}</p>
-                    </dd>
-                </div>
-
                 <div class="govuk-summary-list govuk-summary-list--no-border heading-underline">
                     <dt class="govuk-summary-list__key">Comments</dt>
                     <dd class="govuk-summary-list__value">
@@ -174,7 +167,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h2 class="govuk-fieldset__heading">
-                            Do you want to add another measure?
+                            Do you want to add another item?
                         </h2>
                     </legend>
                     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
