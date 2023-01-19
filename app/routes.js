@@ -738,7 +738,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-1
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-measure-to-take-2')
   } else {
  
-    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-actions')
   }
 
 })
@@ -754,7 +754,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-2
     res.redirect('/Beta/V3/submit-s12-statement/questions/#')
   } else {
  
-    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-actions')
   }
 
 })
