@@ -996,9 +996,9 @@ router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-answer', 
 
 router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
 
-  var reviseplanyes = req.session.data['revise-plan-yes']
+  var reviseplanyes3 = req.session.data['revise-plan-yes-3']
 
-  if (reviseplanyes == "Yes"){
+  if (reviseplanyes3 == "Yes"){
 
     res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-revise')
   } else {
