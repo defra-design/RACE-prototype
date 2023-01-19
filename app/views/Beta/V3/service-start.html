@@ -21,8 +21,12 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </h1>
 
         <p class="govuk-body">Use this service to send a supervising engineer's annual statement to the Environment Agency.</p>
+        
+        <p class="govuk-body">This service is for statutory annual statements. To send a non-statutory statement email the Environment Agency.</p>
+        
+        <p class="govuk-body">Email <a href="mailto:reservoirs@environment-agency.gov.uk" class="govuk-link">reservoirs@environment-agency.gov.uk</a></p>
 
-        <a href="/Beta/V2/gov-gateway-account/create-gov-gateway.html" role="button" draggable="false"
+        <a href="/Beta/V3/submit-s12-statement/choose-a-reservoir" role="button" draggable="false"
             class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
             data-module="govuk-button">
             Start now
@@ -34,16 +38,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
         <h2 class="govuk-heading-m govuk-!-font-size-27 govuk-!-padding-top-2">Before you start</h2>
         
-        <p class="govuk-body">You'll need:</p>
-
-        <ul class="govuk-list govuk-list--bullet">
-            <li>your Government Gateway login details, if you do not have an account you can <a href="/Beta/V2/gov-gateway-account/enter-email"
-                    class="govuk-link--no-visited-state">create one</a>
-            </li>
-            <li>your Defra account details, if you do not have a Defra account you can set one up in the service, you'll
-                need a company registration number if you're registering as a business
-            </li>
-        </ul>
+        <p class="govuk-body">You'll need an email address to set up an account.</p>
 
         <p>Read about<a
                 href="https://www.gov.uk/guidance/reservoir-supervising-engineers-written-statements-and-site-visit-reports"
@@ -53,7 +48,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <h2 class="govuk-heading-m govuk-!-font-size-27 govuk-!-padding-top-6"> Get help using this service</h2>
 
         <p class="govuk-body"> You can <a href="#" class="govuk-link govuk-link--no-visited-state"> get help doing things online</a>.
-        </p>
+
     </div>
 </div>
 {% endblock %}
