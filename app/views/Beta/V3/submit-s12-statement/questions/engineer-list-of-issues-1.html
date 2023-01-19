@@ -19,7 +19,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
             <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">Issues for the engineer to watch</h1>
 
-
             <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
 
                 <div class="govuk-summary-list heading-underline">
@@ -39,46 +38,37 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     </dd>
                 </div>
 
-                <div class="govuk-grid-row govuk-!-margin-top-3">
-                    <div class="govuk-grid-column-full">
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Issue to watch</p>
-                            </div>
-                            <div class="govuk-grid-column-one-half">
-                                <p class="govuk-body">{{ data['title-reason-1'] }}</p>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="govuk-summary-list  govuk-!-margin-top-3">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Issue to watch</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['title-reason-1'] }}</p>
+                    </dd>
                 </div>
 
-                <div class="govuk-grid-row govuk-!-margin-top-3">
-                    <div class="govuk-grid-column-full">
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third">
-                                <p class="govuk-body govuk-!-font-weight-bold">Description</p>
-                            </div>
-                            <div class="govuk-grid-column-two-thirds">
-                                <p class="govuk-body">{{ data['description-reason-1'] }}</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Description</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['description-reason-1'] }}</p>
+                    </dd>
                 </div>
 
-                <div class="govuk-summary-list govuk-summary-list--no-border">
-
-                    <p class="govuk-body govuk-!-font-weight-bold govuk-!-width-one-third"></p>
+                <div class="govuk-summary-list">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">How often</dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['how-often-reason-1'] }}</p>
+                    </dd>
                 </div>
 
-                <div class="govuk-summary-list govuk-summary-list--no-border heading-underline">
-                    <dt class="govuk-summary-list__key">Comments</dt>
+                <div class="govuk-summary-list heading-underline">
+                    <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
                     <dd class="govuk-summary-list__value">
                         <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason'] }}</p>
                     </dd>
                 </div>
 
             </div>
-
+            
 
             <div class="govuk-form-group govuk-!-margin-top-4 govuk-!-padding-top-6">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
