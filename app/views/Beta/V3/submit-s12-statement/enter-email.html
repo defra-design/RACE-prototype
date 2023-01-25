@@ -1,0 +1,40 @@
+{% extends "layout-back-button.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="/Beta/V3/submit-s12-statement/create-password" method="post">
+
+            <div class="govuk-form-group">
+                <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+                        Enter your email address
+                    </label>
+                </h1>
+                <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+
+
+            <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+                data-module="govuk-button">
+                Continue
+            </button>
+
+        </form>
+
+
+    </div>
+</div>
+
+{% endblock %}
