@@ -12,13 +12,15 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 <div class="govuk-grid-row">
 
-    <div class="govuk-grid-column-two-thirds-from-desktop">
+    <div class="govuk-grid-column-three-quarters">
 
       <h1 class="govuk-heading-xl">Check your answers</h1>
 
-      <h2 class="govuk-heading-m">Reservoir details</h2>
+      <h2 class="govuk-heading-l govuk-!-margin-top-9 govuk-!-padding-top-6">Reservoir details</h2>
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Name
@@ -64,9 +66,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
       </dl>
 
-      <h2 class="govuk-heading-m">Operator's details</h2>
+      <h2 class="govuk-heading-l govuk-!-padding-top-6">Operator's details</h2>
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Name
@@ -125,9 +129,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </div>
       </dl>
 
-      <h2 class="govuk-heading-m">Inspecting engineer's details</h2>
+      <h2 class="govuk-heading-l govuk-!-padding-top-6">Inspecting engineer's details</h2>
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Name
@@ -200,9 +206,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </div>
       </dl>
 
-      <h2 class="govuk-heading-m">Alternative supervising engineer</h2>
+      <h2 class="govuk-heading-l govuk-!-padding-top-6">Alternative supervising engineer</h2>
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Name
@@ -248,16 +256,1223 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
     </dl>
 
 
-      <form action="/Beta/V3/submit-s12-statement/check-answers-1" method="post" novalidate>
+    
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-0 govuk-!-padding-top-6 grey-line-bottom">Reservoir inspection
+      details
+    </h2>
 
-        <input type="hidden" name="answers-checked" value="true">
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of inspection report
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">3 March 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of inspection certificate
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">3 March 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Next scheduled inspection date
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">7 September 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Early inspection recommended
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
 
-        <button type="submit" class="govuk-button" data-module="govuk-button">
-          Continue
-        </button>
 
-      </form>
+      <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Reasons for early inspection</h2>
 
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Reason 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Reason</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Reason 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Reason</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <!-- <div class="govuk-summary-list__row ">
+        <dt class="govuk-summary-list__key govuk-!-padding-top-3 govuk-!-padding-bottom-4">
+          Operator to visually inspect
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">What the operator needs to inspect</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Item 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">What to inspect</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          What to do
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">What to do</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          How often
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">How often</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Item 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">What to inspect</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          What to do
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">What to do</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          How often
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">How often</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Reasons for visual inspection
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">There's a damp spot on the dam which has appeared since last site visit.</p><br>
+
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+
+
+    <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          What the operator needs to do and when
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Keep the grass cut short there for the next year so engineer can see what's happening.
+          </p>
+          <p class="govuk-body">Peg out the damp area and see if it gets any bigger.</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+
+      <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Safety measures</h2>
+
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Activity 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">The spillway capacity be increased to safely pass the PMF flood</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Deadline
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">18 November 2023</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Activity 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Carry out a breach study using 2016 EA RFM Specification through the new development downstream</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Deadline
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">13 September 2023</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Activity 3
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Remove all trees on the embankment, remove all debris, reprofile bank and reseed</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Deadline
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">4 October 2023</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Activity 4
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            The unsteady concrete base slabs need investigating and stabilising</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Deadline
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            24 August 2023</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Activity 5
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Do a geophysical study on embankment</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Deadline
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            18 September 2023</p><br>
+        </dd>
+        <!-- <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd> -->
+      </div>
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Issues to be watched
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Issues for the engineer to watch</h2>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Issue 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Do a geophysical study on embankment</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Issue 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Do a geophysical study on embankment</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Maintenance actions
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Maintenance actions for the operator</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Action 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Action</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Status
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Status</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Compliant
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Compliant</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Action 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Action</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Status
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Status</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Compliant
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Compliant</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Operator to update records </dt>
+        <dd class="govuk-summary-list__value">
+          Yes
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Updates for the operator</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Update 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Update</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Update to be done by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Update to be done by</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Mandatory
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Mandatory</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Update 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Update</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Update to be done by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Update to be done by</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Mandatory
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Mandatory</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Operator to improve monitoring </dt>
+        <dd class="govuk-summary-list__value">
+          Yes
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Monitoring actions for the operator</h2>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Action 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Action</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Action to be done by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Update to be done by</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Mandatory
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Mandatory</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Action 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Action</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Description
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Description</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Action to be done by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Update to be done by</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Mandatory
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Mandatory</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Comments
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Comments</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Flood plan
+      details</h2>
+    
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Flood plan
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of certificate
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            4 February 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Flood plan tested
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Operator to revise flood plan
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Flood plan revisions
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">The valve arrangement has changed. Revise plan to reflect new arrangement.</p><br>
+
+
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-0 govuk-!-padding-bottom-4 grey-line-bottom">Supporting documents</h2>
+   
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+    <!-- <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Supporting documents
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <p class="govuk-body">
+          Yes</p><br>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a href="#">
+          Change
+          <span class="govuk-visually-hidden"> phone</span>
+        </a>
+      </dd>
+    </div> -->
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Uploaded files
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <p class="govuk-body">
+          Test report.pdf</p><br>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a href="#">
+          Change
+          <span class="govuk-visually-hidden"> phone</span>
+        </a>
+      </dd>
     </div>
+
+
+    </dl>
+
+
+    <form action="/Beta/V3/submit-s12-statement/confirmation" method="post" novalidate>
+
+      <input type="hidden" name="answers-checked" value="true">
+
+      <button type="submit" class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-9" data-module="govuk-button">
+        Accept and send
+      </button>
+
+    </form>
+
   </div>
+</div>
 {% endblock %}
