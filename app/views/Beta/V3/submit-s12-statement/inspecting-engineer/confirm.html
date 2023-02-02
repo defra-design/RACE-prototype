@@ -16,8 +16,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
         <form action="/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer" method="post">
 
-
-            <h1 class="govuk-heading-xl">Do these details about the last inspecting engineer match your records?</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Last inspecting engineer details</h1>
 
 
             <dl class="govuk-summary-list govuk-summary-list--no-border">
@@ -29,12 +28,12 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <dd class="govuk-summary-list__value">
                         <p class="govuk-body">Chris Jones</p>
                     </dd>
-                    <dd class="govuk-summary-list__actions">
+                    <!-- <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
                             href="/Beta/V3/submit-s12-statement/inspecting-engineer/change-name">
                             Change<span class="govuk-visually-hidden">inspector's name</span>
                         </a>
-                    </dd>
+                    </dd> -->
                 </div>
 
                 <div class="govuk-summary-list__row">
@@ -100,6 +99,36 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
             </dl>
 
+            <div class="govuk-form-group govuk-!-padding-top-6">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                            Do these details match your records?
+                        </h1>
+                    </legend>
+
+
+                    <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio"
+                                value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio"
+                                value="No">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+
 
             <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-6"
                 data-module="govuk-button">
@@ -111,5 +140,5 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
     </div>
 </div>
 
-
 {% endblock %}
+
