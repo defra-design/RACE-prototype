@@ -721,7 +721,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection-
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-measure-to-take-1')
   } else {
  
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-actions')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-measures')
   }
 
 })
@@ -1004,6 +1004,109 @@ router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answe
   } else {
 
     res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer'
+
+router.post('/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer', function (req, res) {
+
+  var matchreservoir = req.session.data['match-reservoir']
+
+  if (matchreservoir == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-reservoir')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
+
+router.post('/Beta/V3/submit-s12-statement/operator-details/confirm-answer', function (req, res) {
+
+  var matchoperator = req.session.data['match-operator']
+
+  if (matchoperator == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-operator')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer'
+
+router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer', function (req, res) {
+
+  var matchinspectengineer = req.session.data['match-last-inspect-engineer']
+
+  if (matchinspectengineer == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-inspect-engineer')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer', function (req, res) {
+
+  var matchreportcert = req.session.data['match-report-cert']
+
+  if (matchreportcert == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/next-inspection-date')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-report-cert')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer', function (req, res) {
+
+  var matchnextinspection = req.session.data['match-next-inspection']
+
+  if (matchnextinspection == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-reason-for-inspection-1')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer', function (req, res) {
+
+  var matchsafetymeasure = req.session.data['match-safety-measure']
+
+  if (matchsafetymeasure == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-safety-measures')
   }
 
 })
