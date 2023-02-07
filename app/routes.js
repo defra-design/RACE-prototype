@@ -1085,7 +1085,24 @@ router.post('/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer
 
   if (matchnextinspection == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-reason-for-inspection-1')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/need-inspection-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/need-inspection-answer', function (req, res) {
+
+  var needinspection = req.session.data['need-inspection']
+
+  if (needinspection == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-reason-for-inspection-1')
   } else {
 
     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
