@@ -575,75 +575,57 @@ router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, r
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/stat-non-stat-answer'
-router.post('/Beta/V3/submit-s12-statement/stat-non-stat-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'stat-non-stat'
-  var statnonstat = req.session.data['stat-non-stat']
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer'
 
-  // Check whether the variable matches a condition
-  if (statnonstat == "Statutory"){
-    // Send user to next page
-    res.redirect('/Beta/V3/submit-s12-statement/choose-a-reservoir')
-  } else {
-    // Send user to non stat
-    res.redirect('/Beta/V3/submit-s12-statement/non-stat')
-  }
+router.post('/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer', function (req, res) {
 
-})
+  var matchreservoir = req.session.data['match-reservoir']
 
-// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-reservoir-name-answer'
-router.post('/Beta/V3/submit-s12-statement/reservoir-details/change-name-answer', function (req, res) {
+  if (matchreservoir == "Yes"){
 
-  // Make a variable and give it the value from 'changed-name'
-  var changedname = req.session.data['changed-name']
-
-  // Check whether the variable matches a condition
-  if (changedname == "Yes"){
-    // Send user to new-reservoir-name
-    res.redirect('/Beta/V3/submit-s12-statement/reservoir-details/new-name')
-  } else {
-    // Send user to confirm
-    res.redirect('/Beta/V3/submit-s12-statement/reservoir-details/confirm')
-  }
-
-})
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/change-name'
-
-router.post('/Beta/V3/submit-s12-statement/operator-details/change-name-answer', function (req, res) {
-
-  // Make a variable and give it the value from 'operaotor-name'
-  var operatorname = req.session.data['operator-name']
-
-  // Check whether the variable matches a condition
-  if (operatorname == "Yes"){
-    // Send user to ?
-    res.redirect('/Beta/V3/submit-s12-statement/operator-details/change-name-yes')
-  } else {
-    // Send user to ?
     res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
-  }
-
-})
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-answer'
-
-router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-answer', function (req, res) {
-
-  // Make a variable and give it the value from 'operaotor-name'
-  var inspectingengineer = req.session.data['inspecting-engineer']
-
-  // Check whether the variable matches a condition
-  if (inspectingengineer == "Yes"){
-    // Send user to ?
-    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/change-name-yes')
   } else {
-    // Send user to ?
-    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-reservoir')
   }
 
 })
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
+
+router.post('/Beta/V3/submit-s12-statement/operator-details/confirm-answer', function (req, res) {
+
+  var matchoperator = req.session.data['match-operator']
+
+  if (matchoperator == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-operator')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer'
+
+router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer', function (req, res) {
+
+  var matchinspectengineer = req.session.data['match-last-inspect-engineer']
+
+  if (matchinspectengineer == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-inspect-engineer')
+  }
+
+})
+
 
 // Run this code when a form is submitted to '/Beta/V3/alt-supervising-engineer/super-engineer-answer'
 
@@ -663,19 +645,67 @@ router.post('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engine
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/engineer-inspection-answer'
 
-router.post('/Beta/V3/submit-s12-statement/questions/engineer-inspection-answer', function (req, res) {
 
-  var engineerinspection = req.session.data['engineer-inspection']
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer'
 
-  if (engineerinspection == "Yes"){
+router.post('/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer', function (req, res) {
+
+  var matchreportcert = req.session.data['match-report-cert']
+
+  if (matchreportcert == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/next-inspection-date')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-report-cert')
+  }
+
+})
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer', function (req, res) {
+
+  var matchnextinspection = req.session.data['match-next-inspection']
+
+  if (matchnextinspection == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
+  }
+
+})
+
+
+
+
+// NEW ROUTES //
+
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/need-inspection-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/need-inspection-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'alt-super-engineer'
+  var needinspection = req.session.data['need-inspection']
+
+  // Check whether the variable matches a condition
+  if (needinspection == "Yes"){
+    // Send user to engineer-details
     res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-reason-for-inspection-1')
   } else {
+    // Send user to inspection-date
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection')
   }
 
 })
+
+
 
 
 // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-1-answer'
@@ -738,7 +768,7 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-1
     res.redirect('/Beta/V3/submit-s12-statement/questions/operator-measure-to-take-2')
   } else {
  
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-actions')
+    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-measures')
   }
 
 })
@@ -758,6 +788,24 @@ router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-2
   }
 
 })
+
+
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer'
+
+router.post('/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer', function (req, res) {
+
+  var matchsafetymeasure = req.session.data['match-safety-measure']
+
+  if (matchsafetymeasure == "Yes"){
+
+    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
+  } else {
+
+    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-safety-measures')
+  }
+
+})
+
 
 // Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/issues-to-watch-answer'
 
@@ -1004,126 +1052,6 @@ router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answe
   } else {
 
     res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
-  }
-
-})
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer'
-
-router.post('/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer', function (req, res) {
-
-  var matchreservoir = req.session.data['match-reservoir']
-
-  if (matchreservoir == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-reservoir')
-  }
-
-})
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
-
-router.post('/Beta/V3/submit-s12-statement/operator-details/confirm-answer', function (req, res) {
-
-  var matchoperator = req.session.data['match-operator']
-
-  if (matchoperator == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-operator')
-  }
-
-})
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer'
-
-router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer', function (req, res) {
-
-  var matchinspectengineer = req.session.data['match-last-inspect-engineer']
-
-  if (matchinspectengineer == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-inspect-engineer')
-  }
-
-})
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer'
-
-router.post('/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer', function (req, res) {
-
-  var matchreportcert = req.session.data['match-report-cert']
-
-  if (matchreportcert == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/next-inspection-date')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-report-cert')
-  }
-
-})
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer'
-
-router.post('/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer', function (req, res) {
-
-  var matchnextinspection = req.session.data['match-next-inspection']
-
-  if (matchnextinspection == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
-  }
-
-})
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/need-inspection-answer'
-
-router.post('/Beta/V3/submit-s12-statement/questions/need-inspection-answer', function (req, res) {
-
-  var needinspection = req.session.data['need-inspection']
-
-  if (needinspection == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-reason-for-inspection-1')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
-  }
-
-})
-
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer'
-
-router.post('/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer', function (req, res) {
-
-  var matchsafetymeasure = req.session.data['match-safety-measure']
-
-  if (matchsafetymeasure == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
-  } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-safety-measures')
   }
 
 })
