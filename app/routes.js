@@ -576,21 +576,21 @@ router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, r
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer'
+// // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer'
 
-router.post('/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer', function (req, res) {
+// router.post('/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer', function (req, res) {
 
-  var matchreservoir = req.session.data['match-reservoir']
+//   var matchreservoir = req.session.data['match-reservoir']
 
-  if (matchreservoir == "Yes"){
+//   if (matchreservoir == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
-  } else {
+//     res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
+//   } else {
 
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-reservoir')
-  }
+//     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-reservoir')
+//   }
 
-})
+// })
 
 
 // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
