@@ -1,4 +1,4 @@
-{% extends "layout-phase-back-button.html" %}
+{% extends "layout-sign-out.html" %}
 
 {% block pageTitle %}
 Start page template – {{ serviceName }} – GOV.UK Prototype Kit
@@ -14,13 +14,12 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V3/submit-s12-statement/inspecting-engineer/confirm" method="post">
+        <form action="/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer" method="post">
 
-
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">These are the details we hold about the operator. Do they match your records?</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Operator details</h1>
 
             <div id="event-name-hint" class="govuk-hint govuk-!-margin-bottom-8">
-                The operator is the undertaker.
+                'Operator' is used here to mean the undertaker.
               </div>
 
             <dl class="govuk-summary-list govuk-summary-list--no-border">
@@ -45,9 +44,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Address
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        {{ data['operator-address-1'] }}<br>
-                        {{ data['operator-address-2'] }}<br>
-                        {{ data['operator-address-3'] }}
+                        Rockingham Estate<br>Hampshire<br>PO10 1AB
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -62,7 +59,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Email
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        {{ data['operator-email'] }}
+                        <p class="govuk-body">NRoberts@hotmail.com</p>
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -77,7 +74,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         Phone
                     </dt>
                     <dd class="govuk-summary-list__value">
-                        {{ data['operator-phone'] }}
+                        <p class="govuk-body">02392 123-456</p>
                     </dd>
                     <dd class="govuk-summary-list__actions">
                         <a class="govuk-link govuk-link--no-visited-state"
@@ -87,13 +84,12 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     </dd>
                 </div>
 
-
             </dl>
 
 
             <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-6"
                 data-module="govuk-button">
-                Confirm
+                Continue
             </button>
 
         </form>
@@ -102,7 +98,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             <p><a class="govuk-link govuk-link--no-visited-state"
                     href="/Beta/V3/submit-s12-statement/operator-details/add-operator">Add another operator</a></p>
         </div>
-        
+
     </div>
 </div>
 

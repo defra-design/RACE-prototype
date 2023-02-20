@@ -593,38 +593,38 @@ router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, r
 // })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
+// // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
 
-router.post('/Beta/V3/submit-s12-statement/operator-details/confirm-answer', function (req, res) {
+// router.post('/Beta/V3/submit-s12-statement/operator-details/confirm-answer', function (req, res) {
 
-  var matchoperator = req.session.data['match-operator']
+//   var matchoperator = req.session.data['match-operator']
 
-  if (matchoperator == "Yes"){
+//   if (matchoperator == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
-  } else {
+//     res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
+//   } else {
 
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-operator')
-  }
+//     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-operator')
+//   }
 
-})
+// })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer'
+// // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer'
 
-router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer', function (req, res) {
+// router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer', function (req, res) {
 
-  var matchinspectengineer = req.session.data['match-last-inspect-engineer']
+//   var matchinspectengineer = req.session.data['match-last-inspect-engineer']
 
-  if (matchinspectengineer == "Yes"){
+//   if (matchinspectengineer == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
-  } else {
+//     res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+//   } else {
 
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-inspect-engineer')
-  }
+//     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-inspect-engineer')
+//   }
 
-})
+// })
 
 
 // Run this code when a form is submitted to '/Beta/V3/alt-supervising-engineer/super-engineer-answer'

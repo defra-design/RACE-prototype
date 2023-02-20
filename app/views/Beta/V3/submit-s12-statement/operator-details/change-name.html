@@ -15,36 +15,26 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/V3/submit-s12-statement/operator-details/change-name-answer" method="post">
+        <h1 class="govuk-heading-xl">What's the operator's name?</h1>
+
+        <form class="form" action="/Beta/V3/submit-s12-statement/operator-details/confirm-email-details" method="post">
+
 
             <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                    <h1 class="govuk-fieldset__heading">
-                      Are you sure you want to change the operator?
-                    </h1>
-                  </legend>
 
-                  <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="operator-name" name="operator-name" type="radio" value="Yes">
-                      <label class="govuk-label govuk-radios__label" for="operator-name">
-                        Yes
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="operator-name-2" name="operator-name" type="radio" value="No">
-                      <label class="govuk-label govuk-radios__label" for="operator-name-2">
-                        No
-                      </label>
-                    </div>
-                  </div>
-              
-                </fieldset>
-              </div>
+                <label class="govuk-label govuk-label--m" for="operator-email">
+                    Name
+                </label>
+                <input class="govuk-input govuk-!-width-full" id="operator-email" name="operator-email" type="text" value="">
+            </div>
 
-            <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+            <button class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6" data-module="govuk-button">Save
+                and continue</button>
+
+
         </form>
+
     </div>
 </div>
 
