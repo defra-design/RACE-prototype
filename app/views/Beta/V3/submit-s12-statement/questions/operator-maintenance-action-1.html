@@ -19,7 +19,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
             <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--xl" for="more-detail">
-                    What's the first action for the operator?
+                        What's the first action for the operator?
                     </label>
                 </h1>
 
@@ -28,7 +28,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                             Action
                         </label>
                     </h2>
-                    <input class="govuk-input" id="title-reason-1" name="title-reason-1" type="text">
+                    <input class="govuk-input" id="action-1" name="action-1" type="text">
                 </div>
 
                 <div class="govuk-form-group govuk-!-padding-top-6">
@@ -36,7 +36,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                             What to do
                         </label>
                     </h2>
-                    <textarea class="govuk-textarea" id="description-reason-1" name="description-reason-1" rows="5"
+                    <textarea class="govuk-textarea" id="what-to-do-action-1" name="what-to-do-action-1" rows="5"
                         aria-describedby="more-detail-hint"></textarea>
                 </div>
 
@@ -49,30 +49,30 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         </legend>
                         <div class="govuk-radios" data-module="govuk-radios">
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="status-reason-1" name="status" type="radio"
+                                <input class="govuk-radios__input" id="status-action-1" name="status-op-action-1" type="radio"
                                     value="Complete">
-                                <label class="govuk-label govuk-radios__label" for="status-reason-1">
+                                <label class="govuk-label govuk-radios__label" for="status-action-1">
                                     Complete
                                 </label>
                             </div>
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="status-reason-2" name="status" type="radio"
+                                <input class="govuk-radios__input" id="status-action-2" name="status-op-action-1" type="radio"
                                     value="In-progress">
-                                <label class="govuk-label govuk-radios__label" for="status-reason-2">
+                                <label class="govuk-label govuk-radios__label" for="status-action-2">
                                     In progress
                                 </label>
                             </div>
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="status-reason-3" name="status" type="radio"
+                                <input class="govuk-radios__input" id="status-action-3" name="status-op-action-1" type="radio"
                                     value="Not-started">
-                                <label class="govuk-label govuk-radios__label" for="status-reason-3">
+                                <label class="govuk-label govuk-radios__label" for="status-action-3">
                                     Not started
                                 </label>
                             </div>
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="status-reason-4" name="status" type="radio"
+                                <input class="govuk-radios__input" id="status-action-4" name="status-op-action-1" type="radio"
                                     value="Unknown">
-                                <label class="govuk-label govuk-radios__label" for="status-reason-4">
+                                <label class="govuk-label govuk-radios__label" for="status-action-4">
                                     Unknown
                                 </label>
                             </div>
@@ -90,16 +90,16 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         </legend>
                         <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="operator-compliant-1" name="operator-compliant"
+                                <input class="govuk-radios__input" id="operator-compliant-yes-1" name="operator-compliant-action-1"
                                     type="radio" value="Yes">
-                                <label class="govuk-label govuk-radios__label" for="operator-compliant-1">
+                                <label class="govuk-label govuk-radios__label" for="operator-compliant-yes-1">
                                     Yes
                                 </label>
                             </div>
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="operator-compliant-2" name="operator-compliant"
+                                <input class="govuk-radios__input" id="operator-compliant-no-1" name="operator-compliant-1"
                                     type="radio" value="No">
-                                <label class="govuk-label govuk-radios__label" for="operator-compliant-2">
+                                <label class="govuk-label govuk-radios__label" for="operator-compliant-no-1">
                                     No
                                 </label>
                             </div>
@@ -112,7 +112,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                             Comments
                         </label>
                     </h2>
-                    <textarea class="govuk-textarea" id="comments-reason" name="comments-reason" rows="5"
+                    <textarea class="govuk-textarea" id="comments-action-1" name="comments-action-1" rows="5"
                         aria-describedby="more-detail-hint"></textarea>
                 </div>
 
@@ -127,14 +127,4 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 </div>
 
-<!-- <script>
-   
-document.getElementById("status-reason-1").innerHTML = "Complete";
-document.getElementById("status-reason-2").innerHTML = "In progress";
-document.getElementById("status-reason-3").innerHTML = "Not started";
-document.getElementById("status-reason-4").innerHTML = "Unknown";
-
-
-</script> -->
-
-{% endblock %}happy
+{% endblock %}

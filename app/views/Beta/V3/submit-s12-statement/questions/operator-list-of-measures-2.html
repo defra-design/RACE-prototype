@@ -20,109 +20,131 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-padding-bottom-4">What the operator needs to inspect</h1>
 
 
-            <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
-
-                <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Item 1</h3>
-
-                    <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Change<span class="govuk-visually-hidden">name</span>
+            <div class="govuk-summary-card govuk-!-margin-bottom-9">
+                <div class="govuk-summary-card__title-wrapper">
+                  <h2 class="govuk-summary-card__title">Item 1</h2>
+                </div>
+                <div class="govuk-summary-card__content">
+                  <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        What to inspect
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['visual-inspect-reason-1'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Name</span>
                         </a>
-                    </dd>
-                    <!-- <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Remove<span class="govuk-visually-hidden">name</span>
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        What to do
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['visual-inspect-description-reason-1'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Description</span>
                         </a>
-                    </dd> -->
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                            How often
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            {{ data['visual-inspect-how-often-reason-1'] }}                        
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden">Description</span>
+                          </a>
+                        </dd>
+                      </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Comments
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['visual-inspect-comments-reason-1'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Comments</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
                 </div>
-
-
-                <div class="govuk-summary-list  govuk-!-margin-top-3">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to inspect</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['title-reason-1'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to do</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['description-reason-1'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">How often</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['how-often-reason-1'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list heading-underline">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason-1'] }}</p>
-                    </dd>
-                </div>
-
             </div>
 
-            <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
-
-                <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Item 2</h3>
-
-                    <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Change<span class="govuk-visually-hidden">name</span>
+            <div class="govuk-summary-card">
+                <div class="govuk-summary-card__title-wrapper">
+                  <h2 class="govuk-summary-card__title">Item 2</h2>
+                </div>
+                <div class="govuk-summary-card__content">
+                  <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        What to inspect
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['visual-inspect-reason-2'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Name</span>
                         </a>
-                    </dd>
-                    <!-- <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Remove<span class="govuk-visually-hidden">name</span>
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        What to do
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['visual-inspect-description-reason-2'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Description</span>
                         </a>
-                    </dd> -->
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                            How often
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            {{ data['visual-inspect-how-often-reason-2'] }}                        
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden">Description</span>
+                          </a>
+                        </dd>
+                      </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Comments
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['visual-inspect-comments-reason-2'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Comments</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
                 </div>
-
-
-                <div class="govuk-summary-list  govuk-!-margin-top-3">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to inspect</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['title-reason-2'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">What to do</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['description-reason-2'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">How often</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['how-often-reason-2'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list heading-underline">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-reason-2'] }}</p>
-                    </dd>
-                </div>
-
             </div>
-
-
-
-            <div class="govuk-form-group govuk-!-margin-top-4">
+            
+            <div class="govuk-form-group govuk-!-margin-top-9 govuk-!-padding-top-4">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h2 class="govuk-fieldset__heading">

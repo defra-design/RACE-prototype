@@ -20,67 +20,82 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 Monitoring actions for the operator
             </h1>
 
-            <div class="govuk-summary-list govuk-!-margin-top-8 govuk-!-padding-top-8">
-
-                <div class="govuk-summary-list heading-underline">
-                    <h3 class="govuk-heading-m">Monitoring action 1</h3>
-
-                    <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Change<span class="govuk-visually-hidden">name</span>
+            <div class="govuk-summary-card">
+                <div class="govuk-summary-card__title-wrapper">
+                  <h2 class="govuk-summary-card__title">Monitoring action 1</h2>
+                </div>
+                <div class="govuk-summary-card__content">
+                  <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Action
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['monitoring-action-1'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Name</span>
                         </a>
-                    </dd>
-                    <!-- <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Remove<span class="govuk-visually-hidden">name</span>
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Description
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['description-monitoring-action-1'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Description</span>
                         </a>
-                    </dd> -->
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                            Action to be <br>done by
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            {{ data['deadline-day-monitoring-action-1'] }} {{ data['deadline-month-monitoring-action-1'] }} {{ data['deadline-year-monitoring-action-1'] }}
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden">Description</span>
+                          </a>
+                        </dd>
+                      </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Mandatory
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        {{ data['mandatory-monitoring-action-1'] }}
+                      </dd>
+                      <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                          Change<span class="govuk-visually-hidden">Comments</span>
+                        </a>
+                      </dd>
+                    </div>                    
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Comments
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            {{ data['comments-monitoring-action-1'] }}
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden">Comments</span>
+                          </a>
+                        </dd>
+                      </div>
+                  </dl>
                 </div>
-
-
-                <div class="govuk-summary-list  govuk-!-margin-top-3">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">Action</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['title-monitoring-1'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">Description</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['description-monitoring-1'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-right-0">Action to be <br>done by</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['deadline-day-monitoring-1'] }} {{ data['deadline-month-monitoring-1'] }} {{ data['deadline-year-monitoring-1'] }}</p>
-                    </dd>
-                </div>
-
-                <div class="govuk-summary-list">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">Mandatory</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['mandatory-advisory-monitoring-1'] }}</p>
-                    </dd>
-                </div>
-                
-
-                <div class="govuk-summary-list heading-underline">
-                    <dt class="govuk-summary-list__key govuk-!-padding-0">Comments</dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body govuk-!-padding-bottom-6">{{ data['comments-monitoring-1'] }}</p>
-                    </dd>
-                </div>
-
-            </div>
-
-
-
-            <div class="govuk-form-group govuk-!-margin-top-3">
+              </div>
+            
+              <div class="govuk-form-group govuk-!-margin-top-4 govuk-!-padding-top-6">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h2 class="govuk-fieldset__heading">
