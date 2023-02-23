@@ -12,61 +12,58 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    
+    <div class="govuk-grid-column-three-quarters">
 
         <form action="/Beta/V3/submit-s12-statement/operator-details/confirm-operator" method="post">
 
             <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Reservoir details</h1>
 
 
-            <dl class="govuk-summary-list govuk-summary-list--no-border">
-
+            <dl class="govuk-summary-list">
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Reservoir name
                     </dt>
-                    <dd class="govuk-summary-list__value" for="reservoir-name-old">
-                        <p class="govuk-body" id="reservoir-name-old" name="reservoir-name-old">Rockingham Reservoir</p>
+                    <dd class="govuk-summary-list__value" for="reservoir-name-old" id="reservoir-name-old"
+                        name="reservoir-name-old">
+                        Rockingham Reservoir
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/reservoir-details/change-name">
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/reservoir-details/change-name">
                             Change<span class="govuk-visually-hidden">Reservoir name</span>
                         </a>
                     </dd>
                 </div>
-
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Nearest town
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">Dalton Parva</p>
+                    <dd class="govuk-summary-list__value" for="reservoir-town-old" id="reservoir-town-old"
+                        name="reservoir-town-old">
+                        Dalton Parva
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/reservoir-details/change-town">
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/reservoir-details/change-town">
                             Change<span class="govuk-visually-hidden">Nearest town</span>
                         </a>
                     </dd>
                 </div>
-
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         National Grid reference
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['new-reservoir-grid-ref'] }}</p>
+                    <dd class="govuk-summary-list__value" for="reservoir-grid-ref-old" id="reservoir-grid-ref-old" name="reservoir-grid-ref-old">
+                        {{ data['new-reservoir-grid-ref'] }}
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/reservoir-details/change-grid-ref">
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/reservoir-details/change-grid-ref">
                             Change<span class="govuk-visually-hidden">National Grid reference</span>
                         </a>
                     </dd>
                 </div>
-
             </dl>
+
 
             <!-- <div class="govuk-form-group govuk-!-padding-top-6">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">

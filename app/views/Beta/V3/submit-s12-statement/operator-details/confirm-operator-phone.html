@@ -12,7 +12,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-grid-column-three-quarters">
 
         <form action="/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer" method="post">
 
@@ -22,49 +23,45 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 'Operator' is used here to mean the undertaker.
               </div>
 
-            <dl class="govuk-summary-list govuk-summary-list--no-border">
-
+              <dl class="govuk-summary-list">
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Name
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">Naomi Roberts</p>
+                    <dd class="govuk-summary-list__value" for="operator-name-old" id="operator-name-old"
+                        name="operator-name-old">
+                        Naomi Roberts
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-name">
-                            Change<span class="govuk-visually-hidden">name</span>
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/operator-details/change-name">
+                            Change<span class="govuk-visually-hidden">Name</span>
                         </a>
                     </dd>
                 </div>
-
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Address
                     </dt>
-                    <dd class="govuk-summary-list__value">
+                    <dd class="govuk-summary-list__value" for="operator-address-old" id="operator-address-old"
+                        name="operator-address-old">
                         Rockingham Estate<br>Hampshire<br>PO10 1AB
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-address">
-                            Change<span class="govuk-visually-hidden">address</span>
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/operator-details/change-address">
+                            Change<span class="govuk-visually-hidden">Address</span>
                         </a>
                     </dd>
                 </div>
-
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Email
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">NRoberts@hotmail.com</p>
+                    <dd class="govuk-summary-list__value" for="operator-email-old" id="operator-email-old" name="operator-email-old">
+                        NRoberts@hotmail.com
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-email">
-                            Change<span class="govuk-visually-hidden">operator's email address</span>
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/operator-details/change-email">
+                            Change<span class="govuk-visually-hidden">Email</span>
                         </a>
                     </dd>
                 </div>
@@ -73,17 +70,15 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <dt class="govuk-summary-list__key">
                         Phone
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        <p class="govuk-body">{{ data['new-operator-phone'] }}</p>
+                    <dd class="govuk-summary-list__value" for="operator-phone-new" id="operator-phone-new" name="operator-phone-new">
+                        {{ data['new-operator-phone'] }}
                     </dd>
                     <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state"
-                            href="/Beta/V3/submit-s12-statement/operator-details/change-phone">
-                            Change<span class="govuk-visually-hidden">operator's phone number</span>
+                        <a class="govuk-link govuk-link--no-visited-state" href="/Beta/V3/submit-s12-statement/operator-details/change-phone">
+                            Change<span class="govuk-visually-hidden">Phone</span>
                         </a>
                     </dd>
                 </div>
-
             </dl>
 
 

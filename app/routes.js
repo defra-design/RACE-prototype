@@ -593,39 +593,38 @@ router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, r
 // })
 
 
-// // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confirm-answer'
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confrim-operator-answer'
 
-// router.post('/Beta/V3/submit-s12-statement/operator-details/confirm-answer', function (req, res) {
+router.post('/Beta/V3/submit-s12-statement/operator-details/confrim-operator-answer', function (req, res) {
 
-//   var matchoperator = req.session.data['match-operator']
+  var addoperator = req.session.data['add-operator']
 
-//   if (matchoperator == "Yes"){
+  if (addoperator == "Yes"){
 
-//     res.redirect('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm')
-//   } else {
+    res.redirect('/Beta/V3/submit-s12-statement/operator-details/add-operator')
+  } else {
 
-//     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-operator')
-//   }
+    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+  }
 
-// })
+})
 
 
-// // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer'
+// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/operator-details-list-answer'
 
-// router.post('/Beta/V3/submit-s12-statement/inspecting-engineer/confirm-answer', function (req, res) {
+router.post('/Beta/V3/submit-s12-statement/operator-details/operator-details-list-answer', function (req, res) {
 
-//   var matchinspectengineer = req.session.data['match-last-inspect-engineer']
+  var addoperator2 = req.session.data['add-operator-2']
 
-//   if (matchinspectengineer == "Yes"){
+  if (addoperator2 == "Yes"){
 
-//     res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
-//   } else {
+    res.redirect('#')
+  } else {
 
-//     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-inspect-engineer')
-//   }
+    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+  }
 
-// })
-
+})
 
 // Run this code when a form is submitted to '/Beta/V3/alt-supervising-engineer/super-engineer-answer'
 
