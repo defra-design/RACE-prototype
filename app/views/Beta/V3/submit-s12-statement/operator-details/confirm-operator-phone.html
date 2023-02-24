@@ -23,7 +23,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 'Operator' is used here to mean the undertaker.
               </div>
 
-              <dl class="govuk-summary-list">
+              <dl class="govuk-summary-list govuk-!-margin-bottom-9">
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Name
@@ -82,10 +82,46 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             </dl>
 
 
-            <button role="button" draggable="false" class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-6"
-                data-module="govuk-button">
-                Continue
-            </button>
+            <div class="govuk-form-group govuk-!-margin-top-4 govuk-!-padding-top-6">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h2 class="govuk-fieldset__heading">
+                            Do you want to add another operator?
+                        </h2>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="add-operator-1" name="add-operator" type="radio"
+                                value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="add-operator-1">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="add-operator-2" name="add-operator" type="radio"
+                                value="no">
+                            <label class="govuk-label govuk-radios__label" for="add-operator-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+
+
+            <div>
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    data-module="govuk-button">
+                    Continue
+                </button>
+                <button type="submit"
+                    class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-9"
+                    data-module="govuk-button">
+                    Save and come back later
+                </button>
+            </div>
 
         </form>
 
