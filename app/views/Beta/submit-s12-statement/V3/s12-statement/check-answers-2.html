@@ -1,0 +1,1433 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-three-quarters">
+
+    <h1 class="govuk-heading-xl">Check your answers and send your statement</h1>
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-9 govuk-!-padding-top-6">Reservoir</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Rockingham reservoir</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Nearest town
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">PO10 1AB</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> postcode</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          National Grid reference
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">SU106951</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> national Grid reference</span>
+          </a>
+        </dd>
+      </div>
+
+    </dl>
+
+
+    <h2 class="govuk-heading-l govuk-!-padding-top-6">Operator</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Naomi Roberts</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Rockingham Estate<br>Hampshire<br>PO10 1AB</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">NRoberts@hotmail.com</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> email</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Phone
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">02392 123456</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <!-- <h2 class="govuk-heading-l govuk-!-padding-top-6">Last inspecting engineer</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Chris Jones</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> name</span>
+            </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Organisation
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Engineering Consultants</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> address</span>
+            </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Main Street<br>Portsmouth<br>PO1 2FG
+          </p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> email</span>
+            </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">CJones@Engineers.com</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> phone</span>
+            </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Phone
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">02361 654321</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> phone</span>
+            </a>
+        </dd>
+      </div>
+    </dl> -->
+
+    <h2 class="govuk-heading-l govuk-!-padding-top-6">Alternative supervising engineer</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Jennifer Young</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email
+        </dt>
+        <dd class="govuk-summary-list">
+          <p class="govuk-body">jennifer.young_2@hotmail.com</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Phone
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">02361 654321</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <h2 class="govuk-heading-l govuk-!-padding-top-6">Reservoir inspection</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of inspection report
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">3 March 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <!-- <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a> -->
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of inspection certificate
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">3 March 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <!-- <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a> -->
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Next scheduled inspection date
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">7 September 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <!-- <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a> -->
+        </dd>
+      </div>
+
+    </dl>
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Early inspection</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Reason 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['reason-inspect-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['description-inspect-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-inspect-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Reason 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['reason-inspect-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['description-inspect-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-inspect-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Visual inspection</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Item 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              What to inspect
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              What to do
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-description-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              How often
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-how-often-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-comments-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Item 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              What to inspect
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              What to do
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-description-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              How often
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-how-often-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['visual-inspect-comments-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Safety measures</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Measure 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <div>
+                <p class="govuk-body govuk-!-margin-bottom-0">The spillway capacity be increased to safely pass the PMF
+                  flood
+                </p>
+              </div>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deadline
+            </dt>
+            <dd class="govuk-summary-list__value">
+              18 November 2023
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Outstanding
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Measure 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Carry out a breach study using 2016 EA RFM Specification
+              through the new development downstream
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deadline
+            </dt>
+            <dd class="govuk-summary-list__value">
+              13 September 2023
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Outstanding
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Measure 3</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Remove all trees on the embankment, remove all debris,
+              reprofile bank and reseed
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deadline
+            </dt>
+            <dd class="govuk-summary-list__value">
+              4 October 2023
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Outstanding
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Measure 4</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              The unsteady concrete base slabs need investigating and
+              stabilising
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deadline
+            </dt>
+            <dd class="govuk-summary-list__value">
+              24 August 2023
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Outstanding
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Measure 5</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Do a geophysical study on embankment
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Deadline
+            </dt>
+            <dd class="govuk-summary-list__value">
+              18 September 2023
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Outstanding
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Issues for the engineer to watch</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Issue 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Issue to watch
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['issue-watch-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['issue-description-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['issue-comments-reason-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Issue 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Issue to watch
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['issue-watch-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['issue-description-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['issue-comments-reason-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Maintenance actions for the operator</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Action 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Action
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              What to do
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['what-to-do-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Status
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['status-op-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Compliant
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['operator-compliant-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Action 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Action
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              What to do
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['what-to-do-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Status
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['status-op-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Compliant
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['operator-compliant-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Record updates for the operator</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Update 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Update
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['records-update-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['description-records-update-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Update to be <br>done by
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['deadline-day-records-update-1'] }} {{ data['deadline-month-records-update-1'] }} {{
+              data['deadline-year-records-update-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mandatory
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['mandatory-records-update-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-records-update-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Update 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Update
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['records-update-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['description-records-update-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Update to be <br>done by
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['deadline-day-records-update-2'] }} {{ data['deadline-month-records-update-2'] }} {{
+              data['deadline-year-records-update-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mandatory
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['mandatory-records-update-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-records-update-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <h2 class="govuk-heading-l govuk-!-margin-top-6 govuk-!-padding-top-6 govuk-!-margin-bottom-9">
+      Monitoring actions for the operator</h2>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Monitoring action 1</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Action
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['monitoring-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['description-monitoring-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Action to be <br>done by
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['deadline-day-monitoring-action-1'] }} {{ data['deadline-month-monitoring-action-1'] }} {{
+              data['deadline-year-monitoring-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mandatory
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['mandatory-monitoring-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-monitoring-action-1'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="govuk-summary-card govuk-!-margin-bottom-9">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Monitoring action 2</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Action
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['monitoring-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['description-monitoring-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Action to be <br>done by
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['deadline-day-monitoring-action-2'] }} {{ data['deadline-month-monitoring-action-2'] }} {{
+              data['deadline-year-monitoring-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Description</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mandatory
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['mandatory-monitoring-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comments
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['comments-monitoring-action-2'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Comments</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+
+    <h2 class="govuk-heading-l govuk-!-padding-top-6">Flood plan</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Flood plan
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of certificate
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            4 February 2022</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Flood plan tested
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Operator to revise flood plan
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">
+            Yes</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Flood plan revisions
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">The valve arrangement has changed. Revise plan to reflect new arrangement.</p><br>
+
+
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+
+    <h2 class="govuk-heading-l govuk-!-padding-top-6">Supporting information</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Uploaded files
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Test report.pdf</p><br>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+            Change
+            <span class="govuk-visually-hidden"> phone</span>
+          </a>
+        </dd>
+      </div>
+
+    </dl>
+
+
+    <form action="/Beta/submit-s12-statement/V3/s12-statement/confirmation" method="post" novalidate>
+
+
+      <button type="submit" class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-9 govuk-!-margin-right-4"
+        data-module="govuk-button">
+        Accept and send
+      </button>
+
+      <button type="submit"
+        class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-9 govuk-!-margin-right-4"
+        data-module="govuk-button">
+        Send a draft statement
+      </button>
+
+      <button type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-9"
+        data-module="govuk-button">
+        Save and come back later
+      </button>
+
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

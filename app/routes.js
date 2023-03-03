@@ -7,125 +7,125 @@ const router = express.Router()
 // New Beta V1 routes //
 
 
-// Run this code when a form is submitted to '/business-or-individual-answer'
-router.post('/Beta/V1/defra-id-account/business-or-individual-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V1/defra-id-account/business-or-individual-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'business-or-individual'
+  // Make a variable and give it the value
   var businessorindividual = req.session.data['business-or-individual']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (businessorindividual == "A business or organisation"){
-    // Send user to next page
-    res.redirect('/Beta/V1/defra-id-account/org-uk-or-not')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/org-uk-or-not')
   } else {
-    // Send user to individual-name
-    res.redirect('/Beta/V1/defra-id-account/individual-name')
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/individual-name')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/org-uk-or-not-answer'
-router.post('/Beta/V1/defra-id-account/org-uk-or-not-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V1/defra-id-account/org-uk-or-not-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Where is the organisation registered'
+  // Make a variable and give it the value
   var whereisorgregistered = req.session.data['Where is the organisation registered']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (whereisorgregistered == "UK"){
-    // Send user to next page
-    res.redirect('/Beta/V1/defra-id-account/org-in-uk')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/org-in-uk')
   } else {
-    // Send user to individual-name
-    res.redirect('/Beta/V1/defra-id-account/org-not-in-the-uk')
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/org-not-in-the-uk')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/org-in-uk'
-router.post('/Beta/V1/defra-id-account/org-in-uk-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V1/defra-id-account/org-in-uk-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Is the organisation registered with companies-house'
+  // Make a variable and give it the value
   var registeredwithcompanieshouse = req.session.data['registered-with-companies-house']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (registeredwithcompanieshouse == "Yes, the organisation is registered at Companies House"){
-    // Send user to comp-house-yes
-    res.redirect('/Beta/V1/defra-id-account/company-house-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/company-house-yes')
   } else {
-    // Send user to comp-house-no
-    res.redirect('/Beta/V1/defra-id-account/company-house-no')
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/company-house-no')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/company-house-no-answer'
-router.post('/Beta/V1/defra-id-account/company-house-no-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V1/defra-id-account/company-house-no-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Are you are a sole trader or charity'
+  // Make a variable and give it the value
   var areyouasoletraderorcharity = req.session.data['are-you-a-sole-trader-or-charity']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (areyouasoletraderorcharity == "Sole trader"){
-    // Send user to sole-trader
-    res.redirect('/Beta/V1/defra-id-account/sole-trader')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/sole-trader')
   } else {
-    // Send user to charity-region
-    res.redirect('/Beta/V1/defra-id-account/charity-region')
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/charity-region')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/verify-identity-answer'
-router.post('/Beta/V1/defra-id-account/verify-identity-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V1/defra-id-account/verify-identity-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Verify identity'
+  // Make a variable and give it the value
   var verifyidentity = req.session.data['Verify identity']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (verifyidentity == "Send a code to xxxxxxxx478"){
-    // Send user to verify-get-code
-    res.redirect('/Beta/V1/defra-id-account/verify-get-code')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/verify-get-code')
   } else {
-    // Send user to cverify-confirm-security-word
-    res.redirect('/Beta/V1/defra-id-account/verify-confirm-security-word')
+    res.redirect('/Beta/submit-s12-statement/V1/defra-id-account/verify-confirm-security-word')
   }
 
 })
 
-// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-reservoir-name-answer'
-router.post('/Beta/V1/submit-s12-statement/reservoir-details/change-name-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V1/s12-statement/reservoir-details/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'changed-name'
+  // Make a variable and give it the value
   var changedname = req.session.data['changed-name']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (changedname == "Yes"){
-    // Send user to new-reservoir-name
-    res.redirect('/Beta/V1/submit-s12-statement/reservoir-details/new-name')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/s12-statement/reservoir-details/new-name')
   } else {
-    // Send user to ?????
-    res.redirect('/Beta/V1/submit-s12-statement/reservoir-details/confirm')
+    res.redirect('/Beta/submit-s12-statement/V1/s12-statement/reservoir-details/confirm')
   }
 
 })
 
-// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-operator-name-answer'
-router.post('/Beta/V1/submit-s12-statement/operator-details/change-name-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V1/s12-statement/operator-details/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'operator-name'
+  // Make a variable and give it the value
   var operatorname = req.session.data['operator-name']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (operatorname == "Yes"){
-    // Send user to change-operator-name-yes
-    res.redirect('/Beta/V1/submit-s12-statement/operator-details/change-name-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V1/s12-statement/operator-details/change-name-yes')
   } else {
-    // Send user to confirm-details
-    res.redirect('/Beta/V1/submit-s12-statement/operator-details/confirm')
+    res.redirect('/Beta/submit-s12-statement/V1/s12-statement/operator-details/confirm')
   }
 
 })
@@ -135,423 +135,423 @@ router.post('/Beta/V1/submit-s12-statement/operator-details/change-name-answer',
 
 // New Beta V2 routes //
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/reservoir-details/change-name-answer'
-router.post('/Beta/V2/submit-s12-statement/reservoir-details/change-name-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'business-or-individual'
+  // Make a variable and give it the value
   var changedname = req.session.data['changed-name']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (changedname == "Yes"){
-    // Send user to next page
-    res.redirect('/Beta/V2/submit-s12-statement/reservoir-details/new-name')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/new-name')
   } else {
-    // Send user to individual-name
-    res.redirect('/Beta/V2/submit-s12-statement/reservoir-details/confirm')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/confirm')
   }
 
 })
 
 
 
-// Run this code when a form is submitted to '/business-or-individual-answer'
-router.post('/Beta/V2/defra-id-account/business-or-individual-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V2/defra-id-account/business-or-individual-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'business-or-individual'
+  // Make a variable and give it the value
   var businessorindividual = req.session.data['business-or-individual']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (businessorindividual == "A business or organisation"){
-    // Send user to next page
-    res.redirect('/Beta/V2/defra-id-account/org-uk-or-not')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/org-uk-or-not')
   } else {
-    // Send user to individual-name
-    res.redirect('/Beta/V2/defra-id-account/individual-name')
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/individual-name')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/org-uk-or-not-answer'
-router.post('/Beta/V2/defra-id-account/org-uk-or-not-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V2/defra-id-account/org-uk-or-not-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Where is the organisation registered'
+  // Make a variable and give it the value
   var whereisorgregistered = req.session.data['Where is the organisation registered']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (whereisorgregistered == "UK"){
-    // Send user to next page
-    res.redirect('/Beta/V2/defra-id-account/org-in-uk')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/org-in-uk')
   } else {
-    // Send user to individual-name
-    res.redirect('/Beta/V2/defra-id-account/org-not-in-the-uk')
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/org-not-in-the-uk')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/org-in-uk'
-router.post('/Beta/V2/defra-id-account/org-in-uk-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V2/defra-id-account/org-in-uk-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Is the organisation registered with companies-house'
+  // Make a variable and give it the value
   var registeredwithcompanieshouse = req.session.data['registered-with-companies-house']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (registeredwithcompanieshouse == "Yes, the organisation is registered at Companies House"){
-    // Send user to comp-house-yes
-    res.redirect('/Beta/V2/defra-id-account/company-house-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/company-house-yes')
   } else {
-    // Send user to comp-house-no
-    res.redirect('/Beta/V2/defra-id-account/company-house-no')
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/company-house-no')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/company-house-no-answer'
-router.post('/Beta/V2/defra-id-account/company-house-no-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V2/defra-id-account/company-house-no-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Are you are a sole trader or charity'
+  // Make a variable and give it the value
   var areyouasoletraderorcharity = req.session.data['are-you-a-sole-trader-or-charity']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (areyouasoletraderorcharity == "Sole trader"){
-    // Send user to sole-trader
-    res.redirect('/Beta/V2/defra-id-account/sole-trader')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/sole-trader')
   } else {
-    // Send user to charity-region
-    res.redirect('/Beta/V2/defra-id-account/charity-region')
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/charity-region')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/defra-id-account/verify-identity-answer'
-router.post('/Beta/V2/defra-id-account/verify-identity-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V2/defra-id-account/verify-identity-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Verify identity'
+  // Make a variable and give it the value
   var verifyidentity = req.session.data['Verify identity']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (verifyidentity == "Send a code to xxxxxxxx478"){
-    // Send user to verify-get-code
-    res.redirect('/Beta/V2/defra-id-account/verify-get-code')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/verify-get-code')
   } else {
-    // Send user to cverify-confirm-security-word
-    res.redirect('/Beta/V2/defra-id-account/verify-confirm-security-word')
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/verify-confirm-security-word')
   }
 
 })
 
-// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-reservoir-name-answer'
-router.post('/Beta/V2/submit-s12-statement/reservoir-details/change-name-answer', function (req, res) {
+// Run this code when a form is submitted to 
+router.post('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'changed-name'
+  // Make a variable and give it the value
   var changedname = req.session.data['changed-name']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (changedname == "Yes"){
-    // Send user to new-reservoir-name
-    res.redirect('/Beta/V2/submit-s12-statement/reservoir-details/new-name')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/new-name')
   } else {
-    // Send user to ?????
-    res.redirect('/Beta/V2/submit-s12-statement/reservoir-details/confirm')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/confirm')
   }
 
 })
 
-// Run this code when a form is submitted to '/submit-s12-statement/reservoir-details/change-operator-name-answer'
-router.post('/Beta/V2/submit-s12-statement/operator-details/change-name-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'operator-name'
+  // Make a variable and give it the value
   var operatorname = req.session.data['operator-name']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (operatorname == "Yes"){
-    // Send user to change-operator-name-yes
-    res.redirect('/Beta/V2/submit-s12-statement/operator-details/change-name-yes')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change-name-yes')
   } else {
-    // Send user to confirm-details
-    res.redirect('/Beta/V2/submit-s12-statement/operator-details/confirm')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/operator-details/confirm')
   }
 
 })
 
-// Run this code when a form is submitted to '/defra-id-account/verify-identity-answer'
-router.post('/Beta/V2/defra-id-account/verify-identity-answer', function (req, res) {
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V2/defra-id-account/verify-identity-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'Verify identity'
+  // Make a variable and give it the value
   var verifyidentity = req.session.data['Verify identity']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (verifyidentity == "Send a code to xxxxxxxx478"){
-    // Send user to verify-get-code
-    res.redirect('/Beta/V2/defra-id-account/verify-get-code')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/verify-get-code')
   } else {
-    // Send user to cverify-confirm-security-word
-    res.redirect('/Beta/V2/defra-id-account/verify-confirm-security-word')
+    res.redirect('/Beta/submit-s12-statement/V2/defra-id-account/verify-confirm-security-word')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/operator-details/change-name'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V2/submit-s12-statement/operator-details/change-name-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'operaotor-name'
+  // Make a variable and give it the value
   var operatorname = req.session.data['operator-name']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (operatorname == "Yes"){
-    // Send user to ?
-    res.redirect('/Beta/V2/submit-s12-statement/operator-details/change-name-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change-name-yes')
   } else {
-    // Send user to ?
-    res.redirect('/Beta/V2/submit-s12-statement/operator-details/confirm')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/operator-details/confirm')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/inspecting-engineer/change-name-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/inspecting-engineer/change-name-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/inspecting-engineer/change-name-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'operaotor-name'
+  // Make a variable and give it the value
   var inspectingengineer = req.session.data['inspecting-engineer']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (inspectingengineer == "Yes"){
-    // Send user to ?
-    res.redirect('/Beta/V2/submit-s12-statement/inspecting-engineer/change-name-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/inspecting-engineer/change-name-yes')
   } else {
-    // Send user to ?
-    res.redirect('/Beta/V2/submit-s12-statement/inspecting-engineer/confirm')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/inspecting-engineer/confirm')
   }
 
 })
 
-// Run this code when a form is submitted to '/alt-supervising-engineer/super-engineer-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V2/submit-s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var altsuperengineer = req.session.data['alt-super-engineer']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (altsuperengineer == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/alt-supervising-engineer/engineer-details')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/alt-supervising-engineer/engineer-details')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/last-inspection-date')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/last-inspection-date')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/recommended-inspection-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/recommended-inspection-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/recommended-inspection-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var recommendedinspection = req.session.data['recommended-inspection-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (recommendedinspection == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/inspection-forward')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/inspection-forward')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/need-inspection')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/need-inspection')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/need-inspection-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/need-inspection-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/need-inspection-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var operatorspecific = req.session.data['operator-specific-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (operatorspecific == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/need-inspection-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/need-inspection-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-safety-action')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-safety-action')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/operator-safety-action-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V2/submit-s12-statement/questions/operator-safety-action-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-safety-action-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var safetymeasuresyes = req.session.data['safety-measures-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (safetymeasuresyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-safety-action-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-safety-action-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/issues-to-watch')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/issues-to-watch')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/issues-to-watch-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/issues-to-watch-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/issues-to-watch-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var issueswatchyes = req.session.data['issues-to-watch-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (issueswatchyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/issues-to-watch-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/issues-to-watch-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-specific-action')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-specific-action')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/operator-specific-action-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/operator-specific-action-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-specific-action-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var operatorspecificaction = req.session.data['operator-specific-action-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (operatorspecificaction == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-specific-action-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-specific-action-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/owner-records')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/owner-records')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/owner-records-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/owner-records-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/owner-records-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var recordsyes = req.session.data['records-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (recordsyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/owner-records-no')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/owner-records-no')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/flood-plan-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var floodplanyes = req.session.data['flood-plan-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (floodplanyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan-yes')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-tested-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V2/submit-s12-statement/questions/flood-plan-tested-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-tested-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var plantestedyes = req.session.data['plan-tested-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (plantestedyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan-tested-yes')
+
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-tested-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-revise-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V2/submit-s12-statement/questions/flood-plan-revise-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-revise-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var reviseplanyes = req.session.data['revise-plan-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (reviseplanyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/flood-plan-revise')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-revise')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var neworreuseyes = req.session.data['new-or-re-use-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (neworreuseyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-yes')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir-yes')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/upload-support-docs')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/upload-support-docs')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-yes-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-yes-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir-yes-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var operatorcertactionsyes = req.session.data['operator-cert-actions-yes']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (operatorcertactionsyes == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V2/submit-s12-statement/questions/operator-cert-actions')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-cert-actions')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V2/submit-s12-statement/questions/upload-support-docs')
+    res.redirect('/Beta/submit-s12-statement/V2/s12-statement/questions/upload-support-docs')
   }
 
 })
@@ -561,145 +561,135 @@ router.post('/Beta/V2/submit-s12-statement/questions/new-or-abandoned-reservoir-
 // New Beta V3 routes //
 
 
-// Run this code when a form is submitted to '/Beta/V3/defra-id-account/verify-identity-answer'
-router.post('/Beta/V3/defra-id-account/verify-identity-answer', function (req, res) {
-
+// Run this code when a form is submitted to
+router.post('/Beta/submit-s12-statement/V3/defra-id-account/verify-identity-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var verifyidentity = req.session.data['Verify identity']
 
+  // Check whether the variable matches
   if (verifyidentity == "Send a code to xxxxxxxx478"){
    
-    res.redirect('/Beta/V3/defra-id-account/verify-get-code')
+  // Send user to 
+    res.redirect('/Beta/submit-s12-statement/V3/defra-id-account/verify-get-code')
   } else {
-    res.redirect('/Beta/V3/defra-id-account/verify-confirm-security-word')
+    res.redirect('/Beta/submit-s12-statement/V3/defra-id-account/verify-confirm-security-word')
   }
 
 })
 
 
-// // Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer'
 
-// router.post('/Beta/V3/submit-s12-statement/reservoir-details/confirm-answer', function (req, res) {
+// Run this code when a form is submitted to
 
-//   var matchreservoir = req.session.data['match-reservoir']
-
-//   if (matchreservoir == "Yes"){
-
-//     res.redirect('/Beta/V3/submit-s12-statement/operator-details/confirm')
-//   } else {
-
-//     res.redirect('/Beta/V3/submit-s12-statement/no-record-match-reservoir')
-//   }
-
-// })
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/confrim-operator-answer'
-
-router.post('/Beta/V3/submit-s12-statement/operator-details/confrim-operator-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/operator-details/confrim-operator-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var addoperator = req.session.data['add-operator']
 
+  // Check whether the variable matches
   if (addoperator == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/operator-details/add-operator')
+  // Send user to  
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/operator-details/add-operator')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/alt-supervising-engineer/super-engineer')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/operator-details/operator-details-list-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/operator-details/operator-details-list-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/operator-details/operator-details-list-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var addoperator2 = req.session.data['add-operator-2']
 
+  // Check whether the variable matches
   if (addoperator2 == "Yes"){
 
+  // Send user to
     res.redirect('#')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/alt-supervising-engineer/super-engineer')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/alt-supervising-engineer/super-engineer-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V3/s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
 
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var altsuperengineer = req.session.data['alt-super-engineer']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (altsuperengineer == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V3/submit-s12-statement/alt-supervising-engineer/engineer-details')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/alt-supervising-engineer/engineer-details')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V3/submit-s12-statement/questions/last-inspection-date')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/last-inspection-date')
   }
 
 })
 
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/last-inspection-date-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/last-inspection-date-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var matchreportcert = req.session.data['match-report-cert']
 
+  // Check whether the variable matches
   if (matchreportcert == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/next-inspection-date')
+ 
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/next-inspection-date')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-last-report-cert')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/no-record-match-last-report-cert')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/next-inspection-date-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/next-inspection-date-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var matchnextinspection = req.session.data['match-next-inspection']
-
+ 
+  // Check whether the variable matches
   if (matchnextinspection == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/need-inspection')
+ 
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/need-inspection')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-next-inspection')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/no-record-match-next-inspection')
   }
 
 })
 
 
 
+// Run this code when a form is submitted to 
 
-// NEW ROUTES //
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/need-inspection-answer', function (req, res) {
 
-
-
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/need-inspection-answer'
-
-router.post('/Beta/V3/submit-s12-statement/questions/need-inspection-answer', function (req, res) {
-
-  // Make a variable and give it the value from 'alt-super-engineer'
+  // Make a variable and give it the value
   var needinspection = req.session.data['need-inspection']
 
-  // Check whether the variable matches a condition
+  // Check whether the variable matches
   if (needinspection == "Yes"){
-    // Send user to engineer-details
-    res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-reason-for-inspection-1')
+    
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-reason-for-inspection-1')
   } else {
-    // Send user to inspection-date
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-visual-inspection')
   }
 
 })
@@ -707,350 +697,393 @@ router.post('/Beta/V3/submit-s12-statement/questions/need-inspection-answer', fu
 
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-1-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-1-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-reasons-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var addanotherreason = req.session.data['add-another-reason']
 
+  // Check whether the variable matches
   if (addanotherreason == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-reason-for-inspection-2')
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-reason-for-inspection-2')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-visual-inspection')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-2-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/engineer-list-of-reasons-2-answer', function (req, res) {
-
-  var anotherreason2 = req.session.data['another-reason-2']
-  if (anotherreason2 == "yes"){
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-reasons-2-answer', function (req, res) {
   
-    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
-  } else {
+  // Make a variable and give it the value
+  var anotherreason2 = req.session.data['another-reason-2']
+
+  // Check whether the variable matches
+  if (anotherreason2 == "yes"){
     
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection')
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/#')
+  } else { 
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-visual-inspection')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-visual-inspection-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-visual-inspection-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-visual-inspection-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var operatorspecificyes2 = req.session.data['operator-specific-2']
 
+  // Check whether the variable matches
   if (operatorspecificyes2 == "Yes"){
  
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-measure-to-take-1')
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-measure-to-take-1')
   } else {
- 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-measures')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-safety-measures')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-1-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-1-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-measures-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anotherreason = req.session.data['another-reason']
 
+  // Check whether the variable matches
   if (anotherreason == "Yes"){
- 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-measure-to-take-2')
+   
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-measure-to-take-2')
   } else {
- 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-measures')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-safety-measures')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-2-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-measures-2-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-measures-2-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anotherreason2 = req.session.data['another-reason-2']
 
+  // Check whether the variable matches
   if (anotherreason2 == "Yes"){
- 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+   
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/#')
   } else {
- 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-safety-measures')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-safety-measures')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-safety-measures-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-safety-measures-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var matchsafetymeasure = req.session.data['match-safety-measure']
 
+  // Check whether the variable matches
   if (matchsafetymeasure == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/issues-to-watch')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/issues-to-watch')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/no-record-match-safety-measures')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/no-record-match-safety-measures')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/issues-to-watch-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/issues-to-watch-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/issues-to-watch-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var issueswatchyes = req.session.data['issues-to-watch-yes']
 
+  // Check whether the variable matches
   if (issueswatchyes == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-issue-1')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-issue-1')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/engineer-list-of-issues-1-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/engineer-list-of-issues-1-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-issues-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anotherissue = req.session.data['another-issue']
 
+  // Check whether the variable matches
   if (anotherissue == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/engineer-issue-2')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-issue-2')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/engineer-list-of-issues-2-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/engineer-list-of-issues-2-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-issues-2-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anotherissue2 = req.session.data['another-issue-2']
 
+  // Check whether the variable matches
   if (anotherissue2 == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/#')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-maintenance-action-answer'
+// Run this code when a form is submitted to 
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action-answer', function (req, res) {
 
+  // Make a variable and give it the value
   var operatormaintenanceaction = req.session.data['operator-maintenance-action']
 
+  // Check whether the variable matches
   if (operatormaintenanceaction == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action-1')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action-1')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-records')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-records')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-list-of-maintenance-actions-1-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-maintenance-actions-1-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-maintenance-actions-1-answer', function (req, res) {
 
+  // Make a variable and give it the value
   var anotheraction = req.session.data['another-action']
 
+  // Check whether the variable matches
   if (anotheraction == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-maintenance-action-2')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action-2')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-records')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-records')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-list-of-maintenance-actions-2-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-list-of-maintenance-actions-2-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-maintenance-actions-2-answer', function (req, res) {
+ 
+  // Make a variable and give it the value
   var anotheraction2 = req.session.data['another-action-2']
 
+  // Check whether the variable matches
   if (anotheraction2 == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/#')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-records')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-records')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-records-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-records-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-records-answer', function (req, res) {
+ 
+  // Make a variable and give it the value
   var updaterecords = req.session.data['update-records']
 
+  // Check whether the variable matches
   if (updaterecords == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-1')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-add-action-1')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-monitoring')
   }
 
 })
 
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-1-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-1-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anotherrecord1 = req.session.data['another-record']
 
+  // Check whether the variable matches
   if (anotherrecord1 == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-2')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-add-action-2')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-monitoring')
   }
 
 })
 
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-2-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-2-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-2-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anotherrecord1 = req.session.data['another-record-2']
 
+  // Check whether the variable matches
   if (anotherrecord1 == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/#')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-monitoring')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-monitoring')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-monitoring-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-monitoring-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-monitoring-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var updatemonitoring = req.session.data['update-monitoring']
 
+  // Check whether the variable matches
   if (updatemonitoring == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-3')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-add-action-3')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-3-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-3-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-3-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var anothermonitoring = req.session.data['another-monitoring']
 
+  // Check whether the variable matches
   if (anothermonitoring == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/operator-add-action-4')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-add-action-4')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan')
   }
 
 })
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/operator-action-list-4-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/operator-action-list-4-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-4-answer', function (req, res) {
+ 
+  // Make a variable and give it the value
   var anothermonitoring2 = req.session.data['another-monitoring-2']
 
+  // Check whether the variable matches
   if (anothermonitoring2 == "Yes"){
 
-    res.redirect('/Beta/V3/submit-s12-statement/questions/#')
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/#')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/flood-plan-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var floodplanyes = req.session.data['flood-plan-yes']
 
+  // Check whether the variable matches
   if (floodplanyes == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-yes')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-yes')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/upload-support-docs')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V2/submit-s12-statement/questions/flood-plan-tested-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-tested-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var plantestedyes3 = req.session.data['plan-tested-yes-3']
 
+  // Check whether the variable matches
   if (plantestedyes3 == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-tested-yes')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/upload-support-docs')
   }
 
 })
 
 
-// Run this code when a form is submitted to '/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answer'
+// Run this code when a form is submitted to
 
-router.post('/Beta/V3/submit-s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
-
+router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
+  
+  // Make a variable and give it the value
   var reviseplanyes3 = req.session.data['revise-plan-yes-3']
 
+  // Check whether the variable matches
   if (reviseplanyes3 == "Yes"){
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/flood-plan-revise')
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-revise')
   } else {
-
-    res.redirect('/Beta/V3/submit-s12-statement/questions/upload-support-docs')
+    res.redirect('/Beta/submit-s12-statement/V3/s12-statement/questions/upload-support-docs')
   }
 
 })
