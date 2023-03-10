@@ -21,17 +21,19 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
                 <fieldset class="govuk-fieldset">
 
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-margin-bottom-6">
 
                         <h1 class="govuk-fieldset__heading">
                             Does the operator need to revise the plan?
                         </h1>
 
                     </legend>
-               
-                         <div id="revise-flood-plan" class="govuk-hint">
-                          Section 12AA(7)
-                         </div>
+
+
+                    <div id="event-name-hint" class="govuk-hint govuk-!-margin-bottom-8">
+                        Section 12AA(7)
+                    </div>
+
 
                     <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
 
@@ -67,8 +69,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Save and come back later
                 </button>
             </div>
-          </form>
+        </form>
 
-</div>
+    </div>
 
-{% endblock %}
+    {% endblock %}
