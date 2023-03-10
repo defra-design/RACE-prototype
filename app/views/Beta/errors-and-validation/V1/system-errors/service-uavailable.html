@@ -1,0 +1,33 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel-dropout govuk-!-margin-bottom-9">
+            <h1 class="govuk-panel__title">
+                Sorry, the service is unavailable
+            </h1>
+        </div>
+
+        <p class="govuk-body">
+            You will be able to use the service from [Time TBC] on [Day TBC]&nbsp;[Month TBC]&nbsp;[Year TBC].
+        </p>
+        <p class="govuk-body">
+            <a class="govuk-link" href="#">Contact the [Name TBC] Helpline</a> [Content TBC].
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}

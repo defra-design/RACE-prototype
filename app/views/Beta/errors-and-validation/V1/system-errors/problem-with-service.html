@@ -1,0 +1,32 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel-dropout govuk-!-margin-bottom-9">
+            <h1 class="govuk-panel__title">
+                Sorry, there is a problem with the service
+            </h1>
+        </div>
+
+        <p class="govuk-body">Try again later.</p>
+        <p class="govuk-body">We saved your answers. They will be available for [Time TBC] days.</p>
+        <p class="govuk-body">
+            <a class="govuk-link" href="#">Contact the Tax [Name TBC] Helpline</a> [Content TBC]
+        </p>
+    </div>
+</div>
+
+{% endblock %}

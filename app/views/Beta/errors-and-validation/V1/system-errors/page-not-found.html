@@ -1,0 +1,36 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel-dropout govuk-!-margin-bottom-9">
+            <h1 class="govuk-panel__title">
+                Page not found
+            </h1>
+        </div>
+
+        <p class="govuk-body govuk-!-margin-top-6">
+            If you typed the web address, check it is correct.
+        </p>
+        <p class="govuk-body">
+            If you pasted the web address, check you copied the entire address.
+        </p>
+        <p class="govuk-body">
+            If the web address is correct or you selected a link or button, <a href="#" class="govuk-link">contact the
+                [Name TBC] Helpline</a> [Content TBC]
+        </p>
+    </div>
+</div>
+
+{% endblock %}
