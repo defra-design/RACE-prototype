@@ -1,0 +1,81 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+            <div role="alert">
+                <h2 class="govuk-error-summary__title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#">Select the reservoir you want to submit an annual statement for</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="govuk-form-group govuk-form-group--error">
+            <h1 class="govuk-label-wrapper">
+                <form autocomplete="off"
+                    action="/Beta/submit-s12-statement/V3/s12-statement/reservoir-details/confirm-reservoir"
+                    method="post">
+                    <label class="govuk-label govuk-label--xl" for="choose-a-reservoir-name">
+                        Which reservoir do you
+                        want
+                        to submit an annual statement for?
+                    </label>
+            </h1>
+
+            <p id="event-name-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span>Select the reservoir you want to submit an annual statement for
+            </p>
+            <input class="govuk-input govuk-input--error autocomplete govuk-!-margin-bottom-6" id="choose-a-reservoir-name" name="choose-a-reservoir-name" type="text"
+                aria-describedby="event-name-hint event-name-error" style="width:400px;">
+        </div>
+
+
+
+        <div>
+            <button role="button" draggable="false"
+                class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Continue
+            </button>
+            <button type="submit"
+                class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-9"
+                data-module="govuk-button">
+                Save and come back later
+            </button>
+        </div>
+
+
+
+        <div class="govuk-!-margin-top-8">
+            <p><a class="govuk-link govuk-link--no-visited-state"
+                    href="/Beta/submit-s12-statement/V3/s12-statement/reservoir-details/reservoir-not-listed">Reservoir
+                    not listed?</a></p>
+        </div>
+
+    </div>
+
+
+    {% endblock %}
