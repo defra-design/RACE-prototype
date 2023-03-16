@@ -1,0 +1,40 @@
+{% extends "layout-phase.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel-dropout govuk-!-margin-bottom-9">
+            <h1 class="govuk-panel__title">
+                Your session has now timed out
+            </h1>
+        </div>
+
+        <p class="govuk-body govuk-!-margin-top-6">
+            Your session has ended because there was no activity for 15minutes.
+        </p>
+        <p class="govuk-body">
+            This is done for security. We haven not saved any personal infomation that you previously entered.
+        </p>
+
+        <div>
+            <button role="button" draggable="false"
+                class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Start your statement again
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
