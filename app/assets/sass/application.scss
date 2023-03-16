@@ -305,3 +305,47 @@ $govuk-assets-path: '/govuk/assets/';
 .govuk-summary-card__content {
     padding: 15px 20px;
 }
+
+
+// NEW INdex homepage //
+
+.card-overview {
+    border: 2px #c7c7c7 solid;
+    background-color: white;
+}
+
+.card {
+    background-color: #f3f2f1;
+    padding: 30px 30px 10px 30px;
+}
+
+.card-in-testing {
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+}
+
+.govuk-tag--version {
+    color: white;
+    background: #00703c;
+}
+
+.govuk-tag-alt {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    color: #ffffff;
+    background-color: #28a197;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    }
