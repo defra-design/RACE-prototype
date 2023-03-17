@@ -14,15 +14,10 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/account-sign-in/first-time-registering/V1/change-password" method="post">
-
-        {% set html %}
-        <p>Do not share your Government Gateway user ID and password with anyone else.</p>
-        {% endset %}
-
+        <form action="/Beta/account-sign-in/forgotten-password/V1/#" method="post">
 
         <h1 class="govuk-heading-xl">
-            Sign in to your account
+            Sign in
         </h1>
 
         <form action="{{data['returnUrl']}}" method="post">
@@ -54,7 +49,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
         <ul class="govuk-list govuk-!-margin-top-8">
-            <li><a class="govuk-link--no-visited-state" href="#">I have forgotten my password</a></li>
+            <li><a class="govuk-link--no-visited-state" href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">I have forgotten my password</a></li>
         </ul>
 
 

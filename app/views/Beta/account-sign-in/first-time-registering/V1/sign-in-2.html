@@ -14,15 +14,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/account-sign-in/first-time-registering/V1/change-password" method="post">
-
-        {% set html %}
-        <p>Do not share your Government Gateway user ID and password with anyone else.</p>
-        {% endset %}
+        <form action="/Beta/account-sign-in/first-time-registering/V1/choose-a-reservoir" method="post">
 
 
         <h1 class="govuk-heading-xl">
-            Sign in to your account
+            Sign in
         </h1>
 
         <form action="{{data['returnUrl']}}" method="post">

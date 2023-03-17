@@ -1,0 +1,67 @@
+{% extends "layout-phase.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">We have sent you an email</h1>
+
+        <form action="/Beta/account-sign-in/forgotten-password/V1/email-change-password" method="post">
+
+            <p>If an account was found we will have sent you an email</p>
+
+            <p>Follow the link in that email to rest your password</p>
+
+            <p>The link expires in [Time] after it was sent. It can only be used once.</p>
+
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="govGatePassword">
+                    Username
+                </label>
+
+                <input class="govuk-input govuk-!-width-three-quarters" id="govGatePassword" name="govGatePassword"
+                    type="password">
+
+            </div>
+
+
+            <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    I have not received the email
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  TBC?
+                </div>
+              </details>
+
+
+            <button ole="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+                data-module="govuk-button">
+                Return to sign in
+            </button>
+
+
+        </form>
+
+
+        <!-- {% include "includes/get-help.html" %} -->
+
+
+    </div>
+</div>
+
+{% endblock %}
