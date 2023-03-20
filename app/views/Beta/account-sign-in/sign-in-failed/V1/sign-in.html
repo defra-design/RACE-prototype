@@ -14,7 +14,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/account-sign-in/first-time-registering/V1/choose-a-reservoir" method="post">
+        <form class="form" action="/Beta/account-sign-in/sign-in-failed/V1/sign-in-error" method="post">
 
 
         <h1 class="govuk-heading-xl">
@@ -24,20 +24,20 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <form action="{{data['returnUrl']}}" method="post">
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="govGateUserId">
+                <label class="govuk-label" for="username-Id">
                     Username
                 </label>
 
-                <input class="govuk-input govuk-!-width-three-quarters" id="govGateUserId" name="govGateUserId" type="text"
+                <input class="govuk-input govuk-!-width-three-quarters" id="username-Id" name="username-Id" type="text"
                     aria-describedby="govGateUserId-hint">
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="govGatePwassword" type="password" value="true">
+                <label class="govuk-label" for="password-Id" type="password-Id" value="true">
                     Password
                 </label>
 
-                <input type="password" name="password" id="password" class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
+                <input type="password" name="password-Id" id="password-Id" class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
 
             </div>
 
