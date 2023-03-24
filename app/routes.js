@@ -1088,4 +1088,62 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-te
 
 })
 
+
+
+// New Beta V4 Concept routes //
+
+
+router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/operator-details/confrim-operator-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var addoperator = req.session.data['add-operator']
+
+  // Check whether the variable matches
+  if (addoperator == "Yes"){
+
+  // Send user to  
+    res.redirect('/Beta/submit-s12-statement/V4-concept/s12-statement/operator-details/add-operator')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V4-concept/s12-statement/alt-supervising-engineer/super-engineer')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/next-inspection-date-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var matchnextinspection = req.session.data['match-next-inspection']
+ 
+  // Check whether the variable matches
+  if (matchnextinspection == "Yes"){
+ 
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/engineer-reason-for-inspection-1')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/no-record-match-next-inspection')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/engineer-list-of-reasons-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var addanotherreason = req.session.data['add-another-reason']
+
+  // Check whether the variable matches
+  if (addanotherreason == "Yes"){
+
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/engineer-reason-for-inspection-2')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/operator-visual-inspection')
+  }
+
+})
+
+
+
+
 module.exports = router

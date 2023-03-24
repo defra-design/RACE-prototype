@@ -15,7 +15,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-three-quarters">
 
-        <form action="/Beta/submit-s12-statement/V4-concept/s12-statement/alt-supervising-engineer/super-engineer"
+        <form action="/Beta/submit-s12-statement/V4-concept/s12-statement/operator-details/confrim-operator-answer"
             method="post">
 
             <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Check the operator's details match your records</h1>
@@ -88,7 +88,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             </div>
 
 
-            <form method="post" novalidate action="">
                 <div class="govuk-form-group govuk-!-margin-top-6 govuk-!-margin-bottom-9">
                   <fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -97,14 +96,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     
                     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="add-another" name="add-another" type="radio" value="Yes">
-                        <label class="govuk-label govuk-radios__label" for="add-another">
+                        <input class="govuk-radios__input" id="add-operator-yes" name="add-operator" type="radio" value="Yes">
+                        <label class="govuk-label govuk-radios__label" for="add-operator-yes">
                           Yes
                         </label>
                       </div>
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="add-another-2" name="add-another" type="radio" value="No">
-                        <label class="govuk-label govuk-radios__label" for="add-another-2">
+                        <input class="govuk-radios__input" id="add-operator-no" name="add-operator" type="radio" value="No">
+                        <label class="govuk-label govuk-radios__label" for="add-operator-no">
                           No
                         </label>
                       </div>
