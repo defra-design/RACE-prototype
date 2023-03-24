@@ -88,24 +88,39 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             </div>
 
 
-            <div>
-                <button type="submit"
-                    class="govuk-button govuk-button--secondary govuk-!-margin-bottom-9"
-                    data-module="govuk-button">
-                    Add another operator
-                </button>
-            </div>
-
-
+            <form method="post" novalidate action="">
+                <div class="govuk-form-group govuk-!-margin-top-6 govuk-!-margin-bottom-9">
+                  <fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
+                      Do you need to add another operator?
+                    </legend>
+                    
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="add-another" name="add-another" type="radio" value="Yes">
+                        <label class="govuk-label govuk-radios__label" for="add-another">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="add-another-2" name="add-another" type="radio" value="No">
+                        <label class="govuk-label govuk-radios__label" for="add-another-2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+              
+                  </fieldset>
+                </div>
 
             <div>
                 <button role="button" draggable="false"
-                    class="govuk-button govuk-!-margin-top-8 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
                     data-module="govuk-button">
                     Continue
                 </button>
                 <button type="submit"
-                    class="govuk-button govuk-button--secondary govuk-!-margin-top-8 govuk-!-margin-bottom-9"
+                    class="govuk-button govuk-button--secondary govuk-!-margin-top-3 govuk-!-margin-bottom-9"
                     data-module="govuk-button">
                     Save and come back later
                 </button>
