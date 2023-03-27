@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Submit supervising engineers statement for a reservoir
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Beta MVP</span>
+      Sign in / Create account with Government Gateway and Defra ID
+    </h1>
+
+  </div>
+
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+
+      <!-- Version -->
+      <strong class="govuk-tag-alt govuk-heading-m govuk-!-margin-bottom-2">
+        Version 1
+      </strong>
+
+      <p class="govuk-body" style="color: #0b0c0c;">Sprint 0</p>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">User group:</h3>
+
+      <p class="govuk-body govuk-!-padding-top-0">Supervising engineers</p>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">Our Assumptions</h3>
+
+      <ol class="govuk-list govuk-list--number govuk-!-margin-bottom-5">
+        <li>Due to the sensitivity of the information being entered, our users will understand the
+          importance of securely logging in to Government Gateway and Defra accounts.</li>
+
+        <li>They will need to do this to either sign in or create an account to submit an S12
+          Statement
+          online.</li>
+      </ol>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2">What we tested</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>how the user would go about searching for our service online</li>
+        <li>can they sign into our online service</li>
+        <li>how to create a Defra ID account</li>
+      </ul>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2">The scenarios</h3>
+
+      <ol class="govuk-list govuk-list--number">
+        <li class="govuk-!-padding-bottom-2">
+          User wants to register for a service, no Gov Gateway or Defra ID accounts
+        </li>
+
+        <li class="govuk-!-padding-bottom-2">
+          User has Gov Gateway account and no Defra ID account
+        </li>
+
+
+        <li class="govuk-!-padding-bottom-6">
+          Returning user has both Gov Gateway and Defra accounts - two factor authentcation
+        </li>
+
+      </ol>
+
+      <!-- Link to Prototype -->
+      <div class="govuk-button-group">
+        <a href="/Beta/submit-s12-statement/V1/reservoir-guidance" role="button" draggable="false" class="govuk-button"
+          data-module="govuk-button">
+          View prototype scenario 1
+        </a>
+      </div>
+
+      <!-- Link to Prototype -->
+      <div class="govuk-button-group">
+        <a href="/Beta/submit-s12-statement/V1/reservoir-guidance-s2" role="button" draggable="false"
+          class="govuk-button" data-module="govuk-button">
+          View prototype scenario 2
+        </a>
+      </div>
+
+      <!-- Link to Prototype -->
+      <div class="govuk-button-group">
+        <a href="/Beta/submit-s12-statement/V1/reservoir-guidance-s3" role="button" draggable="false"
+          class="govuk-button" data-module="govuk-button">
+          View prototype scenario 3
+        </a>
+      </div>
+
+
+
+      <hr class="govuk-section-break govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+    </div>
+  </div>
+</div>
+{% endblock %}

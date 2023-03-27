@@ -350,3 +350,20 @@ input:focus {
     padding-bottom: 4px;
     padding-left: 8px;
 }
+
+.govuk-card--selectable {
+    position: relative;
+}
+
+.govuk-card--contained {
+    background-color: #f3f2f1;
+    padding: 15px;
+    min-height: 15.5rem;
+}
+
+.govuk-card {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1d70b8;
+    box-sizing: border-box;
+}
