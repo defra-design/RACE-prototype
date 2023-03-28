@@ -367,3 +367,36 @@ input:focus {
     border-bottom: 3px solid #1d70b8;
     box-sizing: border-box;
 }
+
+.login-nav {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.login-nav {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.14286;
+    color: #0b0c0c;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b1b4b6;
+}
+
+.login-nav__list-item-new:first-child {
+    padding-left: 0;
+}
+
+.login-nav__list-item-new {
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    border-right: 1px solid #b1b4b6;
+}
