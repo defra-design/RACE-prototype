@@ -7,7 +7,7 @@ const router = express.Router()
 // New Beta V1 routes //
 
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V1/defra-id-account/business-or-individual-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -25,7 +25,7 @@ router.post('/Beta/submit-s12-statement/V1/defra-id-account/business-or-individu
 })
 
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V1/defra-id-account/org-uk-or-not-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -43,7 +43,7 @@ router.post('/Beta/submit-s12-statement/V1/defra-id-account/org-uk-or-not-answer
 })
 
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V1/defra-id-account/org-in-uk-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -61,7 +61,7 @@ router.post('/Beta/submit-s12-statement/V1/defra-id-account/org-in-uk-answer', f
 })
 
 
-// Run this code when a form is submitted to 
+ 
 router.post('/Beta/submit-s12-statement/V1/defra-id-account/company-house-no-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -79,7 +79,7 @@ router.post('/Beta/submit-s12-statement/V1/defra-id-account/company-house-no-ans
 })
 
 
-// Run this code when a form is submitted to 
+
 router.post('/Beta/submit-s12-statement/V1/defra-id-account/verify-identity-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -96,7 +96,7 @@ router.post('/Beta/submit-s12-statement/V1/defra-id-account/verify-identity-answ
 
 })
 
-// Run this code when a form is submitted to 
+
 router.post('/Beta/submit-s12-statement/V1/s12-statement/reservoir-details/change-name-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -113,7 +113,7 @@ router.post('/Beta/submit-s12-statement/V1/s12-statement/reservoir-details/chang
 
 })
 
-// Run this code when a form is submitted to 
+
 router.post('/Beta/submit-s12-statement/V1/s12-statement/operator-details/change-name-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -154,7 +154,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/chang
 
 
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V2/defra-id-account/business-or-individual-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -172,7 +172,7 @@ router.post('/Beta/submit-s12-statement/V2/defra-id-account/business-or-individu
 })
 
 
-// Run this code when a form is submitted to 
+
 router.post('/Beta/submit-s12-statement/V2/defra-id-account/org-uk-or-not-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -190,7 +190,7 @@ router.post('/Beta/submit-s12-statement/V2/defra-id-account/org-uk-or-not-answer
 })
 
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V2/defra-id-account/org-in-uk-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -208,7 +208,7 @@ router.post('/Beta/submit-s12-statement/V2/defra-id-account/org-in-uk-answer', f
 })
 
 
-// Run this code when a form is submitted to 
+
 router.post('/Beta/submit-s12-statement/V2/defra-id-account/company-house-no-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -226,7 +226,7 @@ router.post('/Beta/submit-s12-statement/V2/defra-id-account/company-house-no-ans
 })
 
 
-// Run this code when a form is submitted to 
+ 
 router.post('/Beta/submit-s12-statement/V2/defra-id-account/verify-identity-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -243,7 +243,7 @@ router.post('/Beta/submit-s12-statement/V2/defra-id-account/verify-identity-answ
 
 })
 
-// Run this code when a form is submitted to 
+
 router.post('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/change-name-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -260,7 +260,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/chang
 
 })
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change-name-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -277,7 +277,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change
 
 })
 
-// Run this code when a form is submitted to
+
 router.post('/Beta/submit-s12-statement/V2/defra-id-account/verify-identity-answer', function (req, res) {
 
   // Make a variable and give it the value
@@ -294,7 +294,7 @@ router.post('/Beta/submit-s12-statement/V2/defra-id-account/verify-identity-answ
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change-name-answer', function (req, res) {
 
@@ -313,7 +313,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/operator-details/change
 })
 
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/inspecting-engineer/change-name-answer', function (req, res) {
 
@@ -331,7 +331,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/inspecting-engineer/cha
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
 
@@ -349,7 +349,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/alt-supervising-enginee
 
 })
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/recommended-inspection-answer', function (req, res) {
 
@@ -368,7 +368,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/recommended-i
 })
 
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/need-inspection-answer', function (req, res) {
 
@@ -387,7 +387,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/need-inspecti
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-safety-action-answer', function (req, res) {
 
@@ -406,7 +406,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-safe
 })
 
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/issues-to-watch-answer', function (req, res) {
 
@@ -425,7 +425,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/issues-to-wat
 })
 
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-specific-action-answer', function (req, res) {
 
@@ -444,7 +444,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/operator-spec
 })
 
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/owner-records-answer', function (req, res) {
 
@@ -463,7 +463,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/owner-records
 })
 
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-answer', function (req, res) {
 
@@ -482,7 +482,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-an
 })
 
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-tested-answer', function (req, res) {
 
@@ -501,7 +501,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-te
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-revise-answer', function (req, res) {
 
@@ -520,7 +520,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/flood-plan-re
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir-answer', function (req, res) {
 
@@ -538,7 +538,7 @@ router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abando
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V2/s12-statement/questions/new-or-abandoned-reservoir-yes-answer', function (req, res) {
 
@@ -580,7 +580,7 @@ router.post('/Beta/submit-s12-statement/V3/defra-id-account/verify-identity-answ
 
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/operator-details/confrim-operator-answer', function (req, res) {
   
@@ -599,7 +599,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/operator-details/confri
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/operator-details/operator-details-list-answer', function (req, res) {
   
@@ -617,7 +617,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/operator-details/operat
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
 
@@ -637,8 +637,6 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/alt-supervising-enginee
 
 
 
-// Run this code when a form is submitted to
-
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/last-inspection-date-answer', function (req, res) {
   
   // Make a variable and give it the value
@@ -656,7 +654,6 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/last-inspecti
 })
 
 
-// Run this code when a form is submitted to
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/next-inspection-date-answer', function (req, res) {
   
@@ -675,8 +672,6 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/next-inspecti
 })
 
 
-
-// Run this code when a form is submitted to 
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/need-inspection-answer', function (req, res) {
 
@@ -697,8 +692,6 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/need-inspecti
 
 
 
-// Run this code when a form is submitted to 
-
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-reasons-1-answer', function (req, res) {
   
   // Make a variable and give it the value
@@ -715,7 +708,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list
 
 })
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-reasons-2-answer', function (req, res) {
   
@@ -734,7 +727,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list
 })
 
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-visual-inspection-answer', function (req, res) {
   
@@ -753,7 +746,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-visu
 })
 
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-measures-1-answer', function (req, res) {
   
@@ -771,7 +764,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-measures-2-answer', function (req, res) {
   
@@ -790,7 +783,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list
 })
 
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-safety-measures-answer', function (req, res) {
   
@@ -809,7 +802,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-safe
 })
 
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/issues-to-watch-answer', function (req, res) {
   
@@ -827,7 +820,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/issues-to-wat
 
 })
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-issues-1-answer', function (req, res) {
   
@@ -846,7 +839,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list
 })
 
 
-// Run this code when a form is submitted to 
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list-of-issues-2-answer', function (req, res) {
   
@@ -864,7 +857,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/engineer-list
 
 })
 
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-maintenance-action-answer', function (req, res) {
 
@@ -883,7 +876,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-main
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-maintenance-actions-1-answer', function (req, res) {
 
@@ -901,7 +894,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list-of-maintenance-actions-2-answer', function (req, res) {
  
@@ -919,7 +912,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-list
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-records-answer', function (req, res) {
  
@@ -939,7 +932,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-reco
 
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-1-answer', function (req, res) {
   
@@ -959,7 +952,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-acti
 
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-2-answer', function (req, res) {
   
@@ -977,7 +970,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-acti
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-monitoring-answer', function (req, res) {
   
@@ -995,7 +988,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-moni
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-3-answer', function (req, res) {
   
@@ -1013,7 +1006,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-acti
 
 })
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-action-list-4-answer', function (req, res) {
  
@@ -1032,7 +1025,6 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/operator-acti
 })
 
 
-// Run this code when a form is submitted to
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-answer', function (req, res) {
   
@@ -1051,7 +1043,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-an
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-tested-answer', function (req, res) {
   
@@ -1070,7 +1062,7 @@ router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-te
 })
 
 
-// Run this code when a form is submitted to
+
 
 router.post('/Beta/submit-s12-statement/V3/s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
   
@@ -1161,11 +1153,6 @@ router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/opera
 })
 
 
-
-
-
-// NEW lines Added //
-
 router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/operator-list-of-measures-1-answer', function (req, res) {
   
   // Make a variable and give it the value
@@ -1183,7 +1170,6 @@ router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/opera
 })
 
 
-// Run this code when a form is submitted to 
 
 router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/issues-to-watch-answer', function (req, res) {
   
@@ -1200,8 +1186,7 @@ router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/issue
   }
 
 })
-
-// Run this code when a form is submitted to 
+ 
 
 router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/engineer-list-of-issues-1-answer', function (req, res) {
   
@@ -1237,8 +1222,6 @@ router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/opera
 
 })
 
-
-// Run this code when a form is submitted to
 
 router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/operator-list-of-maintenance-actions-1-answer', function (req, res) {
 
@@ -1361,8 +1344,6 @@ router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/flood
 })
 
 
-// Run this code when a form is submitted to
-
 router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
   
   // Make a variable and give it the value
@@ -1381,7 +1362,40 @@ router.post('/Beta/submit-s12-statement/V4-concept/s12-statement/questions/flood
 
 
 
+// New Beta V5 routes //
 
+router.post('/Beta/submit-s12-statement/V5/s12-statement/operator-details/confrim-operator-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var addoperator = req.session.data['add-operator']
+
+  // Check whether the variable matches
+  if (addoperator == "Yes"){
+
+  // Send user to  
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/operator-details/add-operator')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/alt-supervising-engineer/super-engineer')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V5/s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+
+  // Make a variable and give it the value
+  var altsuperengineer = req.session.data['alt-super-engineer']
+
+  // Check whether the variable matches
+  if (altsuperengineer == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/alt-supervising-engineer/engineer-details')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/operator-maintenance-action.html')
+  }
+
+})
 
 
 module.exports = router
