@@ -1469,32 +1469,32 @@ router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/operator-reco
 router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-answer', function (req, res) {
   
   // Make a variable and give it the value
-  var floodplanyes = req.session.data['flood-plan-yes']
+  var floodplan = req.session.data['flood-plan']
 
   // Check whether the variable matches
-  if (floodplanyes == "Yes"){
-  
-  // Send user to
-    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-yes')
+  if (floodplan == "Yes") {
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-need-revising')
+  } else if (floodplan == "No") {
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-no')
   } else {
-    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/operator-monitoring')
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-no-directions')
   }
-
+  
 })
 
 
-router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-tested-answer', function (req, res) {
+router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-what-to-test-list-answer', function (req, res) {
   
   // Make a variable and give it the value
-  var plantestedyes3 = req.session.data['plan-tested-yes-3']
+  var addanothertest = req.session.data['add-another-test']
 
   // Check whether the variable matches
-  if (plantestedyes3 == "Yes"){
+  if (addanothertest == "Yes"){
   
   // Send user to
-    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-tested-yes')
+    res.redirect('#')
   } else {
-    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/operator-monitoring')
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-need-revising')
   }
 
 })
@@ -1511,7 +1511,7 @@ router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-te
   // Send user to
     res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-revise')
   } else {
-    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/operator-monitoring')
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/operator-safety-measures')
   }
 
 })
@@ -1646,6 +1646,24 @@ router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/engineer-list
     res.redirect('#')
   } else {
     res.redirect('/Beta/submit-s12-statement/V5/s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/draft-or-submit-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var draftorsubmit = req.session.data['draft-or-submit']
+
+  // Check whether the variable matches
+  if (draftorsubmit == "Send a draft"){
+  
+  // Send user to
+  res.redirect('/Beta/submit-s12-statement/V5/s12-statement/send-draft')
+
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V5/s12-statement/confirmation')
   }
 
 })
