@@ -14,7 +14,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-three-quarters">
 
-    <h1 class="govuk-heading-xl">Check your answers and send your statement</h1>
+    <h1 class="govuk-heading-xl">Check your statement</h1>
 
     <h2 class="govuk-heading-l govuk-!-margin-top-9 govuk-!-padding-top-6">Reservoir</h2>
 
@@ -1394,33 +1394,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
     </dl>
 
 
-    <form action="/Beta/submit-s12-statement/V5/s12-statement/confirmation" method="post" novalidate>
-
-      <div class="govuk-form-group govuk-!-margin-top-6 govuk-!-margin-bottom-9">
-        <fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
-            Do you want to send a draft of the statement to the operator?
-          </legend>
-
-          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="add-another-yes" name="add-another-reason" type="radio"
-                value="Yes">
-              <label class="govuk-label govuk-radios__label" for="add-another-yes">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="add-another-no" name="add-another-reason" type="radio" value="No">
-              <label class="govuk-label govuk-radios__label" for="add-another-no">
-                No
-              </label>
-            </div>
-          </div>
-
-        </fieldset>
-      </div>
-
+    <form action="/Beta/submit-s12-statement/V5/s12-statement/draft-or-submit" method="post" novalidate>
 
       <div>
         <button role="button" draggable="false"

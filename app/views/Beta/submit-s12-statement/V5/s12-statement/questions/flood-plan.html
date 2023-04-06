@@ -14,7 +14,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/submit-s12-statement/V4-concept/s12-statement/questions/flood-plan-answer" method="post">
+        <form action="/Beta/submit-s12-statement/V5/s12-statement/questions/flood-plan-answer" method="post">
 
             <div class="govuk-form-group">
 
@@ -23,16 +23,16 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
 
                         <h1 class="govuk-fieldset__heading">
-                            Does the reservoir have a flood plan?
+                            Has the flood plan been tested as set out in the directions?
                         </h1>
 
                     </legend>
 
 
-                    <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
+                    <div class="govuk-radios govuk-radios govuk-!-margin-top-2" data-module="govuk-radios">
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="flood-plan-yes" name="flood-plan-yes"
+                            <input class="govuk-radios__input" id="flood-plan-yes" name="flood-plan"
                                 type="radio" value="Yes" aria-describedby="yes-or-no-item-hint">
                             <label class="govuk-label govuk-radios__label" for="flood-plan-yes">
                                 Yes
@@ -41,13 +41,22 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="flood-plan-yes-2" name="flood-plan-yes"
+                            <input class="govuk-radios__input" id="flood-plan-no" name="flood-plan"
                                 type="radio" value="No" aria-describedby="yes-or-no-item-2-item-hint">
-                            <label class="govuk-label govuk-radios__label" for="flood-plan-yes-2">
+                            <label class="govuk-label govuk-radios__label" for="flood-plan-no">
                                 No
                             </label>
                         </div>
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="flood-plan-no-direction" name="flood-plan"
+                                type="radio" value="There are no directions" aria-describedby="yes-or-no-item-2-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="flood-plan-no-direction">
+                                There are no directions
+                            </label>
+                        </div>
                     </div>
+
                 </fieldset>
             </div>
 
