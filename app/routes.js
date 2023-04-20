@@ -1668,4 +1668,317 @@ router.post('/Beta/submit-s12-statement/V5/s12-statement/questions/draft-or-subm
 
 })
 
+
+
+// New Beta V6 routes //
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/operator-details/confrim-operator-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var addoperator = req.session.data['add-operator']
+
+  // Check whether the variable matches
+  if (addoperator == "Yes"){
+
+  // Send user to  
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/operator-details/add-operator')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/alt-supervising-engineer/super-engineer')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/alt-supervising-engineer/super-engineer-answer', function (req, res) {
+
+  // Make a variable and give it the value
+  var altsuperengineer = req.session.data['alt-super-engineer']
+
+  // Check whether the variable matches
+  if (altsuperengineer == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/alt-supervising-engineer/engineer-details')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-maintenance-actions.html')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-maintenance-action-answer', function (req, res) {
+
+  // Make a variable and give it the value
+  var operatormaintenanceaction = req.session.data['operator-maintenance-action']
+
+  // Check whether the variable matches
+  if (operatormaintenanceaction == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/issues-to-watch')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-maintenance-action-1')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-list-of-maintenance-actions-1-answer', function (req, res) {
+
+  // Make a variable and give it the value
+  var anotheraction = req.session.data['another-action']
+
+  // Check whether the variable matches
+  if (anotheraction == "Yes"){
+  
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/issues-to-watch')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/issues-to-watch-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var issueswatchyes = req.session.data['issues-to-watch-yes']
+
+  // Check whether the variable matches
+  if (issueswatchyes == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/engineer-issue-1')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-records')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/engineer-list-of-issues-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anotherissue = req.session.data['another-issue']
+
+  // Check whether the variable matches
+  if (anotherissue == "Yes"){
+  
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-records')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-records-answer', function (req, res) {
+ 
+  // Make a variable and give it the value
+  var updaterecords = req.session.data['update-records']
+
+  // Check whether the variable matches
+  if (updaterecords == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-records-add-action')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-monitoring-actions-v2')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-records-actions-list-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anotherrecord1 = req.session.data['another-record']
+
+  // Check whether the variable matches
+  if (anotherrecord1 == "Yes"){
+  
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-monitoring-actions-v2')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-monitoring-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var updatemonitoring = req.session.data['update-monitoring']
+
+  // Check whether the variable matches
+  if (updatemonitoring == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-monitoring-action-1')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-safety-measures')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-monitoring-actions-list-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anothermonitoring = req.session.data['another-monitoring']
+
+  // Check whether the variable matches
+  if (anothermonitoring == "Yes"){
+  
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-safety-measures')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/next-inspection-date-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var matchnextinspection = req.session.data['match-next-inspection']
+ 
+  // Check whether the variable matches
+  if (matchnextinspection == "Yes"){
+ 
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/engineer-reason-for-inspection-1')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-visual-inspection')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/engineer-list-of-reasons-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var addanotherreason = req.session.data['add-another-reason']
+
+  // Check whether the variable matches
+  if (addanotherreason == "Yes"){
+
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-visual-inspection')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-visual-inspection-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var operatorspecificyes2 = req.session.data['operator-specific-2']
+
+  // Check whether the variable matches
+  if (operatorspecificyes2 == "Yes"){
+ 
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-measure-to-take-1')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/operator-list-of-measures-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anotherreason = req.session.data['another-reason']
+
+  // Check whether the variable matches
+  if (anotherreason == "Yes"){
+   
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var floodplanyes = req.session.data['flood-plan-yes']
+
+  // Check whether the variable matches
+  if (floodplanyes == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-yes')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-tested-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var plantestedyes3 = req.session.data['plan-tested-yes-3']
+
+  // Check whether the variable matches
+  if (plantestedyes3 == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-tested-yes')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var reviseplanyes3 = req.session.data['revise-plan-yes-3']
+
+  // Check whether the variable matches
+  if (reviseplanyes3 == "Yes"){
+  
+  // Send user to
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-revise')
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/upload-support-docs')
+  }
+
+})
+
+
+
+router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/draft-or-submit-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var draftorsubmit = req.session.data['draft-or-submit']
+
+  // Check whether the variable matches
+  if (draftorsubmit == "Send a draft"){
+  
+  // Send user to
+  res.redirect('/Beta/submit-s12-statement/V6/s12-statement/send-draft')
+
+  } else {
+    res.redirect('/Beta/submit-s12-statement/V6/s12-statement/confirmation')
+  }
+
+})
+
+
+
 module.exports = router
