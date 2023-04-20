@@ -1947,10 +1947,10 @@ router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-te
 router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-tested-yes-answer', function (req, res) {
   
   // Make a variable and give it the value
-  var reviseplanyes3 = req.session.data['revise-plan-yes-3']
+  var floodplan = req.session.data['flood-plan']
 
   // Check whether the variable matches
-  if (reviseplanyes3 == "Yes"){
+  if (floodplan == "Yes"){
   
   // Send user to
     res.redirect('/Beta/submit-s12-statement/V6/s12-statement/questions/flood-plan-revise')
