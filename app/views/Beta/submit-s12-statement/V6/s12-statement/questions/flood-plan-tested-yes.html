@@ -22,22 +22,21 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
 
-                        <h1 class="govuk-fieldset__heading">
+                        <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-6">
                             Does the operator need to revise the flood plan?
                         </h1>
 
+                        <div id="event-name-hint" class="govuk-hint govuk-!-margin-bottom-6">
+                            Section 12AA(7)
+                        </div>
                     </legend>
 
-                    <div id="event-name-hint" class="govuk-hint govuk-!-margin-bottom-6">
-                        Section 12AA(7)
-                    </div>
 
-
-                    <div class="govuk-radios govuk-radios govuk-!-margin-top-2" data-module="govuk-radios">
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="flood-plan-yes" name="flood-plan"
-                                type="radio" value="Yes" aria-describedby="yes-or-no-item-hint">
+                            <input class="govuk-radios__input" id="flood-plan-yes" name="flood-plan" type="radio"
+                                value="Yes" aria-describedby="yes-or-no-item-hint">
                             <label class="govuk-label govuk-radios__label" for="flood-plan-yes">
                                 Yes
                             </label>
@@ -45,8 +44,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="flood-plan-no" name="flood-plan"
-                                type="radio" value="No" aria-describedby="yes-or-no-item-2-item-hint">
+                            <input class="govuk-radios__input" id="flood-plan-no" name="flood-plan" type="radio"
+                                value="No" aria-describedby="yes-or-no-item-2-item-hint">
                             <label class="govuk-label govuk-radios__label" for="flood-plan-no">
                                 No
                             </label>
@@ -68,7 +67,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Save and come back later
                 </button>
             </div>
-          </form>
+        </form>
 
     </div>
 </div>
