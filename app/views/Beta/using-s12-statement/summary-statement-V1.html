@@ -1,0 +1,148 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <span class="govuk-caption-xl">Summary statement</span>
+        <h1 class="govuk-heading-xl govuk-!-padding-bottom-4">Rockingham Reservoir</h1>
+
+
+        <form action="/Beta/submit-s12-statement/V7/upload-support-docs" method="post">
+
+            <div class="govuk-form-group govuk-!-padding-bottom-6">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h3 class="govuk-fieldset__heading">
+                            Are there updates to safety measures?
+                        </h3>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline govuk-!-margin-top-2" data-module="govuk-radios">
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="flood-plan-yes" name="flood-plan-yes" type="radio"
+                                value="Yes" aria-describedby="yes-or-no-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="flood-plan-yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="flood-plan-yes-2" name="flood-plan-yes" type="radio"
+                                value="No" aria-describedby="yes-or-no-item-2-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="flood-plan-yes-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="govuk-form-group govuk-!-padding-bottom-6">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h3 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
+                           Are there areas of non-compliance?
+                        </h3>
+                    </legend>
+                    <div id="waste-hint" class="govuk-hint govuk-!-padding-bottom-2">
+                        Select all that apply.
+                    </div>
+                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox"
+                                value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                Maintenance (section 10(3)(b)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox"
+                                value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                Records and monitoring (section 11)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox"
+                                value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                Flood plan (section 12AA)
+                            </label>
+                        </div>
+                        <p class="govuk-body">Or</p>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox"
+                                value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                No areas of non-compliance
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+
+            <div class="govuk-form-group govuk-!-padding-bottom-6">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h3 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
+                            Have you made any directions?
+                        </h3>
+                    </legend>
+                    <div id="waste-hint" class="govuk-hint govuk-!-padding-bottom-2">
+                        Select all that apply.
+                    </div>
+                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox"
+                                value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                Visual inspection by the operator (section 12(6))
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox"
+                                value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                Revision of flood plan (section 12 AA7)
+                            </label>
+                        </div>
+                        <p class="govuk-body">Or</p>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox"
+                                value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                No directions
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+
+
+
+            <div>
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    data-module="govuk-button">
+                    Continue
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
