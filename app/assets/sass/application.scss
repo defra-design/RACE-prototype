@@ -412,3 +412,48 @@ input:focus {
     text-align: right;
     float: right !important;
 }
+
+
+
+// Beta //
+
+.login-nav {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    line-height: 1.14286;
+    color: #0b0c0c;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b1b4b6;
+    padding-bottom: 36px;
+}
+
+.login-nav__list {
+    margin: 0;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    float: right;
+}
+
+.login-nav__list-item-new {
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    border-right: 1px solid #b1b4b6;
+}
+
+.login-nav__list-item-new:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.login-nav__link-new {
+    margin-right: 0;
+}
