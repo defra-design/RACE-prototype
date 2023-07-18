@@ -13,30 +13,28 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 <div class="govuk-grid-row">
 
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-three-quarters">
 
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Upload an annual statement for Rockingham Reservoir</h1>
 
-        <div class="govuk-form-group">
+        <dl class="govuk-summary-list">
 
-            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    National Grid reference
+                </dt>
+                <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-grid-ref-old"
+                    id="reservoir-grid-ref-old" name="reservoir-grid-ref-old">
+                    SU106951
+                </dd>
+            </div>
+        </dl>
 
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                    <h1 class="govuk-fieldset__heading">
-                        Upload an annual statement for {reservoir name}
-                    </h1>
-                </legend>
-            </br>
-                <p class="govuk-body">National Grid reference: {NGR} </p>
-                
-                <div class="govuk-form-group govuk-!-margin-top-6">
-                    <label class="govuk-label" for="file-upload-1">
-                        Upload a file
-                    </label>
-                    <input class="govuk-file-upload govuk-!-margin-left-0" id="file-upload-1" name="file-upload-1"
-                        type="file">
-                </div>
-
-            </fieldset>
+        <div class="govuk-form-group govuk-!-padding-left-1">
+            <label class="govuk-label" for="file-upload-1">
+                Upload a file
+            </label>
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
         </div>
 
         <div>
@@ -48,12 +46,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     Send annual statement
                 </button>
             </form>
-            <!-- <button type="submit"
-                    class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-9"
-                    data-module="govuk-button">
-                    Save and come back later
-                </button> -->
         </div>
     </div>
+</div>
 
-    {% endblock %}
+{% endblock %}

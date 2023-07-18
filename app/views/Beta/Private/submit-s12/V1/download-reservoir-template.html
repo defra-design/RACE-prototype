@@ -19,7 +19,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             Rockingham Reservoir</h1>
 
         <dl class="govuk-summary-list">
-        
+
             <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                     National Grid reference
@@ -28,31 +28,19 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     id="reservoir-grid-ref-old" name="reservoir-grid-ref-old">
                     SU106951
                 </dd>
-                <!-- <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link govuk-link--no-visited-state" href="#">
-                            Change<span class="govuk-visually-hidden">National Grid reference</span>
-                        </a>
-                    </dd> -->
             </div>
         </dl>
 
         <div>
-            <form action="/Beta/Private/submit-s12/V1/download-confirmation">
-                <button role="button" draggable="false"
-                    class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-9 govuk-!-margin-right-4"
-                    data-module="govuk-button">
-                    Download template
-                </button>
-            </form>
-            <!-- <button type="submit"
-                    class="govuk-button govuk-button--secondary govuk-!-margin-top-6 govuk-!-margin-bottom-9"
-                    data-module="govuk-button">
-                    Choose another template
-                </button> -->
+            <button role="button" draggable="false"
+                class="govuk-button govuk-button--secondary govuk-!-margin-top-0 govuk-!-margin-bottom-9 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Download template
+            </button>
         </div>
 
 
-        <div class="govuk-form-group govuk-!-margin-top-9 govuk-!-margin-bottom-4">
+        <div class="govuk-form-group govuk-!-margin-top-6 govuk-!-margin-bottom-4">
             <fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
                     Do you want to download a template for another reservoir?
@@ -80,25 +68,16 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
         <div>
 
+            <form action="/Beta/Private/submit-s12/V1/download-confirmation">
 
 
-            <button role="button" draggable="false"
-                class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
-                data-module="govuk-button">
-                Continue
-            </button>
-
-            <!-- <button type="submit"
-                  class="govuk-button govuk-button--secondary govuk-!-margin-top-3 govuk-!-margin-bottom-9"
-                  data-module="govuk-button">
-                  Save and come back later
-              </button> -->
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    data-module="govuk-button">
+                    Continue
+                </button>
+            </form>
         </div>
-
-
-
-        </form>
-
     </div>
 </div>
 
