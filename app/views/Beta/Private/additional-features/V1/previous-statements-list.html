@@ -30,128 +30,40 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-three-quarters">
 
-    <form autocomplete="off" action="/Beta/submit-s12-statement/V6/s12-statement/reservoir-details/choose-a-reservoir"
-      method="post">
-
       <h1 class="govuk-heading-xl">
         Previous annual statements: Rockingham Reservoir
       </h1>
-    </form>
-  </div>
 
-  <div class="govuk-grid-column-full">
-
-    <div class="govuk-tabs" data-module="govuk-tabs">
-      <h2 class="govuk-tabs__title">
-        Contents
-      </h2>
-      <ul class="govuk-tabs__list">
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#current">
-            Current
-          </a>
-        </li>
-
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#previous">
-            Previous
-          </a>
-        </li>
-
-      </ul>
-
-
-      <div class="govuk-tabs__panel" id="previous">
-        <h2 class="govuk-heading-l">Previous annual statements</h2>
-        <table class="govuk-table govuk-!-margin-top-4">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-half">Reservoir name</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Status</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Date uploaded</th>
-
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-
-            <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="#"
-                  class="govuk-link govuk-link--no-visited-state">Breaker
-                  Falls</a></td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">
-                  Submitted
-                </strong></td>
-                <td class="govuk-table__cell">15/10/22</td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Half
-                  Moon Reservoir</a></td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">
-                  Submitted
-                </strong></td>
-                <td class="govuk-table__cell">03/05/22</td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Long
-                  Meadow Reservoir</a></td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">
-                  Submitted
-                </strong></td>
-                <td class="govuk-table__cell">05/04/22</td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="current">
-        <h2 class="govuk-heading-l">Current annual statements</h2>
-        <table class="govuk-table govuk-!-margin-top-4">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-half">Reservoir name</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Status</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-
-            <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="#"
-                  class="govuk-link govuk-link--no-visited-state">Rockingham
-                  Reservoir</a></td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
-                  In progress
-                </strong></td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="#"
-                  class="govuk-link govuk-link--no-visited-state">Manside
-                  Pool (ID355)</a></td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
-                  In progress
-                </strong></td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="#"
-                  class="govuk-link govuk-link--no-visited-state">Kitely
-                  Moor</a></td>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
-                In progress
-              </strong></td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Statements</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Document</th>
+            <th scope="col" class="govuk-table__header govuk-table__header">Period</th>
+            <th scope="col" class="govuk-table__header govuk-table__header">Date sent</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Annual statement</th>
+            <td class="govuk-table__cell govuk-table__cell">year to July 2022</td>
+            <td class="govuk-table__cell govuk-table__cell">31 July 2022</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Annual statement</th>
+            <td class="govuk-table__cell govuk-table__cell">year to July 2021</td>
+            <td class="govuk-table__cell govuk-table__cell">31 July 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Annual statement</th>
+            <td class="govuk-table__cell govuk-table__cell">year to July 2020</td>
+            <td class="govuk-table__cell govuk-table__cell">31 July 2020</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
-
-
 
 
 {% endblock %}
