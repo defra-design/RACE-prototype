@@ -457,3 +457,15 @@ input:focus {
 .login-nav__link-new {
     margin-right: 0;
 }
+
+.govuk-file-upload {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    color: #0b0c0c;
+    max-width: 100%;
+    margin-left: -5px;
+    padding: 5px;
+    border: 0px;
+}
