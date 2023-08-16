@@ -1,0 +1,82 @@
+{% extends "layout-phase.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="/Beta/Private/account-sign-in/sign-in-failed/V2/account-locked" method="post">
+
+            <div class="govuk-error-summary" data-module="govuk-error-summary">
+                <div role="alert">
+                  <h2 class="govuk-error-summary__title">
+                    There is a problem
+                  </h2>
+                  <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                      <li>
+                        <a href="#">Check your email address</a>
+                      </li>
+                      <li>
+                        <a href="#">Check your password</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+        <h1 class="govuk-heading-xl">
+            Sign in
+        </h1>
+
+        <form action="{{data['returnUrl']}}" method="post">
+
+            <div class="govuk-form-group govuk-form-group--error">
+                <label class="govuk-label" for="national-insurance-number">
+                    Username
+                </label>
+            
+                <p id="national-insurance-number-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Check your email address
+                </p>
+                <input class="govuk-input govuk-!-width-three-quarters govuk-input--error" id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint national-insurance-number-error"  value="{{ data['username-Id-3'] }}">
+              </div>
+
+
+              <div class="govuk-form-group govuk-form-group--error">
+                <label class="govuk-label" for="national-insurance-number">
+                    Password
+                </label>
+               
+                <p id="national-insurance-number-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Check your password
+                </p>
+                <input class="govuk-input govuk-!-width-three-quarters govuk-input--error" id="national-insurance-number" name="national-insurance-number" type="password" aria-describedby="national-insurance-number-hint national-insurance-number-error"  value="************">
+              </div>
+
+
+            <button class="govuk-button" data-module="govuk-button">
+                Sign in
+            </button>
+
+        </form>
+
+
+        <div class="govuk-list govuk-!-margin-top-4">
+          <a class="govuk-link--no-visited-state" href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">I've forgotten my password</a>
+       </div>
+
+    </div>
+</div>
+
+{% endblock %}

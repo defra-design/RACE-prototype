@@ -1,0 +1,74 @@
+{% extends "layout-phase.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="/Beta/Private/account-sign-in/first-time-registering/V2/create-password">
+
+
+            <h1 class="govuk-heading-xl">
+                Sign in
+            </h1>
+
+            <form action="" method="post">
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="">
+                        Username
+                    </label>
+
+                    <input class="govuk-input govuk-!-width-three-quarters" id="" name="" type="text"
+                        aria-describedby="">
+                </div>
+
+                <div class="govuk-form-group govuk-!-margin-bottom-2">
+                    <label class="govuk-label" for="Password" type="password" value="true">
+                        Password
+                    </label>
+
+                    <input type="password" value="" id="password-1"
+                        class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
+                </div>
+
+                <div class=" govuk-!-margin-bottom-9">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state" id="password-1" onclick="myFunction()">Show password</a>
+                </div>
+
+                <button class="govuk-button" data-module="govuk-button">
+                    Sign in
+                </button>
+
+            </form>
+
+            <div class="govuk-list govuk-!-margin-top-4">
+                <a class="govuk-link--no-visited-state"
+                    href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">I've forgotten my password</a>
+            </div>
+
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("password-1");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+
+{% endblock %}
