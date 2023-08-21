@@ -32,17 +32,13 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                         aria-describedby="">
                 </div>
 
-                <div class="govuk-form-group govuk-!-margin-bottom-2">
+                <div class="govuk-form-group">
                     <label class="govuk-label" for="Password" type="password" value="true">
                         Password
                     </label>
 
                     <input type="password" value="Fake12345!" id="password-1"
                         class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
-                </div>
-
-                <div class=" govuk-!-margin-bottom-9">
-                    <a href="#" class="govuk-link govuk-link--no-visited-state" onclick="myFunction()">Show password</a>
                 </div>
 
                 <button class="govuk-button" data-module="govuk-button">
@@ -58,17 +54,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     </div>
 </div>
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("password-1");
-        if (x.type === "password") {
-            x.type = "text";
-        } else {
-            x.type = "password";
-        }
-    }
-</script>
 
 
 {% endblock %}

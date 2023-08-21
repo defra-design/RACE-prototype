@@ -14,44 +14,46 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/Private/account-sign-in/first-time-registering/V2/choose-a-reservoir" method="post">
+        <form action="/Beta/Private/account-sign-in/first-time-registering/V2/choose-a-reservoir">
 
 
-        <h1 class="govuk-heading-xl">
-            Sign in
-        </h1>
-
-        <form action="{{data['returnUrl']}}" method="post">
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="govGateUserId">
-                    Username
-                </label>
-
-                <input class="govuk-input govuk-!-width-three-quarters" id="govGateUserId" name="govGateUserId" type="text"
-                    aria-describedby="govGateUserId-hint">
-            </div>
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="govGatePwassword" type="password" value="true">
-                    Password
-                </label>
-
-                <input type="password" name="password" id="password" class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
-
-            </div>
-
-            <button class="govuk-button" data-module="govuk-button">
+            <h1 class="govuk-heading-xl">
                 Sign in
-            </button>
+            </h1>
 
-        </form>
+            <form action="" method="post">
 
-        <div class="govuk-list govuk-!-margin-top-4">
-            <a class="govuk-link--no-visited-state" href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">Forgotten your password?</a>
-         </div>
-         
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="">
+                        Username
+                    </label>
+
+                    <input class="govuk-input govuk-!-width-three-quarters" id="" name="" type="text"
+                        aria-describedby="">
+                </div>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="Password" type="password" value="true">
+                        Password
+                    </label>
+
+                    <input type="password" value="" id="password-1"
+                        class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
+                </div>
+
+                <button class="govuk-button" data-module="govuk-button">
+                    Sign in
+                </button>
+
+            </form>
+
+            <div class="govuk-list govuk-!-margin-top-4">
+                <a class="govuk-link--no-visited-state"
+                    href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">I've forgotten my password</a>
+            </div>
+
     </div>
 </div>
+
 
 {% endblock %}
