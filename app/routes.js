@@ -1981,4 +1981,42 @@ router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/draft-or-subm
 
 
 
+// Private Beta //
+
+router.post('/Beta/Private/submit-s12/V9/download-reservoir-template-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anothertemplate = req.session.data['another-template']
+
+  // Check whether the variable matches
+  if (anothertemplate == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9/choose-a-reservoir-2')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9/download-confirmation')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V9/download-reservoir-template-2-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anothertemplate2 = req.session.data['another-template-2']
+
+  // Check whether the variable matches
+  if (anothertemplate2 == "Yes"){
+   
+  // Send user to
+    res.redirect('#')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9/download-confirmation-2')
+  }
+
+})
+
+
+
+
 module.exports = router
