@@ -1,0 +1,85 @@
+{% extends "layout-account.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner" id="beta-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+        class="govuk-link">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<div class="login-nav">
+  <ul class="login-nav__list">
+    <li class="login-nav__list-item-new"><a href="#" class="govuk-link login-nav__link-new govuk-link--no-visited-state">Sign out</a></li>
+  </ul>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
+
+    <h1 class="govuk-heading-xl">
+      Your annual statements
+    </h1>
+<p class="govuk-body">You have completed 0 statements.</p>
+  </div>
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <table class="govuk-table govuk-!-margin-top-4">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Reservoir</th>
+          <th scope="col" class="govuk-table__header app-custom-class govuk-!-padding-left-9">Status</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V8/upload-your-template"
+              class="govuk-link govuk-link--no-visited-state">Rockingham
+              Reservoir</a></td>
+          <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--blue">
+              In progress
+            </strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+
+      <form action="/Beta/Private/submit-s12/V8/choose-a-reservoir">
+
+        <button class="govuk-button govuk-button" data-module="govuk-button">
+          Start a new statement
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
