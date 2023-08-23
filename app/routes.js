@@ -1983,16 +1983,19 @@ router.post('/Beta/submit-s12-statement/V6/s12-statement/questions/draft-or-subm
 
 // Private Beta //
 
+
+// V9 //
+
 router.post('/Beta/Private/submit-s12/V9/download-reservoir-template-answer', function (req, res) {
   
   // Make a variable and give it the value
-  var anothertemplate = req.session.data['another-template']
+  var anothertemplate1 = req.session.data['another-template-1']
 
   // Check whether the variable matches
-  if (anothertemplate == "Yes"){
+  if (anothertemplate1 == "Yes"){
    
   // Send user to
-    res.redirect('/Beta/Private/submit-s12/V9/choose-a-reservoir-2')
+    res.redirect('/Beta/Private/submit-s12/V9/choose-a-reservoir-3')
   } else {
     res.redirect('/Beta/Private/submit-s12/V9/download-confirmation')
   }
@@ -2009,7 +2012,7 @@ router.post('/Beta/Private/submit-s12/V9/download-reservoir-template-2-answer', 
   if (anothertemplate2 == "Yes"){
    
   // Send user to
-    res.redirect('#')
+    res.redirect('/Beta/Private/submit-s12/V9/choose-a-reservoir')
   } else {
     res.redirect('/Beta/Private/submit-s12/V9/download-confirmation-2')
   }
@@ -2017,6 +2020,74 @@ router.post('/Beta/Private/submit-s12/V9/download-reservoir-template-2-answer', 
 })
 
 
+router.post('/Beta/Private/submit-s12/V9/download-reservoir-template-3-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anothertemplate3 = req.session.data['another-template-3']
+
+  // Check whether the variable matches
+  if (anothertemplate3 == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9/choose-a-reservoir')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9/download-confirmation-3')
+  }
+
+})
 
 
+router.post('/Beta/Private/submit-s12/V9/send-your-statement-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var send2undertaker = req.session.data['send-to-undertaker']
+
+  // Check whether the variable matches
+  if (send2undertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9/undertaker-email-details')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9/upload-confirmation')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V9/send-your-statement-2-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var send2undertaker2 = req.session.data['send-to-undertaker-2']
+
+  // Check whether the variable matches
+  if (send2undertaker2 == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9/undertaker-email-details-2')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9/upload-confirmation-2')
+  }
+
+})
+
+
+
+// V9-1 //
+
+
+router.post('/Beta/Private/submit-s12/V9-1/send-your-statement-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var send2undertaker = req.session.data['send-to-undertaker']
+
+  // Check whether the variable matches
+  if (send2undertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9-1/undertaker-email-details')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9-1/upload-confirmation')
+  }
+
+})
 module.exports = router

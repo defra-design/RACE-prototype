@@ -476,3 +476,188 @@ input:focus {
 .white-link {
     color: #ffffff !important;
 }
+
+
+// Submit S12 V9-1 //
+
+.subnav {
+    border-bottom: 1px solid #b1b4b6;
+    margin-bottom: 10px;
+}
+
+.subnav a {
+    font-family: "GDS Transport", arial, sans-serif;
+    font-size: 24px;
+    color: #1d70b8;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 0;
+}
+
+.subnav a:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.subnav a.active {
+    color: #1d70b8;
+    border-bottom: 4px solid #1d70b8;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+
+// V9-1 //
+
+.search-and filter {
+    display: flex;
+}
+
+
+.search-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-wrapper input[type="search"] {
+    height: 50px;
+}
+
+.search-input-wrapper {
+    display: table;
+    width: 100%;
+    background: #ffffff;
+}
+
+.search-input-submit-wrapper {
+    width: 1%;
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+}
+
+
+.search-wrapper .search-submit {
+    background-size: 60px auto;
+    background-position: 160% 50%;
+}
+
+.search-wrapper .search-submit {
+    width: 50px;
+    height: 50px;
+}
+
+.search-submit {
+    background-color: #005ea5;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0;
+    position: relative;
+    padding: 0;
+    background-image: url(/public/images/search-button.png);
+    background-repeat: no-repeat;
+    text-indent: -5000px;
+    overflow: hidden;
+}
+
+.filter-button {
+    color: #0b0c0c;
+    background-color: #f3f2f1;
+    box-shadow: 0 2px 0 #929191;
+    width: auto;
+    margin-bottom: 32px;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.1875;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 22px;
+    padding: 8px 10px 7px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-shadow: 0 2px 0 #b1b4b6;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    margin-top: 30px;
+    height: 50px;
+
+}
+
+.not-started-tag {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    color: #383f43;
+    background: #eeefef;
+}
+
+.in-progress-tag {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    color: #144e81;
+    background: #d2e2f1;
+}
+
+.received-tag {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    color: #005a30;
+    background: #cce2d8;
+}
+

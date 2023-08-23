@@ -1,0 +1,66 @@
+{% extends "layout-sign-out.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="/Beta/Private/submit-s12/V9/send-your-statement-2-answer" method="post">
+
+            <div class="govuk-form-group">
+
+                <fieldset class="govuk-fieldset">
+
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
+                        <h1 class="govuk-fieldset__heading">
+                            Do you want to send a copy of your annual statememt to the named undertaker?
+                        </h1>
+
+                    </legend>
+
+
+                    <div class="govuk-radios govuk-radios govuk-!-margin-top-2" data-module="govuk-radios">
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="send-to-undertaker-yes" name="send-to-undertaker-2"
+                                type="radio" value="Yes" aria-describedby="yes-or-no-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="send-to-undertaker-yes">
+                                Yes
+                            </label>
+                        </div>
+
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="send-to-undertaker-no" name="send-to-undertaker-2"
+                                type="radio" value="No" aria-describedby="yes-or-no-item-2-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="send-to-undertaker-no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    data-module="govuk-button">
+                    Continue
+                </button>
+            </div>
+          </form>
+
+    </div>
+</div>
+
+{% endblock %}

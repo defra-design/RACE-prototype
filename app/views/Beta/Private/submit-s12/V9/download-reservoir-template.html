@@ -39,10 +39,21 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-three-quarters">
 
+
         <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Download an annual statement template for
             Rockingham Reservoir</h1>
 
         <dl class="govuk-summary-list">
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Nearest town
+                </dt>
+                <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                    id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                    Skipton
+                </dd>
+            </div>
 
             <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
@@ -66,6 +77,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
         <form action="/Beta/Private/submit-s12/V9/download-reservoir-template-answer" method="post">
 
+
             <div class="govuk-form-group govuk-!-margin-top-6 govuk-!-margin-bottom-4">
                 <fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -74,14 +86,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
                     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="another-template-yes" name="another-template"
+                            <input class="govuk-radios__input" id="another-template-yes" name="another-template-1"
                                 type="radio" value="Yes">
                             <label class="govuk-label govuk-radios__label" for="another-template-yes">
                                 Yes
                             </label>
                         </div>
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="another-template-no" name="another-template"
+                            <input class="govuk-radios__input" id="another-template-no" name="another-template-1"
                                 type="radio" value="No">
                             <label class="govuk-label govuk-radios__label" for="another-template-no">
                                 No
@@ -100,7 +112,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                     data-module="govuk-button">
                     Continue
                 </button>
+
         </form>
+
     </div>
 </div>
 </div>
