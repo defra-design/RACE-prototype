@@ -1,0 +1,93 @@
+{% extends "layout-account.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner" id="beta-banner">
+    <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+            Prototype
+        </strong>
+        <span class="govuk-phase-banner__text">
+            This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+                class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+    </p>
+</div>
+
+<div class="login-nav">
+    <ul class="login-nav__list">
+        <li class="login-nav__list-item-new"><a href="#"
+                class="govuk-link login-nav__link-new govuk-link--no-visited-state">Sign out</a></li>
+    </ul>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-three-quarters">
+
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Download an annual statement template for
+            Rockingham Reservoir</h1>
+
+        <dl class="govuk-summary-list">
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Nearest town
+                </dt>
+                <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                    id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                    Skipton
+                </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Named undertaker
+                </dt>
+                <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                    id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                    Jenny Philips
+                </dd>
+            </div>
+        </dl>
+        </br>
+        <div>
+            <button role="button" draggable="false"
+                class="govuk-button govuk-button--secondary govuk-!-margin-top-0 govuk-!-margin-bottom-9 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Download template
+            </button>
+        </div>
+
+
+        <form action="/Beta/Private/submit-s12/V9-1/download-confirmation" method="post">
+
+
+            <div>
+
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    data-module="govuk-button">
+                    Continue
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
