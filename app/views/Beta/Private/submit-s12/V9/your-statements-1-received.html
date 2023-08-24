@@ -61,46 +61,44 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
       </ul>
 
 
-      <div class="govuk-tabs__panel" id="#current">
+      <div class="govuk-tabs__panel" id="current">
 
         <h2 class="govuk-heading-l">Current</h2>
 
-        <p class="govuk-body">Showing 2 reservoirs</p>
+        <p class="govuk-body">Showing 1 reservoir</p>
 
-        <table class="govuk-table govuk-!-margin-top-4">
+        <table class="govuk-table govuk-!-margin-top-4 govuk-body govuk-!-font-size-16">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header app-custom-class">Reservoir</th>
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-padding-left-9">Due date</th>
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-padding-left-9">Status</th>
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-padding-left-9">Action</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Due date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Status</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Action</th>
             </tr>
           </thead>
 
-          <tbody class="govuk-table__body">
+          <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
 
             <tr class="govuk-table__row">
               <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9/confirm-reservoir-2"
                   class="govuk-link govuk-link--no-visited-state">Earlswood Common Boating Lake</a></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9">12 Decemeber 2023</td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--green">
-                Received
-              </strong></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><a
-                  href="/Beta/Private/submit-s12/V9/upload-your-template-2"
-                  class="govuk-link govuk-link--no-visited-state">View</a></td>
+              <td class="govuk-table__cell">12 Decemeber 2023</td>
+              <td class="govuk-table__cell"><strong class="in-progress-tag">
+                  In progress
+                </strong></td>
+              <td class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9/upload-your-template-2"
+                  class="govuk-link govuk-link--no-visited-state">Upload</a></td>
             </tr>
 
             <tr class="govuk-table__row">
               <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9-1/confirm-reservoir"
                   class="govuk-link govuk-link--no-visited-state">Rockingham
                   Reservoir</a></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9">12 Decemeber 2023</td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--green">
+              <td class="govuk-table__cell">12 Decemeber 2023</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
                   Received
                 </strong></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><a
-                  href="/Beta/Private/submit-s12/V9/upload-your-template"
+              <td class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9/upload-your-template"
                   class="govuk-link govuk-link--no-visited-state">View</a></td>
             </tr>
 
@@ -108,7 +106,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </table>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="drafts">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="previous">
         <h2 class="govuk-heading-l govuk-!-margin-bottom-8">Previous</h2>
 
         <div class="subnav govuk-!-margin-bottom-4">
@@ -117,61 +115,59 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         </div>
 
 
-        <table class="govuk-table govuk-!-margin-top-4">
+        <table class="govuk-table govuk-!-margin-top-4 govuk-body govuk-!-font-size-16">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header app-custom-class">Reservoir</th>
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-padding-left-9">Date sent</th>
-              <th scope="col" class="govuk-table__header app-custom-class govuk-!-padding-left-9">Status</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Date sent</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Status</th>
             </tr>
           </thead>
 
-          <tbody class="govuk-table__body">
+          <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
 
             <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9-1/confirm-reservoir"
+              <td scope="row" class="govuk-table__cell"><a href="#"
                   class="govuk-link govuk-link--no-visited-state">Breaker falls
                   Reservoir</a></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9">14 October 2022</td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--green">
-                  Received
-                </strong></td>
+              <td class="govuk-table__cell">14 October 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                Received
+              </strong></td>
             </tr>
 
             <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9-1/confirm-reservoir"
-                  class="govuk-link govuk-link--no-visited-state">Breaker falls
+              <td scope="row" class="govuk-table__cell"><a href="#"
+                  class="govuk-link govuk-link--no-visited-state">Kedleston Park Lake No.1
                   Reservoir</a></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9">22 September 2022</td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--green">
-                  Received
-                </strong></td>
+              <td class="govuk-table__cell">22 September 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                Received
+              </strong></td>
             </tr>
             <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9-1/confirm-reservoir"
-                  class="govuk-link govuk-link--no-visited-state">Breaker falls
+              <td scope="row" class="govuk-table__cell"><a href="¢"
+                  class="govuk-link govuk-link--no-visited-state">Eagle Pond
                   Reservoir</a></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9">10 September 2022</td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--green">
-                  Received
-                </strong></td>
-
+              <td class="govuk-table__cell">10 September 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                Received
+              </strong></td>
             </tr>
             <tr class="govuk-table__row">
-              <td scope="row" class="govuk-table__cell"><a href="/Beta/Private/submit-s12/V9-1/confirm-reservoir"
-                  class="govuk-link govuk-link--no-visited-state">Breaker falls
+              <td scope="row" class="govuk-table__cell"><a href="#"
+                  class="govuk-link govuk-link--no-visited-state">Coatenhill Reservoir ID230
                   Reservoir</a></td>
-              <td class="govuk-table__cell govuk-!-padding-left-9">5 August 2022</td>
-              <td class="govuk-table__cell govuk-!-padding-left-9"><strong class="govuk-tag govuk-tag--green">
-                  Received
-                </strong></td>
-
+              <td class="govuk-table__cell">5 August 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                Received
+              </strong></td>
             </tr>
-
           </tbody>
         </table>
       </div>
 
+      
       <form action="/Beta/Private/submit-s12/V9/choose-a-reservoir-2" method="post">
         <div>
           <button class="govuk-button govuk-button--secondary govuk-!-margin-top-9" data-module="govuk-button">
@@ -179,7 +175,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
           </button>
         </div>
       </form>
-      
+
     </div>
   </div>
 </div>
