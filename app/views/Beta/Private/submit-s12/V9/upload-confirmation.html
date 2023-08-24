@@ -58,8 +58,17 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         href="/Beta/Private/submit-s12/V9/manage-account-details">account</a> to manage your information.
     </p>
 
-    <p class="govuk-body">Return to <a class="govuk-link govuk-link--no-visited-state govuk-!-margin-bottom-9"
-        href="/Beta/Private/submit-s12/V9/your-statements-1-recieved">Your annual statements</a></p>
+    <form action="/Beta/Private/submit-s12/V9/your-statements-1-received" method="post">
+
+      <div>
+
+        <button class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-4" data-module="govuk-button">
+          Your annual statements
+        </button>
+
+      </div>
+
+    </form>
 
     <p class="govuk-!-margin-top-8"><a href="#" class="govuk-link govuk-link--no-visited-state">What did you think of
         this service?</a> (takes 30 seconds)</p>
