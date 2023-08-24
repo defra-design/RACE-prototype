@@ -2090,4 +2090,22 @@ router.post('/Beta/Private/submit-s12/V9-1/send-your-statement-answer', function
   }
 
 })
+
+
+router.post('/Beta/Private/submit-s12/V9-1/send-your-statement-2-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var send2undertaker = req.session.data['send-to-undertaker']
+
+  // Check whether the variable matches
+  if (send2undertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9-1/undertaker-email-details-2')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9-1/upload-confirmation-2')
+  }
+
+})
+
 module.exports = router
