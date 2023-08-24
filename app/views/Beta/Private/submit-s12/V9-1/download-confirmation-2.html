@@ -56,13 +56,25 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
             <p class="govuk-body">You must upload the statement by {due date}.</p>
 
-            <p class="govuk-body">You can go to your <a class="govuk-link govuk-link--no-visited-state"
-                    href="/Beta/Private/submit-s12/V9/manage-account-details">account</a> to manage your information. 
-            </p>
 
-            <p class="govuk-body">Return to <a class="govuk-link govuk-link--no-visited-state govuk-!-margin-bottom-9"
-                  href="/Beta/Private/submit-s12/V9-1/your-statements-2-in-prog">Your annual statements</a></p>
-        
+
+            <p class="govuk-body">You can go to your <a class="govuk-link govuk-link--no-visited-state"
+              href="/Beta/Private/submit-s12/V9-1/manage-account-details">account</a> to manage your information.
+          </p>
+      
+          <form action="/Beta/Private/submit-s12/V9-1/your-statements-2-in-prog" method="post">
+      
+            <div>
+      
+              <button class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-4" data-module="govuk-button">
+                Your annual statements
+              </button>
+      
+            </div>
+      
+          </form>
+      
+                
             <p class="govuk-body govuk-!-margin-top-9"><a href="#" class="govuk-link govuk-link--no-visited-state">What did you
                 think of this service?</a> (takes 30 seconds)</p>
         
