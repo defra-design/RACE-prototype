@@ -2046,7 +2046,7 @@ router.post('/Beta/Private/submit-s12/V9/send-your-statement-answer', function (
   if (send2undertaker == "Yes"){
    
   // Send user to
-    res.redirect('/Beta/Private/submit-s12/V9/undertaker-email-details')
+    res.redirect('/Beta/Private/submit-s12/V9/upload-confirmation')
   } else {
     res.redirect('/Beta/Private/submit-s12/V9/upload-confirmation')
   }
@@ -2063,7 +2063,7 @@ router.post('/Beta/Private/submit-s12/V9/send-your-statement-2-answer', function
   if (send2undertaker2 == "Yes"){
    
   // Send user to
-    res.redirect('/Beta/Private/submit-s12/V9/undertaker-email-details-2')
+    res.redirect('/Beta/Private/submit-s12/V9/upload-confirmation-2')
   } else {
     res.redirect('/Beta/Private/submit-s12/V9/upload-confirmation-2')
   }
