@@ -2075,6 +2075,23 @@ router.post('/Beta/Private/submit-s12/V9/send-your-statement-2-answer', function
 // V9-1 //
 
 
+router.post('/Beta/Private/submit-s12/V9-1/download-reservoir-template-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var anothertemplate1 = req.session.data['another-template-1']
+
+  // Check whether the variable matches
+  if (anothertemplate1 == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V9-1/your-statements-1-in-prog')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V9-1/download-confirmation')
+  }
+
+})
+
+
 router.post('/Beta/Private/submit-s12/V9-1/send-your-statement-answer', function (req, res) {
   
   // Make a variable and give it the value
