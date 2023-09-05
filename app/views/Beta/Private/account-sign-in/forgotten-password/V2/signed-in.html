@@ -30,32 +30,21 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
   </ul>
 </div>
 
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
 
-            <div class="govuk-panel govuk-panel--confirmation">
-                <h1 class="govuk-panel__title">
-                    Your password has been changed.
-                </h1>
-            </div>
+        <h1 class="govuk-heading-xl">Example page</h1>
 
-            <p class="govuk-body">We have sent you a confirmation email</p>
-
-            <!-- <button class="govuk-button govuk-!-margin-top-6" data-module="govuk-button">
-                Back to manage account
-              </button> -->
-
-
-
-
-            <p class="govuk-body govuk-!-margin-top-9"><a class="govuk-link govuk-link--no-visited-state"
-                    href="app/views/Beta/Private/account-sign-in/change-password/V2/your-statements.html">Return to [Page TBC?]</a></p>
-
-        
 
     </div>
 </div>
+
 
 {% endblock %}
