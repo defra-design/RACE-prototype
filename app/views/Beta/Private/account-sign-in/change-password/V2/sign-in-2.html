@@ -17,41 +17,46 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <form action="/Beta/account-sign-in/forgotten-password/V1/reset-password" method="post">
 
 
-        <h1 class="govuk-heading-xl">
-            Sign in
-        </h1>
-
-        <form action="{{data['returnUrl']}}" method="post">
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="govGateUserId">
-                    Username
-                </label>
-
-                <input class="govuk-input govuk-!-width-three-quarters" id="govGateUserId" name="govGateUserId" type="text"
-                    aria-describedby="govGateUserId-hint">
-            </div>
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="govGatePwassword" type="password" value="true">
-                    Password
-                </label>
-
-                <input type="password" name="password" id="password" class="govuk-input govuk-!-width-three-quarters" autocomplete="current-password">
-
-            </div>
-
-            <button class="govuk-button" data-module="govuk-button">
+            <h1 class="govuk-heading-xl">
                 Sign in
-            </button>
+            </h1>
 
-        </form>
+            <form action="{{data['returnUrl']}}" method="post">
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="govGateUserId">
+                        Username
+                    </label>
+
+                    <input class="govuk-input govuk-!-width-three-quarters" id="govGateUserId" name="govGateUserId"
+                        type="text" aria-describedby="govGateUserId-hint">
+                </div>
+
+                <div class="govuk-form-group">
+
+                    <label for="input-722309f3" class="gem-c-label govuk-label">Password</label>
+
+                    <div class="gem-c-show-password__input-wrapper"><input autocomplete="off"
+                            class="gem-c-input govuk-input gem-c-input--with-password" id="input-722309f3"
+                            spellcheck="false" type="password"><button class="gem-c-show-password__toggle"
+                            aria-controls="input-722309f3" type="button" aria-label="Show password">Show</button><span
+                            class="govuk-visually-hidden" aria-live="polite">Your password is shown</span></div>
+                </div>
+
+
+                <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
+                    Sign in
+                </button>
+
+            </form>
 
 
 
-        <div class="govuk-list govuk-!-margin-top-4">
-            <a class="govuk-link--no-visited-state" href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">I have forgotten my password</a>
-         </div>
+            <div class="govuk-list govuk-!-margin-top-9">
+                <a class="govuk-link--no-visited-state"
+                    href="#">I have forgotten my
+                    password</a>
+            </div>
 
 
     </div>

@@ -12,70 +12,77 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 <div class="govuk-grid-row">
 
-    <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-two-thirds">
 
-        <form action="/Beta/Private/account-sign-in/sign-in-failed/V2/sign-in-error-2" method="post">
+    <form action="/Beta/Private/account-sign-in/sign-in-failed/V2/sign-in-error-2" method="post">
 
-            <div class="govuk-error-summary" data-module="govuk-error-summary">
-                <div role="alert">
-                  <h2 class="govuk-error-summary__title">
-                    There is a problem
-                  </h2>
-                  <div class="govuk-error-summary__body">
-                    <ul class="govuk-list govuk-error-summary__list">
-                      <li>
-                        <a href="#">Check your email address</a>
-                      </li>
-                      <li>
-                        <a href="#">Check your password</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-
-        <h1 class="govuk-heading-xl">
-            Sign in
-        </h1>
-
-        <form action="" method="post">
-
-            <div class="govuk-form-group govuk-form-group--error">
-                <label class="govuk-label" for="username-Id-2">
-                    Username
-                </label>
-            
-                <p id="national-insurance-number-error" class="govuk-error-message">
-                  <span class="govuk-visually-hidden">Error:</span> Check your email address
-                </p>
-                <input class="govuk-input govuk-!-width-three-quarters govuk-input--error" id="username-Id-2" name="username-Id-2" type="text" aria-describedby="national-insurance-number-hint national-insurance-number-error" value="">
-              </div>
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#">Check your email address</a>
+              </li>
+              <li>
+                <a href="#">Check your password</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
 
-              <div class="govuk-form-group govuk-form-group--error">
-                <label class="govuk-label" for="password">
-                    Password
-                </label>
-               
-                <p id="national-insurance-number-error" class="govuk-error-message">
-                  <span class="govuk-visually-hidden">Error:</span> Check your password
-                </p>
-                <input class="govuk-input govuk-!-width-three-quarters govuk-input--error" id="password" name="password" type="password" aria-describedby="" value="">
-              </div>
+      <h1 class="govuk-heading-xl">
+        Sign in
+      </h1>
+
+      <form action="" method="post">
+
+        <div class="govuk-form-group govuk-form-group--error">
+          <label class="govuk-label" for="username-Id-2">
+            Username
+          </label>
+
+          <p id="national-insurance-number-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Check your email address
+          </p>
+          <input class="govuk-input govuk-!-width-three-quarters govuk-input--error" id="username-Id-2"
+            name="username-Id-2" type="text"
+            aria-describedby="national-insurance-number-hint national-insurance-number-error" value="">
+        </div>
 
 
-            <button class="govuk-button" data-module="govuk-button">
-                Sign in
-            </button>
+        <div class="govuk-form-group govuk-form-group--error">
 
-        </form>
+          <label for="password-2" class="gem-c-label govuk-label">Password</label>
 
-        <div class="govuk-list govuk-!-margin-top-4">
-            <a class="govuk-link--no-visited-state" href="/Beta/account-sign-in/forgotten-password/V1/forgotten-password">I've forgotten my password</a>
-         </div>
-         
+          <p id="password-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Check your password
+          </p>
+
+          <div class="gem-c-show-password__input-wrapper"><input autocomplete="off"
+              class="gem-c-input govuk-input gem-c-input--with-password govuk-input--error" id="password-2"
+              spellcheck="false" type="password"><button class="gem-c-show-password__toggle"
+              aria-controls="password-2" type="button" aria-label="Show password">Show</button><span
+              class="govuk-visually-hidden" aria-live="polite">Your password is shown</span></div>
+        </div>
+
+
+        <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
+          Sign in
+      </button>
+
+      </form>
+
+      <div class="govuk-list govuk-!-margin-top-9">
+        <a class="govuk-link--no-visited-state" href="#">I have forgotten my
+            password</a>
     </div>
+
+  </div>
 </div>
 
 {% endblock %}
