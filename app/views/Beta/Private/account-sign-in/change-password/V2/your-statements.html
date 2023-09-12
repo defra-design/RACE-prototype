@@ -1,0 +1,238 @@
+{% extends "layout-account.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner" id="beta-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+        class="govuk-link">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<div class="login-nav">
+  <ul class="login-nav__list">
+    <li class="login-nav__list-item-new"><a href="/Beta/Private/account-sign-in/change-password/V2/my-account"
+        class="govuk-link login-nav__link-new govuk-link--no-visited-state profile">Manage account</a></li>
+    <li class="login-nav__list-item-new"><a href="#"
+        class="govuk-link login-nav__link-new govuk-link--no-visited-state">Sign out</a></li>
+  </ul>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      Your annual statements
+    </h1>
+
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#current">
+            Current
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#previous">
+            Previous
+          </a>
+        </li>
+      </ul>
+
+
+
+      <div class="govuk-tabs__panel" id="current">
+        <h2 class="govuk-heading-l">Current</h2>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+
+                <form method="get" novalidate="">
+
+                  <div class="search-wrapper govuk-form-group">
+                    <label for="search-applications" class="govuk-label">Search by reservoir name</label>
+
+                    <div class="search-input-wrapper">
+                      <input type="search" value="" id="search-applications" name="search" title="Search"
+                        class="govuk-input">
+
+                      <div class="search-input-submit-wrapper">
+                        <button type="submit" class="search-submit">Search</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+              <div class="govuk-grid-column-one-third">
+                <div>
+                  <button id="defra-filter--button" class="filter-button" type="button" aria-expanded="false">
+                    Show filters
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+     
+
+
+        <table class="govuk-table govuk-!-margin-top-4">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row govuk-body govuk-!-font-size-16">
+              <th scope="col" class="govuk-table__header app-custom-class">Reservoir</th>
+              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-quarter">Town</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Status</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Action</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
+
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell"><a href="#"
+                  class="govuk-link govuk-link--no-visited-state">Eagle Pond</a></td>
+              <td class="govuk-table__cell">Snaresbrook</td>
+              <td class="govuk-table__cell">
+                <strong class="not-started-tag">
+                  Not started
+                </strong>
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link govuk-link--no-visited-state"
+                  href="/Beta/Private/submit-s12/V9-1/download-reservoir-template-2">Download</a>
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell"><a href="#"
+                  class="govuk-link govuk-link--no-visited-state">Rockingham Reservoir</a></td>
+              <td class="govuk-table__cell">Harrogate</td>
+              <td class="govuk-table__cell">
+                <strong class="not-started-tag">
+                  Not started
+                </strong>
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link govuk-link--no-visited-state"
+                  href="/Beta/Private/submit-s12/V9-1/download-reservoir-template">Download</a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="previous">
+        <h2 class="govuk-heading-l govuk-!-margin-bottom-8">Previous</h2>
+
+        <div class="subnav govuk-!-margin-bottom-4">
+          <a class="active" href="#">2021 to 2022</a>
+          <a href="#">2020 to 2021</a>
+        </div>
+
+  
+
+        <table class="govuk-table govuk-!-margin-top-4 govuk-body govuk-!-font-size-16">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-quarter">Reservoir</th>
+              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-quarter">Nearest town</th>
+              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-quarter">Submission date</th>
+              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-quarter">Status</th>
+              <th scope="col" class="govuk-table__header app-custom-class govuk-!-width-one-quarter">Action</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
+
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell"><a href="#"
+                  class="govuk-link govuk-link--no-visited-state">Breaker Falls
+                </a></td>
+              <td class="govuk-table__cell">Milton</td>
+              <td class="govuk-table__cell">14 October 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                  Submitted
+                </strong></td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link govuk-link--no-visited-state" href="#">View</a>
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Park
+                  Lake No.1
+                  Reservoir</a></td>
+              <td class="govuk-table__cell">Brookvale</td>
+              <td class="govuk-table__cell">22 September 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                  Submitted
+                </strong></td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link govuk-link--no-visited-state" href="#">View</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell"><a href="¢"
+                  class="govuk-link govuk-link--no-visited-state">Eagle Pond
+                </a></td>
+              <td class="govuk-table__cell">Snaresbrook</td>
+              <td class="govuk-table__cell">10 September 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                  Submitted
+                </strong></td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link govuk-link--no-visited-state" href="#">View</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell"><a href="#"
+                  class="govuk-link govuk-link--no-visited-state">Coatenhill Reservoir
+                </a></td>
+              <td class="govuk-table__cell">Coatenhill</td>
+              <td class="govuk-table__cell">5 August 2022</td>
+              <td class="govuk-table__cell"><strong class="received-tag">
+                  Submitted
+                </strong></td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link govuk-link--no-visited-state" href="#">View</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
