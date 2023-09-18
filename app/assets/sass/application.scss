@@ -709,43 +709,40 @@ input:focus {
     cursor: pointer
 }
 
-@media print {
-    .gem-c-show-password__toggle {
-        font-family: sans-serif
-    }
+
+.gem-c-show-password__toggle {
+    font-family: sans-serif
 }
 
-@media (min-width: 40.0625em) {
-    .gem-c-show-password__toggle {
-        font-size: 19px;
-        font-size: 1.1875rem;
-        line-height: 1.3157894737
-    }
+
+
+.gem-c-show-password__toggle {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737
 }
 
-@media print {
-    .gem-c-show-password__toggle {
-        font-size: 14pt;
-        line-height: 1.15
-    }
+.gem-c-show-password__toggle {
+    font-size: 14pt;
+    line-height: 1.15
 }
 
-@media (max-width: 19.99em) {
-    .gem-c-show-password__toggle {
-        padding: 5px;
-        width: 100%;
-        margin-top: -2px;
-        white-space: normal
-    }
+
+
+.gem-c-show-password__toggle {
+    padding: 5px;
+    width: 100%;
+    margin-top: -2px;
+    white-space: normal
 }
 
-@media (min-width: 20em) {
-    .gem-c-show-password__toggle {
-        margin-left: -2px;
-        margin-top: 0;
-        margin-bottom: 0
-    }
+
+.gem-c-show-password__toggle {
+    margin-left: -2px;
+    margin-top: 0;
+    margin-bottom: 0
 }
+
 
 .gem-c-show-password__toggle:hover {
     color: #003078;
@@ -768,4 +765,202 @@ input:focus {
     background: #fff;
     border-color: #fd0;
     color: #0b0c0c
+}
+
+
+// V10 //
+
+.not-started-tag-new {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    :first-letter {text-transform: uppercase;}
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    color: #383f43;
+    background: #eeefef;
+}
+
+
+.in-progress-tag-new {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    :first-letter {text-transform: uppercase;}
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    color: #144e81;
+    background: #d2e2f1;
+}
+
+.sent-tag-new {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    :first-letter {text-transform: uppercase;}
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    color: #005a30;
+    background: #cce2d8;
+}
+
+
+.sort-year {
+    display: inline-flex;
+    padding-right: 30px !important;
+}
+
+.icon-sort-button {
+    cursor: pointer;
+    background: none;
+    border-color: white;
+    border-width: 0px;
+    font-family: "GDS Transport", arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1d70b8;
+    padding-left: 0px;
+    margin-bottom: 4px;
+}
+
+
+.icon-sort {
+    display: inline-block;
+    box-sizing: content-box;
+    height: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.icon-sort:before {
+    content: "";
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #707071;
+    vertical-align: bottom;
+    position: absolute;
+    margin-top: 6px;
+}
+
+.icon-sort:after {
+    content: "";
+    position: absolute;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #707071;
+    vertical-align: top;
+    margin-top: -2px;
+}
+
+.icon-sort-button:hover {
+    color: #003078;
+    border-bottom: 1px, black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+
+}
+
+.icon-sort-button:focus {
+    outline: transparent solid 3px;
+    color: rgb(11, 12, 12);
+    background-color: rgb(255, 221, 0);
+    box-shadow: rgb(11, 12, 12) 0px 4px;
+    text-decoration: none;
+}
+
+
+.icon-sort-button:active {
+    background: #fff;
+    border-color: #fd0;
+    color: #0b0c0c
+}
+
+.filter-button-2 {
+    color: #0b0c0c;
+    background-color: #f3f2f1;
+    box-shadow: 0 2px 0 #929191;
+    width: auto;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.1875;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    padding: 8px 10px 7px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+    box-shadow: 0 2px 0 #b1b4b6;
+    text-align: center;
+    vertical-align: top;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    width: 570px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    z-index: 1;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.apply-filter {
+    display: inline;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
