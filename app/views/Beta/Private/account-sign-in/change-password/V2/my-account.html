@@ -1,4 +1,4 @@
-{% extends "layout-sign-out.html" %}
+{% extends "layout-account.html" %}
 
 {% block pageTitle %}
 Start page template – {{ serviceName }} – GOV.UK Prototype Kit
@@ -8,127 +8,134 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 {% endset%}
 
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+        Beta
+      </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+            class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="/Beta/Private/submit-s12/V10/manage-account-details"
+        class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+  </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+
+{% endblock %}
+
 {% block content %}
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">
+  <div class="govuk-grid-column-three-quarters">
+
+    <h1 class="govuk-heading-xl">
+      Your account
+    </h1>
+
+  </div>
 
 
+  <div class="govuk-grid-column-three-quarters">
 
-        <div class="hmrc-page-heading ">
-            <h1 id="pageHeading" class="govuk-heading-xl govuk-!-margin-bottom-8">Your account</h1>
-        </div>
+    <h2 class="govuk-heading-m">Your details</h2>
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Laura Smith
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
 
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Company address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Engineering Consultants<br>Sample Street<br>Sample Town<br>Sample City<br>AB12 3CD
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> company address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Phone number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">01234 567 890</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> phone number</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">smith.l.@engineeringconsultants.com</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> email</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row" id="paperless">
+        <dt class="govuk-summary-list__key">
+          Password
+        </dt>
+        <dd class="govuk-summary-list__value">
+          ******************
+        </dd>
+        <dd class="govuk-summary-list__actions">
 
+          <a class="govuk-link govuk-link--no-visited-state"
+            href="/Beta/Private/account-sign-in/change-password/V2/change-password">
 
-        <h2 class="govuk-heading-m">Profile</h2>
+            Change
+            <span class="govuk-visually-hidden">how we contact you</span>
 
-        <dl class="govuk-summary-list">
+          </a>
 
-            <div class="govuk-summary-list__row" id="name">
-                <dt class="govuk-summary-list__key">
-                    Name
-                </dt>
-                <dd class="govuk-summary-list__value">
-                    John Sturniolo
-                </dd>
-                <dd class="govuk-summary-list__actions">
+        </dd>
+      </div>
 
-                    <a class="govuk-link govuk-link--no-visited-state"
-                        href="#">
+    </dl>
 
-                        Change
-                        <span class="govuk-visually-hidden">your name</span>
-
-                    </a>
-
-
-
-                </dd>
-            </div>
-
-
-            <div class="govuk-summary-list__row" id="main_address">
-                <dt class="govuk-summary-list__key">
-                    Address
-                </dt>
-                <dd class="govuk-summary-list__value">
-                    <span class="address-line">12 Sample Street<br>Sampletown<br>AB12 3CD</span>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-
-                    <a class="govuk-link govuk-link--no-visited-state" href="#">
-
-                        Change
-                        <span class="govuk-visually-hidden">Your main address</span>
-
-                    </a>
-
-                </dd>
-            </div>
-            
-            <div class="govuk-summary-list__row" id="paperless">
-                <dt class="govuk-summary-list__key">
-                    Email
-                </dt>
-                <dd class="govuk-summary-list__value">
-                    john.d05@name.com
-                </dd>
-                <dd class="govuk-summary-list__actions">
-
-                    <a class="govuk-link govuk-link--no-visited-state"
-                        href="#">
-
-                        Change
-                        <span class="govuk-visually-hidden">how we contact you</span>
-
-                    </a>
-
-                </dd>
-            </div>
-
-            <div class="govuk-summary-list__row" id="paperless">
-                <dt class="govuk-summary-list__key">
-                    Telephone
-                </dt>
-                <dd class="govuk-summary-list__value">
-                    07711 223344
-                </dd>
-                <dd class="govuk-summary-list__actions">
-
-                    <a class="govuk-link govuk-link--no-visited-state"
-                        href="#">
-
-                        Change
-                        <span class="govuk-visually-hidden">how we contact you</span>
-
-                    </a>
-
-                </dd>
-            </div>
-
-            <div class="govuk-summary-list__row" id="paperless">
-                <dt class="govuk-summary-list__key">
-                    Password
-                </dt>
-                <dd class="govuk-summary-list__value">
-                    ******************
-                </dd>
-                <dd class="govuk-summary-list__actions">
-
-                    <a class="govuk-link govuk-link--no-visited-state"
-                        href="/Beta/Private/account-sign-in/change-password/V2/change-password">
-
-                        Change
-                        <span class="govuk-visually-hidden">how we contact you</span>
-
-                    </a>
-
-                </dd>
-            </div>
-
-    </div>
+  </div>
 </div>
+
+
+
 
 {% endblock %}

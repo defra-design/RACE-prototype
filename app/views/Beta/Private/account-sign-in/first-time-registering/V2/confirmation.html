@@ -1,4 +1,4 @@
-{% extends "layout-phase-back-button.html" %}
+{% extends "layout-account-service-name.html" %}
 
 {% block pageTitle %}
 Start page template – {{ serviceName }} – GOV.UK Prototype Kit
@@ -8,14 +8,32 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 {% endset%}
 
-{% block content %}
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a
+                        href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+                        class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
         <form action="/Beta/Private/account-sign-in/first-time-registering/V2/sign-in-2" method="post">
 
-            <div class="govuk-panel govuk-panel--confirmation">
+            <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-top-8">
                 <h1 class="govuk-panel__title">
                     Your password has been created.
                 </h1>

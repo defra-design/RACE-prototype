@@ -665,6 +665,27 @@ input:focus {
 
 // Account Sign in V2 //
 
+.float-right {
+    text-align: right;
+}
+
+.login-nav-2 {
+    margin: 0;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    float: right;
+    display: inline-flex;
+}
+
+.login-nav-2-item {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 40px;
+}
+
+
+
 .gem-c-show-password__input-wrapper {
     display: table;
     display: flex;
