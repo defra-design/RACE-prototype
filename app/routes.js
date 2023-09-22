@@ -2125,4 +2125,25 @@ router.post('/Beta/Private/submit-s12/V9-1/send-your-statement-2-answer', functi
 
 })
 
+
+// Cookies V1 //
+
+
+router.post('/Beta/Private/Cookies/V1/Customise/cookies-page-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var analyticscookies = req.session.data['analytics-cookies']
+
+  // Check whether the variable matches
+  if (analyticscookies == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/Cookies/V1/Accept/service-start-cookies-accept')
+  } else {
+    res.redirect('/Beta/Private/Cookies/V1/Reject/service-start-cookies-reject')
+  }
+
+})
+
+
 module.exports = router
