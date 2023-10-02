@@ -1,0 +1,160 @@
+{% extends "layout-essential-cookies-2.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+        Beta
+      </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+            class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="/Beta/Private/submit-s12/V10/manage-account-details"
+        class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      Your annual statements
+    </h1>
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+            <form method="get" novalidate="">
+
+              <div class="search-wrapper govuk-form-group">
+                <label for="search-applications" class="govuk-label">Search by reservoir name</label>
+
+                <div class="search-input-wrapper">
+                  <input type="search" value="" id="search-applications" name="search" title="Search"
+                    class="govuk-input">
+
+                  <div class="search-input-submit-wrapper">
+                    <button type="submit" class="search-submit">Search</button>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <table class="govuk-table govuk-!-margin-top-4">
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row govuk-body govuk-!-font-size-16">
+
+          <th scope="col" class="govuk-table__header app-custom-class" aria-sort="">
+            <button aria-label="Sort by Reservoir" type="button" class="icon-sort-button">Reservoir
+              <div class="icon-sort"></div>
+            </button>
+          </th>
+
+          <th scope="col" class="govuk-table__header app-custom-class" aria-sort="">
+            <button aria-label="Sort by Undertaker" type="button" class="icon-sort-button">Undertaker
+              <div class="icon-sort"></div>
+            </button>
+          </th>
+
+          <th scope="col" class="govuk-table__header app-custom-class" aria-sort="">
+            <button aria-label="Sort by Due date" type="button" class="icon-sort-button">Due date
+              <div class="icon-sort"></div>
+            </button>
+          </th>
+
+          <th scope="col" class="govuk-table__header app-custom-class" aria-sort="">
+            <button aria-label="Sort by Status" type="button" class="icon-sort-button">Status
+              <div class="icon-sort"></div>
+            </button>
+          </th>
+
+          <th scope="col" class="govuk-table__header app-custom-class"></th>
+
+          <th scope="col" class="govuk-table__header app-custom-class"></th>
+        </tr>
+
+      </thead>
+
+      <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
+
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">Eagle Pond</td>
+          <td class="govuk-table__cell">Sarah Smith</td>
+          <td class="govuk-table__cell">10 December 2023</td>
+          <td class="govuk-table__cell"><strong class="not-started-tag-new">
+              Not started
+            </strong></td>
+          <td class="govuk-table__cell">
+            <a class="govuk-link govuk-link--no-visited-state" href="#">Download</a>
+          </td>
+          <!-- <td class="govuk-table__cell">
+            <a class="govuk-link govuk-link--no-visited-state" href="#">Send</a>
+          </td> -->
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">Rockingham Reservoir</td>
+          <td class="govuk-table__cell">Jenny Philips</td>
+          <td class="govuk-table__cell">10 December 2023</td>
+          <td class="govuk-table__cell"><strong class="not-started-tag-new">
+              Not started
+            </strong></td>
+          <td class="govuk-table__cell">
+            <a class="govuk-link govuk-link--no-visited-state" href="/Beta/Private/submit-s12/V10/your-statements-1-in-prog">Download</a>
+          </td>
+          <!-- <td class="govuk-table__cell">
+            <a class="govuk-link govuk-link--no-visited-state"
+              href="/Beta/Private/submit-s12/V10/send-your-statement">Send</a>
+          </td> -->
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+{% endblock %}
