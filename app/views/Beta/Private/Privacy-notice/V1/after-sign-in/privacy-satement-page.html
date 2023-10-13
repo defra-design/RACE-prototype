@@ -1,0 +1,54 @@
+{% extends "layout-essential-cookies-2.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#"
+            class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="/Beta/Private/submit-s12/V10/manage-account-details"
+        class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+<a class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-0" href="javascript:history.back()">Back</a>
+
+
+<div class="govuk-grid-row">
+
+  {% include "includes/privacy-notice.html" %}
+
+
+</div>
+
+
+{% endblock %}
