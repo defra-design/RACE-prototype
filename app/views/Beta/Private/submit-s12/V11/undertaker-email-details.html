@@ -1,0 +1,103 @@
+{% extends "layout-account-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+          <span class="govuk-phase-banner__text">
+            This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+              class="govuk-link">feedback</a> will help us to improve it.
+          </span>
+  
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third-from-desktop float-right">
+        <a href="/Beta/Private/submit-s12/V10/manage-account-details"
+          class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+  
+        <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+  
+      </div>
+    </div>
+  
+  </div>
+  
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Confirm undertaker's details</h1>
+
+        <form class="form" action="/Beta/Private/submit-s12/V9-1/upload-confirmation" method="post">
+
+
+            <dl class="govuk-summary-list">
+
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Reservoir name
+                    </dt>
+                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                        Rockingham reservoir
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Named undertaker
+                    </dt>
+                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                        Jenny Philips
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Email
+                    </dt>
+                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                        jenny.philips@engineers.com
+                    </dd>
+                </div>
+               
+            </dl>
+
+            <div>
+                <button role="button" draggable="false"
+                    class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                    data-module="govuk-button">
+                    Confirm and send annual statement
+                </button>
+            </div>
+  
+
+        </form>
+
+
+
+
+    </div>
+</div>
+
+{% endblock %}
