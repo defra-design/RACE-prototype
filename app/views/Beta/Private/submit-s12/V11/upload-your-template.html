@@ -12,29 +12,27 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 <div class="govuk-phase-banner">
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds-from-desktop">
-        <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
           Beta
         </strong>
-          <span class="govuk-phase-banner__text">
-            This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
-              class="govuk-link">feedback</a> will help us to improve it.
-          </span>
-  
-        </p>
-      </div>
-      <div class="govuk-grid-column-one-third-from-desktop float-right">
-        <a href="/Beta/Private/submit-s12/V10/manage-account-details"
-          class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
-  
-        <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
-  
-      </div>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
     </div>
-  
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
   </div>
-  
+
+</div>
+
 <a class="govuk-back-link" href="javascript:history.back()">Back</a>
 
 {% endblock %}
@@ -43,56 +41,33 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 <div class="govuk-grid-row">
-    
-    <div class="govuk-grid-column-three-quarters">
 
-        <form action="/Beta/Private/submit-s12/V10/upload-confirmation" method="post">
+  <div class="govuk-grid-column-three-quarters">
 
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Upload your statement
-            </h1>
+    <form action="/Beta/Private/submit-s12/V11/upload-confirmation" method="post">
 
-            <!-- <dl class="govuk-summary-list">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Upload your statement
+      </h1>
 
-                <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                        Nearest town
-                    </dt>
-                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
-                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
-                        Harrogate
-                    </dd>
-                </div>
-                
-                <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                        Named undertaker
-                    </dt>
-                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
-                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
-                        Jenny Philips
-                    </dd>
-                </div>
-            </dl> -->
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="file-upload-1">
+          Upload a file
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
 
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="file-upload-1">
-                    Upload a file
-                </label>
-                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-            </div>
-
-            <div>
+      <div>
 
 
-                <button role="button" draggable="false"
-                    class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
-                    data-module="govuk-button">
-                    Send statement
-                </button>
+        <button role="button" draggable="false"
+          class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+          data-module="govuk-button">
+          Send statement
+        </button>
 
-            </div>
-        </form>
-    </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 {% endblock %}
