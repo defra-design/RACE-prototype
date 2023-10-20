@@ -796,8 +796,14 @@ input:focus {
     outline-offset: -2px;
     letter-spacing: 1px;
     text-decoration: none;
-    :first-letter {text-transform: uppercase;}
-    font-family: "GDS Transport", arial, sans-serif;
+
+    :first-letter {
+        text-transform: uppercase;
+    }
+
+    font-family: "GDS Transport",
+    arial,
+    sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 700;
@@ -819,8 +825,14 @@ input:focus {
     outline-offset: -2px;
     letter-spacing: 1px;
     text-decoration: none;
-    :first-letter {text-transform: uppercase;}
-    font-family: "GDS Transport", arial, sans-serif;
+
+    :first-letter {
+        text-transform: uppercase;
+    }
+
+    font-family: "GDS Transport",
+    arial,
+    sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 700;
@@ -841,8 +853,14 @@ input:focus {
     outline-offset: -2px;
     letter-spacing: 1px;
     text-decoration: none;
-    :first-letter {text-transform: uppercase;}
-    font-family: "GDS Transport", arial, sans-serif;
+
+    :first-letter {
+        text-transform: uppercase;
+    }
+
+    font-family: "GDS Transport",
+    arial,
+    sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 700;
@@ -983,4 +1001,37 @@ input:focus {
 
 .show {
     display: block;
+}
+
+
+// V11 Submit S12 //
+
+.table-cell-download {
+    padding: 10px 50px 10px 0;
+    border-bottom: 1px solid #b1b4b6;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table-cell-download-2 {
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #b1b4b6;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table-cell-send {
+    border-bottom: 1px solid #b1b4b6;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 9px;
+}
+
+.table-cell-send-2 {
+    border-bottom: 1px solid #b1b4b6;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 3px;
 }
