@@ -1,0 +1,65 @@
+{% extends "layout-privacy-statement.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+
+            </p>
+        </div>
+     
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel-dropout govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+            <h1 class="govuk-panel__title">
+                You have been signed out
+            </h1>
+        </div>
+
+        <p class="govuk-body govuk-!-margin-top-6">
+            You have been signed out because you did not do anything for 20 minutes.
+        </p>
+        <p class="govuk-body">
+            This is to protect your information.
+        </p>
+
+        <div>
+            <button role="button" draggable="false"
+                class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Sign in again
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

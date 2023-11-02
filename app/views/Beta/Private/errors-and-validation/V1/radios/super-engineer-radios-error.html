@@ -1,0 +1,151 @@
+{% extends "layout-privacy-statement.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+            </p>
+        </div>
+
+        <div class="govuk-grid-column-one-third-from-desktop float-right">
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+        </div>
+    </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+            <div role="alert">
+                <h2 class="govuk-error-summary__title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#">Select yes if you want to send the statement to the undertaker</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
+            <h1 class="govuk-fieldset__heading">
+                Who the statement will go to
+            </h1>
+
+        </legend>
+
+
+        <p class="govuk-body govuk-!-padding-top-4">
+            The statement will go to the Environment Agency but you can use this service to send it to the
+            undertaker too.
+        </p>
+        <p class="govuk-body">
+            These are the details we hold for the undertaker.</p>
+
+        <div class="govuk-!-margin-top-4 govuk-!-margin-bottom-8 govuk-!-padding-bottom-2">
+            <dl class="govuk-summary-list">
+
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Reservoir
+                    </dt>
+                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                        Rockingham Reservoir
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Undertaker
+                    </dt>
+                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                        Jenny Philips
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Email
+                    </dt>
+                    <dd class="govuk-summary-list__value govuk-!-padding-left-9" for="reservoir-named-undertaker"
+                        id="reservoir-named-undertaker" name="reservoir-named-undertaker">
+                        jenny.philips@engineers.com
+                    </dd>
+                </div>
+            </dl>
+        </div>
+
+
+        <div class="govuk-form-group govuk-form-group--error govuk-!-margin-top-8 govuk-!-margin-bottom-4">
+            <fieldset class="govuk-fieldset" aria-describedby="where-do-you-live-error">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <h1 class="govuk-fieldset__heading">
+                        Do you want to send the statement to the undertaker too?
+                    </h1>
+                </legend>
+                <p id="where-do-you-live-error" class="govuk-error-message">
+                    <span class="govuk-visually-hidden">Error:</span>Select yes if you want to send the
+                    statement to the undertaker
+                </p>
+                <div class="govuk-radios govuk-radios--inline " data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="" name="" type="radio" value="">
+                        <label class="govuk-label govuk-radios__label" for="">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="" name="" type="radio" value="">
+                        <label class="govuk-label govuk-radios__label" for="">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <button role="button" draggable="false"
+            class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-8 govuk-!-margin-right-4"
+            data-module="govuk-button">
+            Continue
+        </button>
+
+    </div>
+</div>
+
+{% endblock %}
