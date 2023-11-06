@@ -1,0 +1,70 @@
+{% extends "layout-account-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+Send a supervising engineer's annual statement
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+            class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-top-8">Check your email</h1>
+
+    <p class="govuk-body">Click the link in the email to reset your password.</p>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Email did not arrive
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p class="govuk-body">Emails sometimes take a few minutes to arrive. If you do not receive an email, the service
+          can send you a new one.
+        </p>
+
+        <button class="govuk-button govuk-!-margin-bottom-8" data-module="govuk-button">
+          Resend email
+        </button>
+
+        <p class="govuk-body">If you still do not receive an email contact the Environment Agency.</p>
+
+        <p class="govuk-body">Email <a class="govuk-link--no-visited-state" href="">reservoirs@environment-agency.gov.uk</a>
+        </p>
+
+      </div>
+    </details>
+
+
+    <a class="white-link" href="/Beta/Private/account-sign-in/forgotten-password/V3/reset-password">Reset password</a>
+
+
+  </div>
+</div>
+
+{% endblock %}

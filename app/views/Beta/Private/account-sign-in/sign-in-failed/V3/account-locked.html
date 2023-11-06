@@ -1,0 +1,55 @@
+{% extends "layout-account-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+Send a supervising engineer's annual statement
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+        Beta
+      </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="https://defragroup.eu.qualtrics.com/jfe/form/SV_0wFTSeSWzDuXiRg/"
+            class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel-dropout govuk-!-margin-top-8 govuk-!-margin-bottom-9">
+            <h1 class="govuk-panel__title">
+               Service locked
+            </h1>
+        </div>
+
+        <p class="govuk-body govuk-!-margin-top-6">
+            You cannot log into the service because you have entered incorrect login details over 5 times.
+        </p>
+        <p class="govuk-body">
+            To get help, contact the Environment Agency.
+        </p>         
+
+        <p class="govuk-body">
+            Email <a href="mailto:reservoirs@environment-agency.gov.uk" class="govuk-link">reservoirs@environment-agency.gov.uk</a>
+        </p> 
+
+    </div>
+</div>
+
+{% endblock %}

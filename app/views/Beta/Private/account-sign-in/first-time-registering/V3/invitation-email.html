@@ -1,0 +1,32 @@
+{% extends "layout-phase.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+                    Invitation to send a supervising engineer's annual statement online
+                </label>
+            </h1>
+        </div>
+
+        <p class="govuk-body">Are you proposing that we sample email text here. Might be better to do it in Word with branding etc</p>
+
+        <a class="govuk-list govuk-link--no-visited-state" href="/Beta/Private/account-sign-in/first-time-registering/V3/service-start">Send an annual statement online</a>
+
+
+    </div>
+</div>
+
+{% endblock %}
