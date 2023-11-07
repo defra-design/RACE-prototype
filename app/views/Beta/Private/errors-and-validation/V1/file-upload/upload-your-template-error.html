@@ -52,7 +52,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li>
-              <a href="#">The file size must be smaller than 30MB</a>
+              <a href="#">The selected file must be smaller than 30MB</a>
             </li>
           </ul>
         </div>
@@ -67,8 +67,11 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
           <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">Upload your statement
           </h1>
         </label>
+        <div id="file-upload-hint" class="govuk-hint">
+      You can upload your statement as a PDF or Word document. It can be up to 30MB.
+    </div>
         <p id="file-upload-1-error" class="govuk-error-message">
-          <span class="govuk-visually-hidden">Error:</span>The file size must be smaller than 30MB
+          <span class="govuk-visually-hidden">Error:</span>The selected file must be smaller than 30MB
         </p>
         <input class="govuk-file-upload govuk-file-upload--error" id="file-upload-1" name="fileUpload1" type="file"
           aria-describedby="file-upload-1-error">
