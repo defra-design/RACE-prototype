@@ -54,10 +54,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             <li>
               <a href="#">The selected file must be smaller than 30MB</a>
             </li>
+            <li>
+              <a href="#">The selected file must be a PDF or a Word document</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
+
 
 
 
@@ -70,12 +74,16 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         You can upload your statement as a PDF or Word document. It can be up to 30MB.
       </div>
 
-      </br>
-
       <p id="file-upload-1-error" class="govuk-error-message">
         <span class="govuk-visually-hidden">Error:</span>The selected file must be smaller than 30MB
       </p>
-      <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file" aria-describedby="">
+
+      <p id="file-upload-1-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span>The selected file must be a PDF or a Word document
+      </p>
+
+      <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file"
+        aria-describedby="">
     </div>
 
     <div>
