@@ -1039,3 +1039,25 @@ input:focus {
     padding-top: 10px;
     padding-left: 3px;
 }
+
+
+// Upload progress //
+
+.upload-progress-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px !important;
+}
+
+.upload-icon {
+    width:50px;
+    height:50px;
+}
+
+.progress-of-file {
+    font-size: 24pt;
+    font-family: GDS Transport, arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+    margin-left: 10px;
+}

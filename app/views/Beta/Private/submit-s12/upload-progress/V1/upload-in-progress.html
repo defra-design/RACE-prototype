@@ -1,0 +1,70 @@
+{% extends "layout-account-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="/Beta/Private/submit-s12/V13/manage-account-details.html"
+        class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-three-quarters">
+
+    <div class="govuk-form-group">
+
+      <label class="govuk-label" for="file-upload-1">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">Uploading your statement
+        </h1>
+
+      </label>
+
+      <div class="upload-progress-container">
+
+        <div>
+          <img class="upload-icon govuk-!-margin-top-3" src="/public/images/Upload file icon.svg"
+            alt="Uploading file icon">
+        </div>
+        <div>
+          <h2 class="progress-of-file">20% complete.
+          </h2>
+        </div>
+
+      </div>
+    </div>
+
+    {% endblock %}
