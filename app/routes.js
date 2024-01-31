@@ -2146,4 +2146,40 @@ router.post('/Beta/Private/Cookies/V1/Customise/cookies-page-answer', function (
 })
 
 
+// Submit S12 V14 //
+
+router.post('/Beta/Private/submit-s12/V14/which-idea-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var whichidea = req.session.data['which-idea']
+
+  // Check whether the variable matches
+  if (whichidea == "Idea A"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V14/Idea-A/service-start')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V14/Idea-B/service-start')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V14/Idea-B/send-or-resend-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendorresend = req.session.data['send-or-resend']
+
+  // Check whether the variable matches
+  if (sendorresend == "Send statement"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V14/Idea-B/send-your-statement')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V14/Idea-B/resubmit-statement')
+  }
+
+})
+
+
 module.exports = router

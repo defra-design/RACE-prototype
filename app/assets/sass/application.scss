@@ -1061,3 +1061,50 @@ input:focus {
     margin-bottom: 15px !important;
     margin-left: 10px;
 }
+
+
+// Submit S12 V15 //
+
+.icon-sort-button-2 {
+    cursor: pointer;
+    background: none;
+    border-color: white;
+    border-width: 0px;
+    font-family: "GDS Transport", arial, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1d70b8;
+    padding-left: 0px;
+    margin-bottom: 4px;
+}
+
+.table-cell {
+    text-align: right;
+    vertical-align: top;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.action-send-a {
+    text-align: right;
+    vertical-align: top;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.action-send-b {
+    text-align: right;
+    vertical-align: top;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.action-resend {
+    text-align: right;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.table-padding-top {
+    padding-top: 20px;
+}
