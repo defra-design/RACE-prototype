@@ -38,10 +38,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">
-            Rockingham Reservoir
-        </h1>
-
 
         <div class="govuk-form-group">
 
@@ -51,7 +47,9 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 <fieldset class="govuk-fieldset" aria-describedby="">
                     <legend id="which-idea"
                         class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--l ">
-                        What do you want to do?
+                        <h1 class="govuk-fieldset__heading">
+                            Send or resend
+                      </h1>
                     </legend>
 
                     <div class="govuk-radios govuk-!-margin-bottom-6" data-module="govuk-radios">
@@ -59,14 +57,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                             <input class="govuk-radios__input" id="send-statement" name="send-or-resend" type="radio"
                                 value="Send statement">
                             <label class="govuk-label govuk-radios__label" for="send-statement">
-                                Send statement
+                                Send a new statement
                             </label>
                         </div>
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="resend-statement" name="send-or-resend" type="radio"
                                 value="Resend statement">
                             <label class="govuk-label govuk-radios__label" for="resend-statement">
-                                Resend statement
+                                Send an existing statement with changes
                             </label>
                         </div>
                     </div>
