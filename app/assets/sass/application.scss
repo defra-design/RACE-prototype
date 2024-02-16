@@ -1108,3 +1108,78 @@ input:focus {
 .table-padding-top {
     padding-top: 20px;
 }
+
+
+// Submit S12 V13 //
+
+.not-started-tag-update {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    :first-letter {
+        text-transform: uppercase;
+    }
+
+    font-family: "GDS Transport",
+    arial,
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 9px 4px;
+    color: #30282f;
+    background-color: #e5e6e7;
+}
+
+.in-progress-tag-update {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    :first-letter {
+        text-transform: uppercase;
+    }
+
+    font-family: "GDS Transport",
+    arial,
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 9px 4px;
+    color: #0c2d4a;
+    background-color: #bbd4ea;
+}
+
+.sent-tag-update {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    :first-letter {
+        text-transform: uppercase;
+    }
+
+    font-family: "GDS Transport",
+    arial,
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 9px 4px;
+    color: #005a30;
+    background-color: #cce2d8;
+}
