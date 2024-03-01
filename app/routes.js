@@ -2182,4 +2182,73 @@ router.post('/Beta/Private/submit-s12/V14/Idea-B/send-or-resend-answer', functio
 })
 
 
+// Submit S12 V14 //
+
+router.post('/Beta/Private/submit-s12/V15/which-idea-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var whichidea = req.session.data['which-idea']
+
+  // Check whether the variable matches
+  if (whichidea == "Idea A"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/your-statements')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-B/your-statements')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V15/Idea-A/send-your-statement-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtoundertaker = req.session.data['send-to-undertaker']
+
+  // Check whether the variable matches
+  if (sendtoundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/send-to-another-undertaker-yes')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/send-to-another-undertaker-no')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V15/Idea-A/send-to-another-undertaker-yes-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtoanotherundertaker = req.session.data['send-to-another-undertaker']
+
+  // Check whether the variable matches
+  if (sendtoanotherundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/enter-emails')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/upload-your-template')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V15/Idea-A/send-to-another-undertaker-no-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtonewundertaker = req.session.data['send-to-new-undertaker']
+
+  // Check whether the variable matches
+  if (sendtonewundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/enter-emails')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V15/Idea-A/upload-your-template')
+  }
+
+})
+
 module.exports = router
