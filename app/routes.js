@@ -2251,4 +2251,40 @@ router.post('/Beta/Private/submit-s12/V15/Idea-A/send-to-another-undertaker-no-a
 
 })
 
+
+// Submit S12 V16 //
+
+router.post('/Beta/Private/submit-s12/V15/yas-options-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var yasoptions = req.session.data['yas-options']
+
+  // Check whether the variable matches
+  if (yasoptions == "Search option"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V16/your-statements-search')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V16/your-statements-no-search')
+  }
+
+})
+
+router.post('/Beta/Private/submit-s12/V16/send-or-resend-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendorresend = req.session.data['send-or-resend']
+
+  // Check whether the variable matches
+  if (sendorresend == "Send statement"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V16/send-your-statement')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V16/resubmit-statement')
+  }
+
+})
+
+
 module.exports = router

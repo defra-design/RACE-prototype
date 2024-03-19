@@ -1,0 +1,135 @@
+{% extends "layout-new-crown-service-name.html" %}
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Annual statement templates
+    </h1>
+
+    <p class="govuk-body">Templates are Word documents.</p>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-top-8">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-6">
+      Templates
+    </h2>
+
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+
+    <table class="govuk-table govuk-!-margin-bottom-9 govuk-!-padding-bottom-9">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header"><button aria-label="Sort by Reservoir" type="button"
+              class="icon-sort-button-2">Reservoir
+              <div class="icon-sort"></div>
+            </button>
+          </th>
+          <th scope="col" class="govuk-table__header govuk-table__header"><button aria-label="Sort by Reservoir"
+              type="button" class="icon-sort-button-2">Undertaker
+              <div class="icon-sort"></div>
+          </th>
+          <th scope="col" class="govuk-table__header govuk-table__header"><button aria-label="Sort by Reservoir"
+              type="button" class="icon-sort-button-2">Last sent
+              <div class="icon-sort"></div>
+          </th>
+          <th scope="col" class="govuk-table__header govuk-table__header">Action</th>
+        </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Breaker Falls</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Christopher Bell</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">22 December 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Rockingham Reservoir</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Sarah Smith</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">18 July 2023</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state"
+                href="/Beta/Private/submit-s12/V16/send-or-resend">Send<span class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+{% endblock %}
