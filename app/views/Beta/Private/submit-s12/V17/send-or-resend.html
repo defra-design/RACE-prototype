@@ -1,0 +1,92 @@
+{% extends "layout-new-crown-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <div class="govuk-form-group">
+
+            <form action="/Beta/Private/submit-s12/V17/send-or-resend-answer" method="post">
+
+
+                <fieldset class="govuk-fieldset" aria-describedby="">
+                    <legend id="which-idea"
+                        class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-margin-bottom-4">
+                        <h1 class="govuk-fieldset__heading">
+                            Send or resend a statement
+                      </h1>
+                    </legend>
+
+                    <div class="govuk-radios govuk-!-margin-bottom-6" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="send-statement" name="send-or-resend" type="radio"
+                                value="Send statement">
+                            <label class="govuk-label govuk-radios__label" for="send-statement">
+                                Send a new statement
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="resend-statement" name="send-or-resend" type="radio"
+                                value="Resend statement">
+                            <label class="govuk-label govuk-radios__label" for="resend-statement">
+                                Send a revised statement
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+        </div>
+
+
+        <div>
+
+            <button role="button" draggable="false"
+                class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Continue
+            </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
