@@ -58,7 +58,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
             <p class="govuk-body govuk-!-padding-top-4">
-                The statement will go to the Environment Agency but you can use this service to send it to the undertaker too.
+                The statement will go to the Environment Agency but you can use this service to send it to the
+                undertaker too.
             </p>
             <p class="govuk-body">
                 Here are the contact details we hold for the undertaker of Rockingham Reservoir.</p>
@@ -87,16 +88,17 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
             </dl>
 
 
-            <form action="/Beta/Private/submit-s12/V17/send-to-another-undertaker-yes" method="post">
+            <form action="/Beta/Private/submit-s12/V17/send-your-statement-answer" method="post">
 
 
                 <div class="govuk-form-group govuk-!-margin-top-6 govuk-!-padding-top-8 govuk-!-margin-bottom-4">
-                    <fieldset class="govuk-fieldset" aria-describedby="send-to-undertaker">
-                        <legend id="send-to-undertaker" class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
-                            Do you want to send the statement to Sarah Smith?
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h2 class="govuk-fieldset__heading">
+                                Do you want to send the statement to Sarah Smith?
+                            </h2>
                         </legend>
-
-                        <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                        <div class="govuk-radios" data-module="govuk-radios">
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="send-to-undertaker-yes" name="send-to-undertaker"
                                     type="radio" value="Yes">
@@ -111,8 +113,15 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                                     No
                                 </label>
                             </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="send-to-undertaker-details-wrong"
+                                    name="send-to-undertaker" type="radio"
+                                    value="No, the undertaker's details are wrong">
+                                <label class="govuk-label govuk-radios__label" for="send-to-undertaker-details-wrong">
+                                    No, the undertaker's details are wrong
+                                </label>
+                            </div>
                         </div>
-
                     </fieldset>
                 </div>
 
