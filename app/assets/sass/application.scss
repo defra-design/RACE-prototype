@@ -222,9 +222,9 @@ body {
 }
 
 .autocomplete:focus {
-    outline: 3px solid #fd0;
+    outline: 3px solid #ffdd00;
     outline-offset: 0;
-    box-shadow: #0b0c0c inset 0 0 0 2px;
+    box-shadow: #0b0c0c inset 0 0 0 4px;
     position: relative;
 }
 
@@ -278,7 +278,8 @@ input[type=text] {
 
 input:focus {
     outline-offset: 0;
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #ffdd00;
+    box-shadow: #0b0c0c inset 0 0 0 2px;
 }
 
 .govuk-panel-dropout {
@@ -693,7 +694,7 @@ input:focus {
 .login-nav-2-item {
     position: relative;
     margin-bottom: 5px;
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
 
@@ -787,7 +788,7 @@ input:focus {
 
 .gem-c-show-password__toggle:focus {
     z-index: 1;
-    background: #fd0;
+    background: #ffdd00;
     color: #0b0c0c;
     outline: 0
 }
@@ -949,10 +950,10 @@ input:focus {
 }
 
 .icon-sort-button:focus {
-    outline: transparent solid 3px;
-    color: rgb(11, 12, 12);
-    background-color: rgb(255, 221, 0);
-    box-shadow: rgb(11, 12, 12) 0px 4px;
+    outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: #ffdd00;
+    box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
     text-decoration: none;
 }
 
@@ -1090,6 +1091,14 @@ input:focus {
     margin-bottom: 4px;
 }
 
+.icon-sort-button-2:focus {
+    outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: #ffdd00;
+    box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+    text-decoration: none;
+}
+
 .table-cell {
     text-align: right;
     vertical-align: top;
@@ -1222,15 +1231,44 @@ input:focus {
 }
 
 .search-input:focus {
-    outline: 3px solid #fd0;
+    outline: 3px solid #ffdd00;
     outline-offset: 0;
     box-shadow: #0b0c0c inset 0 0 0 2px;
     position: relative;
 }
 
 .search-submit:focus {
-    outline: 3px solid #fd0;
+    outline: 3px solid #ffdd00;
     outline-offset: 0;
     box-shadow: #0b0c0c inset 0 0 0 4px;
     border-right-width: 2px;
+}
+
+
+
+// V18 Search for a reservoir //
+
+.search-submit-2 {
+    background-color: #1d70b8;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0;
+    position: absolute;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-size: 70px;
+    background-position: 110% 50%;
+    background-image: url(/public/images/search-button.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.search-submit-2:focus {
+    outline: 3px solid #ffdd00;
+    outline-offset: 0;
+    box-shadow: #0b0c0c inset 0 0 0 4px;
 }
