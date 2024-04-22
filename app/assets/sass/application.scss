@@ -1248,6 +1248,13 @@ input:focus {
 
 // V18 Search for a reservoir //
 
+.search-field {
+    height: 50px;
+    width: 400px;
+}
+
+
+
 .search-submit-2 {
     background-color: #1d70b8;
     color: #ffffff;
@@ -1263,7 +1270,7 @@ input:focus {
     background-image: url(/public/images/search-button.png);
     background-repeat: no-repeat;
     overflow: hidden;
-    margin-left: 30px;
+    margin-left: 6px;
     display: inline-block;
 }
 
