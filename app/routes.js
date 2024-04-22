@@ -2359,5 +2359,75 @@ router.post('/Beta/Private/submit-s12/V17/send-to-another-undertaker-no-answer',
 
 
 
+// Submit S12 V19 – Send to undertaker //
+
+
+router.post('/Beta/Private/submit-s12/V19/send-or-resend-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendorresend = req.session.data['send-or-resend']
+
+  // Check whether the variable matches
+  if (sendorresend == "Send statement"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V19/send-your-statement')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V19/resubmit-statement')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V19/send-your-statement-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtoundertaker = req.session.data['send-to-undertaker']
+
+  // Check whether the variable matches
+  if (sendtoundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V19/send-to-another-undertaker-yes')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V19/send-to-another-undertaker-no')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V19/send-to-another-undertaker-yes-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtoanotherundertaker = req.session.data['send-to-another-undertaker']
+
+  // Check whether the variable matches
+  if (sendtoanotherundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V19/enter-emails')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V19/upload-your-template')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V19/send-to-another-undertaker-no-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtonewundertaker = req.session.data['send-to-new-undertaker']
+
+  // Check whether the variable matches
+  if (sendtonewundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V19/enter-emails')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V19/upload-your-template')
+  }
+
+})
+
 
 module.exports = router

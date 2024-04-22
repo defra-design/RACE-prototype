@@ -1,0 +1,113 @@
+{% extends "layout-new-crown-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop float-right">
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+  </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <form action="/Beta/Private/submit-s12/V19/check-emails" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Enter the email addresses you want to send the statement to
+            </h1>
+          </legend>
+
+          <p class="govuk-body govuk-!-padding-top-4">
+            You can send your statement to one or more people.</p>
+
+          <div class="govuk-form-group govuk-!-margin-top-8">
+            <label class="govuk-label" for="address-line-1">
+              Email address
+            </label>
+            <input class="govuk-input" id="address-line-1" name="addressLine1" type="text" autocomplete="address-line1">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-2">
+              Email address (optional)
+            </label>
+            <input class="govuk-input" id="address-line-2" name="addressLine2" type="text" autocomplete="address-line2">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-town">
+              Email address (optional)
+            </label>
+            <input class="govuk-input" id="address-town" name="addressTown" type="text" autocomplete="address-level2">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-town">
+              Email address (optional)
+            </label>
+            <input class="govuk-input" id="address-town" name="addressTown" type="text" autocomplete="address-level2">
+          </div>
+          <!-- 
+          <div>
+            <button role="button" draggable="false"
+              class="govuk-button govuk-button--secondary govuk-!-margin-top-3 govuk-!-margin-bottom-8 govuk-!-margin-right-4"
+              data-module="govuk-button">
+              Add more contacts
+            </button>
+          </div> -->
+
+        </fieldset>
+      </div>
+
+
+
+      <div>
+        <button role="button" draggable="false"
+          class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6"
+          data-module="govuk-button">
+          Continue
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
