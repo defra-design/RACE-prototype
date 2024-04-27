@@ -1,0 +1,418 @@
+{% extends "layout-new-crown-service-name.html" %}
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+    <div class="govuk-!-display-inline-block govuk-grid-column-one-third-from-desktop float-right">
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+      <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+    </div>
+
+    
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Annual statement templates
+    </h1>
+
+    <p class="govuk-body">Templates are Word documents.</p>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-top-8">
+
+
+  <div class="govuk-grid-column-one-half">
+
+    <!--Make sure the form has the autocomplete function switched off:-->
+
+    <form autocomplete="off" action="#" method="post">
+
+      <label for="" class="govuk-label">Search by reservoir</label>
+
+      <div class="autocomplete govuk-!-margin-bottom-6">
+
+        <input class="search-field" id="choose-reservoir" type="Search" name="reservoirs" placeholder="">
+      </div>
+
+      <div class="govuk-!-display-inline">
+        <button type="submit" draggable="false" class="search-submit-2 govuk-!-margin-bottom-6"
+          data-module="govuk-button"></button>
+
+      </div>
+
+    </form>
+
+
+
+  <p class="govuk-body govuk-!-margin-top-4">You have 5 reservoirs.</p>
+
+</div>
+
+</div>
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-2 govuk-!-padding-top-4 govuk-!-margin-bottom-6">
+      Templates
+    </h2>
+
+    <table class="govuk-table govuk-!-margin-bottom-9 govuk-!-padding-bottom-9">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header"><button aria-label="Sort by Reservoir" type="button"
+              class="icon-sort-button-2">Reservoir
+              <div class="icon-sort"></div>
+            </button>
+          </th>
+          <th scope="col" class="govuk-table__header govuk-table__header"><button aria-label="Sort by Reservoir"
+              type="button" class="icon-sort-button-2">Undertaker
+              <div class="icon-sort"></div>
+          </th>
+          <th scope="col" class="govuk-table__header govuk-table__header"><button aria-label="Sort by Reservoir"
+              type="button" class="icon-sort-button-2">Last sent
+              <div class="icon-sort"></div>
+          </th>
+          <th scope="col" class="govuk-table__header govuk-table__header">Action</th>
+        </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Breaker Falls</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">William Barry</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">22 December 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Upper Eagle Pond</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Company Inc</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">18 November 2022</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state"
+                href="/Beta/Private/submit-s12/V16/send-or-resend">Send<span class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Rockingham Reservoir</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Aaron Bell</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">12 November 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Kestrel Lake</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Jennifer White</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">10 October 2022</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state"
+                href="/Beta/Private/submit-s12/V16/send-or-resend">Send<span class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Upper Fox Lake</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Reservoirs Assoc.</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">7 October 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+        <!-- <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Evergreen Reservoir</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">William Barry</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">15 December 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Lower Eagle Pond</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Company Inc</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">24 November 2022</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state"
+                href="/Beta/Private/submit-s12/V16/send-or-resend">Send<span class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Mountain Reservoir </td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Aaron Bell</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">2 November 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Hawk Reservoir</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Jennifer White</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">16 October 2022</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state"
+                href="/Beta/Private/submit-s12/V16/send-or-resend">Send<span class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td scope="row" class="govuk-table__cell table-padding-top">Lower Fox Lake</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">Reservoirs Assoc.</td>
+          <td class="govuk-table__cell govuk-table__cell table-padding-top">10 October 2022</td>
+          <td class="govuk-table__cell govuk-table__cell">
+            <p class="download"><a class="govuk-link govuk-link--no-visited-state" href="#">Download<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="#">Send<span
+                  class="govuk-visually-hidden">
+                  template</span></a></p>
+          </td>
+        </tr> -->
+
+
+      </tbody>
+    </table>
+
+
+    <details class="govuk-details govuk-!-margin-bottom-9">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Reservoir not listed
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <p class="govuk-body">Contact the Environment Agency.</p>
+
+        <p class="govuk-body">Email &nbsp;<a class="govuk-link govuk-link--no-visited-state" href="#">s12statement@environment-agency.gov.uk</a>.</p>
+
+        <p class="govuk-body">Staff monitor emails from 9am to 5pm, Monday to Friday.</p>
+
+      </div>
+    </details>
+
+
+  </div>
+
+</div>
+
+
+<script>
+  function autocomplete(inp, arr) {
+    /*the autocomplete function takes two arguments,
+    the text field element and an array of possible autocompleted values:*/
+    var currentFocus;
+    /*execute a function when someone writes in the text field:*/
+    inp.addEventListener("input", function (e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false; }
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function (e) {
+            /*insert the value for the autocomplete text field:*/
+            inp.value = this.getElementsByTagName("input")[0].value;
+            /*close the list of autocompleted values,
+            (or any other open lists of autocompleted values:*/
+            closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+    });
+    /*execute a function presses a key on the keyboard:*/
+    inp.addEventListener("keydown", function (e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+    });
+    function addActive(x) {
+      /*a function to classify an item as "active":*/
+      if (!x) return false;
+      /*start by removing the "active" class on all items:*/
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+      /*add class "autocomplete-active":*/
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+    function removeActive(x) {
+      /*a function to remove the "active" class from all autocomplete items:*/
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+    function closeAllLists(elmnt) {
+      /*close all autocomplete lists in the document,
+      except the one passed as an argument:*/
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+          x[i].parentNode.removeChild(x[i]);
+        }
+      }
+    }
+    /*execute a function when someone clicks in the document:*/
+    document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+    });
+  }
+
+  /*An array containing all the country names in the world:*/
+  var reservoirs = ["Breaker Falls", "Evergreen Reservoir", "Hawk Reservoir", "Kestrel Lake", "Lower Eagle Pond", "Lower Fox Lake", "Mountain Reservoir", "Rockingham Reservoir", "Upper Eagle Pond", "Upper Fox Lake"];
+
+  /*initiate the autocomplete function on the "choose-reservoir" element, and pass along the reservoirs array as possible autocomplete values:*/
+  autocomplete(document.getElementById("choose-reservoir"), reservoirs);
+</script>
+
+
+
+{% endblock %}
