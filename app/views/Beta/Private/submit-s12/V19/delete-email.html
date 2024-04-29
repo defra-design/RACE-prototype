@@ -23,12 +23,6 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
             </p>
         </div>
-        <div class="govuk-grid-column-one-third-from-desktop float-right">
-            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
-
-            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
-
-        </div>
     </div>
 
 </div>
@@ -42,38 +36,44 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
 
 
+        <div class="govuk-form-group">
 
-        <form action="/Beta/Private/submit-s12/V19/send-to-another-undertaker-yes-answer" method="post">
+            <form action="/Beta/Private/submit-s12/V19/delete-email-answer" method="post">
 
-            <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="changedName-hint">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
+                <fieldset class="govuk-fieldset" aria-describedby="">
+                    <legend id="which-idea"
+                        class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-margin-bottom-4">
                         <h1 class="govuk-fieldset__heading">
-                            Send the statement to someone else as well
-                        </h1>
+                            Are you sure you want to delete sample1@sample1.co.uk?
+                      </h1>
                     </legend>
-                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+
+                    <div class="govuk-radios govuk-!-margin-bottom-6" data-module="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="send-to-undertaker-yes" name="send-to-another-undertaker"
-                                type="radio" value="Yes">
-                            <label class="govuk-label govuk-radios__label" for="send-to-undertaker-yes">
+                            <input class="govuk-radios__input" id="delete-yes" name="delete-email" type="radio"
+                                value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="delete-yes">
                                 Yes
                             </label>
                         </div>
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="send-to-undertaker-no" name="send-to-another-undertaker"
-                                type="radio" value="No">
-                            <label class="govuk-label govuk-radios__label" for="send-to-undertaker-no">
+                            <input class="govuk-radios__input" id="delete-no" name="delete-email" type="radio"
+                                value="NO">
+                            <label class="govuk-label govuk-radios__label" for="delete-no">
                                 No
                             </label>
                         </div>
                     </div>
-                </fieldset>
-            </div>
 
+                </fieldset>
+        </div>
+
+
+        <div>
 
             <button role="button" draggable="false"
                 class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
@@ -81,9 +81,12 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                 Continue
             </button>
 
-        </form>
+            </form>
 
+        </div>
     </div>
 </div>
+
+
 
 {% endblock %}

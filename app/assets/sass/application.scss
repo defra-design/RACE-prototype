@@ -1279,3 +1279,14 @@ input:focus {
     outline-offset: 0;
     box-shadow: #0b0c0c inset 0 0 0 4px;
 }
+
+
+// V19 Send to undertaker //
+
+.width-50-percent {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 50% !important;
+}

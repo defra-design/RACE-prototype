@@ -2388,15 +2388,15 @@ router.post('/Beta/Private/submit-s12/V19/send-your-statement-answer', function 
   if (sendtoundertaker == "Yes"){
    
   // Send user to
-    res.redirect('/Beta/Private/submit-s12/V19/send-to-another-undertaker-yes')
+    res.redirect('/Beta/Private/submit-s12/V19/send-to-someone-else')
   } else {
-    res.redirect('/Beta/Private/submit-s12/V19/send-to-another-undertaker-no')
+    res.redirect('/Beta/Private/submit-s12/V19/send-to-someone-else-instead')
   }
 
 })
 
 
-router.post('/Beta/Private/submit-s12/V19/send-to-another-undertaker-yes-answer', function (req, res) {
+router.post('/Beta/Private/submit-s12/V19/send-to-someone-else-answer', function (req, res) {
   
   // Make a variable and give it the value
   var sendtoanotherundertaker = req.session.data['send-to-another-undertaker']
@@ -2413,7 +2413,7 @@ router.post('/Beta/Private/submit-s12/V19/send-to-another-undertaker-yes-answer'
 })
 
 
-router.post('/Beta/Private/submit-s12/V19/send-to-another-undertaker-no-answer', function (req, res) {
+router.post('/Beta/Private/submit-s12/V19/send-to-someone-else-instead-answer', function (req, res) {
   
   // Make a variable and give it the value
   var sendtonewundertaker = req.session.data['send-to-new-undertaker']
@@ -2429,5 +2429,37 @@ router.post('/Beta/Private/submit-s12/V19/send-to-another-undertaker-no-answer',
 
 })
 
+
+router.post('/Beta/Private/submit-s12/V19/delete-email-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var deleteemail = req.session.data['delete-email']
+
+  // Check whether the variable matches
+  if (deleteemail == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V19/check-emails-1')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V19/check-emails')
+  }
+
+})
+
+router.post('/Beta/Private/submit-s12/V19/delete-email-1-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var deleteemail1 = req.session.data['delete-email-1']
+
+  // Check whether the variable matches
+  if (deleteemail1 == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V19/check-optional-emails-1')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V19/check-optional-emails-1')
+  }
+
+})
 
 module.exports = router

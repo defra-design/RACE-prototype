@@ -38,33 +38,57 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+            <div role="alert">
+                <h2 class="govuk-error-summary__title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#">Select yes if you want to delete sample1@sample1.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <div class="govuk-form-group">
 
-            <form action="/Beta/Private/submit-s12/V19/send-or-resend-answer" method="post">
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full"> 
+        <div class="govuk-form-group govuk-form-group--error">
+
+            <form action="/Beta/Private/submit-s12/V19/delete-email-answer" method="post">
 
 
                 <fieldset class="govuk-fieldset" aria-describedby="">
                     <legend id="which-idea"
                         class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-margin-bottom-4">
                         <h1 class="govuk-fieldset__heading">
-                            Send or resend a statement
+                            Are you sure you want to delete sample1@sample1.co.uk?
                       </h1>
                     </legend>
 
+                    <p id="where-do-you-live-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span>Select yes if you want to delete sample1@sample1.co.uk
+                    </p>
+
                     <div class="govuk-radios govuk-!-margin-bottom-6" data-module="govuk-radios">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="send-statement" name="send-or-resend" type="radio"
-                                value="Send statement">
-                            <label class="govuk-label govuk-radios__label" for="send-statement">
-                                Send a new statement
+                            <input class="govuk-radios__input" id="delete-yes" name="delete-email" type="radio"
+                                value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="delete-yes">
+                                Yes
                             </label>
                         </div>
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="resend-statement" name="send-or-resend" type="radio"
-                                value="Resend statement">
-                            <label class="govuk-label govuk-radios__label" for="resend-statement">
-                                Send a revised statement
+                            <input class="govuk-radios__input" id="delete-no" name="delete-email" type="radio"
+                                value="NO">
+                            <label class="govuk-label govuk-radios__label" for="delete-no">
+                                No
                             </label>
                         </div>
                     </div>
