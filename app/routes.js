@@ -2462,4 +2462,23 @@ router.post('/Beta/Private/submit-s12/V19/delete-email-1-answer', function (req,
 
 })
 
+
+// Upload a file V1 //
+
+router.post('/Beta/Private/submit-s12/upload-a-file/V1/remove-statement-file-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var deletefile = req.session.data['delete-file']
+
+  // Check whether the variable matches
+  if (deletefile == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/upload-a-file/V1/upload-your-statement')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/upload-a-file/V1/upload-your-statement-file-added')
+  }
+
+})
+
 module.exports = router
