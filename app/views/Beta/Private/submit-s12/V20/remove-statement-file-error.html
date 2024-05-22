@@ -1,0 +1,121 @@
+{% extends "layout-new-crown-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third-from-desktop float-right">
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+        </div>
+    </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+            <div role="alert">
+                <h2 class="govuk-error-summary__title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#">Select yes if you want to remove {File name and Format type}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <div class="govuk-form-group govuk-form-group--error">
+
+            <form action="/Beta/Private/submit-s12/upload-a-file/V1/remove-statement-file-answer" method="post">
+
+
+                <fieldset class="govuk-fieldset" aria-describedby="">
+                    <legend id="which-idea"
+                        class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-4">
+                        <h1 class="govuk-fieldset__heading">
+                            Remove {File name and Format type}
+                      </h1>
+                    </legend>
+                    <p id="file-upload-1-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span>Select yes if you want to remove {File name and Format type}
+                      </p>
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="delete-file-yes" name="delete-file" type="radio"
+                                value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="delete-file-yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="delete-file-no" name="delete-file" type="radio"
+                                value="NO">
+                            <label class="govuk-label govuk-radios__label" for="delete-file-no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+        </div>
+
+
+        <div>
+
+            <button role="button" draggable="false"
+                class="govuk-button govuk-!-margin-top-3 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
+                data-module="govuk-button">
+                Continue
+            </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

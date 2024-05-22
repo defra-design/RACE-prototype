@@ -1,0 +1,113 @@
+{% extends "layout-new-crown-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third-from-desktop float-right">
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+        </div>
+    </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-5">Upload and send statement</h1>
+
+        <p class="govuk-body">You can upload your statement as a PDF or Word document. It can
+            be up to 30MB.
+        </p>
+
+        <p class="govuk-body">We'll check the statement to make sure it's safe to send.</p>
+
+        <p class="govuk-body">This could take up to a minute.</p>
+
+    </div>
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="/Beta/Private/submit-s12/V20/upload-your-statement-add-file" method="post">
+
+
+            <div class="govuk-!-margin-top-6">
+
+                <div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label govuk-label--m" for="">
+                            Upload a file
+                        </label>
+
+
+                        <div class="moj-multi-file-upload__dropzone">
+
+                            <input class="govuk-file-upload" id="" name="" type="file">
+
+                            <p class="govuk-body">Drag and drop your file here or</p>
+
+                            <button role="button" draggable="false" type="submit"
+                                class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0"
+                                data-module="govuk-button">
+                                Choose file
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="govuk-!-margin-top-6 govuk-!-padding-top-6">
+
+                    <h2 class="govuk-heading-m">File added</h2>
+
+                </div>
+
+            </div>
+
+        </form>
+
+        <button role="" draggable="" type=""
+            class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4" data-module="">
+            Upload and send statement
+        </button>
+
+    </div>
+</div>
+
+
+{% endblock %}

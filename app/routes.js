@@ -2481,4 +2481,59 @@ router.post('/Beta/Private/submit-s12/upload-a-file/V1/remove-statement-file-ans
 
 })
 
+
+// Submit S12 V19 – Send to undertaker //
+
+
+router.post('/Beta/Private/submit-s12/V20/send-your-statement-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtoundertaker = req.session.data['send-to-undertaker']
+
+  // Check whether the variable matches
+  if (sendtoundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V20/send-to-someone-else')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V20/send-to-someone-else-instead')
+  }
+
+})
+
+
+router.post('/Beta/Private/submit-s12/V20/send-to-someone-else-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendtoanotherundertaker = req.session.data['send-to-another-undertaker']
+
+  // Check whether the variable matches
+  if (sendtoanotherundertaker == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V20/enter-emails')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V20/upload-your-statement')
+  }
+
+})
+
+router.post('/Beta/Private/submit-s12/V20/remove-statement-file-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var deletefile = req.session.data['delete-file']
+
+  // Check whether the variable matches
+  if (deletefile == "Yes"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V20/upload-your-statement')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V20/upload-your-statement-file-added')
+  }
+
+})
+
+
+
 module.exports = router
