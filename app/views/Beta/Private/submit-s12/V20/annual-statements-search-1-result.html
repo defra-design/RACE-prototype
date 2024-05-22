@@ -28,7 +28,7 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     </div>
 
-    
+
   </div>
 
 </div>
@@ -57,30 +57,25 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-one-half">
 
-    <!--Make sure the form has the autocomplete function switched off:-->
 
-    <form autocomplete="off" action="/Beta/Private/submit-s12/V18/annual-statements-search" method="post">
+    <label for="" class="govuk-label">Search by reservoir</label>
 
-      <label for="" class="govuk-label">Search by reservoir</label>
+    <div class="autocomplete govuk-!-margin-bottom-6">
 
-      <div class="autocomplete govuk-!-margin-bottom-6">
+      <input class="search-field" id="choose-reservoir" type="Search" name="reservoirs" Value="Upper Fox Lake">
+    </div>
 
-        <input class="search-field" id="choose-reservoir" type="Search" name="reservoirs" Value="Upper Fox Lake">
-      </div>
+    <div class="govuk-!-display-inline">
+      <button type="submit" draggable="false" class="search-submit-2 govuk-!-margin-bottom-6"
+        data-module="govuk-button"></button>
 
-      <div class="govuk-!-display-inline">
-        <button type="submit" draggable="false" class="search-submit-2 govuk-!-margin-bottom-6"
-          data-module="govuk-button"></button>
-
-      </div>
-
-    </form>
+    </div>
 
 
 
-  <p class="govuk-body govuk-!-margin-top-4"><strong>Showing:</strong> 1 of 1 results.</p>
+    <p class="govuk-body govuk-!-margin-top-4"><strong>Showing:</strong> 1 of 1 results.</p>
 
-</div>
+  </div>
 
 </div>
 
@@ -126,8 +121,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                   class="govuk-visually-hidden">
                   template</span></a></p>
 
-            <p class="send"><a class="govuk-link govuk-link--no-visited-state" href="/Beta/Private/submit-s12/V20/send-your-statement">Send<span
-                  class="govuk-visually-hidden">
+            <p class="send"><a class="govuk-link govuk-link--no-visited-state"
+                href="/Beta/Private/submit-s12/V20/send-or-resend">Send<span class="govuk-visually-hidden">
                   template</span></a></p>
           </td>
         </tr>
@@ -146,7 +141,8 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 
         <p class="govuk-body">Contact the Environment Agency.</p>
 
-        <p class="govuk-body">Email &nbsp;<a class="govuk-link govuk-link--no-visited-state" href="#">s12statement@environment-agency.gov.uk</a>.</p>
+        <p class="govuk-body">Email &nbsp;<a class="govuk-link govuk-link--no-visited-state"
+            href="#">s12statement@environment-agency.gov.uk</a>.</p>
 
         <p class="govuk-body">Staff monitor emails from 9am to 5pm, Monday to Friday.</p>
 

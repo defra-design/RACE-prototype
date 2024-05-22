@@ -2485,6 +2485,23 @@ router.post('/Beta/Private/submit-s12/upload-a-file/V1/remove-statement-file-ans
 // Submit S12 V19 – Send to undertaker //
 
 
+router.post('/Beta/Private/submit-s12/V20/send-or-resend-answer', function (req, res) {
+  
+  // Make a variable and give it the value
+  var sendorresend = req.session.data['send-or-resend']
+
+  // Check whether the variable matches
+  if (sendorresend == "Send statement"){
+   
+  // Send user to
+    res.redirect('/Beta/Private/submit-s12/V20/send-your-statement')
+  } else {
+    res.redirect('/Beta/Private/submit-s12/V20/resubmit-statement')
+  }
+
+})
+
+
 router.post('/Beta/Private/submit-s12/V20/send-your-statement-answer', function (req, res) {
   
   // Make a variable and give it the value
