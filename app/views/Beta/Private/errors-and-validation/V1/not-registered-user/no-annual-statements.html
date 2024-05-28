@@ -1,0 +1,61 @@
+{% extends "layout-privacy-statement.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+        </span>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-panel govuk-panel-dropout govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+      <h1 class="govuk-panel__title">
+        No annual statements
+      </h1>
+    </div>
+
+    <p class="govuk-body govuk-!-margin-top-6">
+      There dosesn't appear to be any reservoir statements accossiated with this account.
+    </p>
+ 
+
+    <p class="govuk-body">
+      If you need to talk to someone about your account, contact the Environment Agency.</p>
+
+    <p class="govuk-body">Email <a href="mailto:s12statement@environment-agency.gov.uk"
+        class="govuk-link">s12statement@environment-agency.gov.uk</a></p>
+
+    <p class="govuk-body">Staff monitor emails from 9am to 5pm, Monday to Friday.</p>
+  </div>
+</div>
+
+
+{% endblock %}
