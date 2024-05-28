@@ -1,0 +1,97 @@
+{% extends "layout-new-crown-service-name.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third-from-desktop float-right">
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+        </div>
+    </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-5">Upload and send statement</h1>
+
+        <p class="govuk-body">You can upload your statement as a PDF or Word document. It can
+            be up to 30MB.
+        </p>
+
+        <p class="govuk-body">We'll check the statement to make sure it's safe to send.</p>
+
+        <p class="govuk-body">This could take up to a minute.</p>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="/Beta/Private/submit-s12/upload-a-file/V2/A/upload-your-statement-add-file" method="post">
+
+            <div class="govuk-!-margin-top-6">
+
+                <div>
+                    <h2 class="govuk-heading-m">File added</h2>
+                    <dl class="govuk-summary-list govuk-summary-list--long-key">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Upper Fox Lake Reservoir.docx
+                            </dt>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link govuk-link--no-visited-state"
+                                    href="/Beta/Private/submit-s12/upload-a-file/V1/remove-statement-file">Remove<span
+                                        class="govuk-visually-hidden">[Rockingham Reservoir statement.doc</span></a>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+
+            </div>
+
+        </form>
+
+        <button role="" draggable="" type=""
+            class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4" data-module="">
+            Upload and send statement
+        </button>
+
+    </div>
+</div>
+
+
+{% endblock %}

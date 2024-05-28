@@ -1,0 +1,73 @@
+{% extends "layout-new-crown-service-name-2.html" %}
+
+{% block pageTitle %}
+Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">
+                    Beta
+                </strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service — your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
+                </span>
+
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third-from-desktop float-right">
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state profile">Manage account</a>
+
+            <a href="#" class="govuk-link login-nav-2-item govuk-link--no-visited-state">Sign out</a>
+
+        </div>
+    </div>
+
+</div>
+
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+
+        <div class="folder-image"><img src="/public/images/Folder open view Windows.png" alt="open-folder-window">
+
+
+            <form action="/Beta/Private/submit-s12/upload-a-file/V2/C/upload-your-statement-file-added" method="post">
+
+                <div class="open-button-position">
+                    <button type="submit" class="open-button" data-module="govuk-button">
+                        Open
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div>
+            <button class="govuk-button govuk-!-margin-bottom-6 govuk-!-margin-right-4">
+                Upload and send statement
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
