@@ -57,42 +57,14 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
         <p class="govuk-body">This could take up to a minute.</p>
 
     </div>
-</div>
-
-
-<div class="govuk-grid-row">
 
     <div class="govuk-grid-column-two-thirds">
 
         <form action="/Beta/Private/submit-s12/V20/upload-confirmation" method="post">
 
-
             <div class="govuk-!-margin-top-6">
 
                 <div>
-
-                    <div class="govuk-form-group">
-                        <label class="govuk-label govuk-label--m" for="documents">
-                            Upload a file
-                        </label>
-
-
-                        <div class="moj-multi-file-upload__dropzone">
-                            
-                            <input class="govuk-file-upload" id="documents" name="documents" type="file" multiple="">
-                            
-                            <p class="govuk-body">Drag and drop your file here or</p>
-                            
-                            <label for="documents" class="govuk-button govuk-button--secondary">Choose file</label>
-
-                            <div aria-live="polite" role="status" class="govuk-visually-hidden"></div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="govuk-!-margin-top-6 govuk-!-padding-top-6">
                     <h2 class="govuk-heading-m">File added</h2>
                     <dl class="govuk-summary-list govuk-summary-list--long-key">
                         <div class="govuk-summary-list__row">
@@ -100,21 +72,27 @@ Start page template – {{ serviceName }} – GOV.UK Prototype Kit
                                 Upper Fox Lake Reservoir.docx
                             </dt>
                             <dd class="govuk-summary-list__actions">
-                                <a class="govuk-link govuk-link--no-visited-state" href="/Beta/Private/submit-s12/V20/remove-statement-file">Remove<span class="govuk-visually-hidden">[Rockingham Reservoir statement.doc</span></a>
+                                <a class="govuk-link govuk-link--no-visited-state"
+                                    href="/Beta/Private/submit-s12/V20/remove-statement-file">Remove<span
+                                        class="govuk-visually-hidden">[Rockingham Reservoir statement.doc</span></a>
                             </dd>
                         </div>
                     </dl>
                 </div>
 
+
             </div>
 
-            <button role="button" draggable="false" type="submit"
+
+
+            <button role="button" draggable="false"
                 class="govuk-button govuk-!-margin-top-6 govuk-!-margin-bottom-6 govuk-!-margin-right-4"
                 data-module="govuk-button">
                 Upload and send statement
             </button>
 
         </form>
+
     </div>
 </div>
 
