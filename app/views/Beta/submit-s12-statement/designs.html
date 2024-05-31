@@ -3,6 +3,7 @@
 {% block content %}
 
 <div class="govuk-grid-row">
+
   <div class="govuk-grid-column-two-thirds">
 
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
@@ -10,38 +11,50 @@
       Submit an annual statement
     </h1>
 
-    <p class="govuk-body-l">
+    <p class="govuk-body-l govuk-!-padding-bottom-5">
       <span class="govuk-body-l govuk-!-font-weight-bold">User group:</span>
       Supervising engineers
     </p>
 
-  </div>
-
-</div>
 
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
 
     <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
       <p class="govuk-body govuk-!-padding-bottom-0">Sprint 1</p>
 
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Reservoir, Operator and last inspector
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Reservoir details, Operator details and
+        last inspector
         details</h2>
 
       <a href="/Beta/submit-s12-statement/V1/s12-statement/reservoir-details/choose-a-reservoir"
-        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-6">Version
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
         1</a>
 
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-      <p class="govuk-!-font-weight-bold">Assumptions</p>
+            <li>Choose and select a reservoir to create the statement dropdown search</li>
 
-      <ol class="govuk-list govuk-list--number govuk-list--spaced govuk-!-margin-bottom-6">
-        <li>Our users will find it easy to confirm or update pre-populated information.</li>
-        <li>Giving users pre-populated information will save them time and help improve the accuracy of data held by the
-          Environment Agency.</li>
-      </ol>
+            <li>Review or amend the reservoir details</li>
+
+            <li>Review or amend the operator details</li>
+
+            <li>Add a new Operator and there details</li>
+
+            <li>Review last inspecting engineer details</li>
+
+            <li>Alternative supervising engineer dropdown search</li>
+
+          </ul>
+        </div>
+      </details>
 
 
       <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">What we tested</h3>
@@ -58,20 +71,92 @@
 
       <p class="govuk-body govuk-!-padding-bottom-0">Sprint 2 &ndash; 3</p>
 
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Section 1 and 2</h2>
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Section 1: General information and
+        Section 2: Status and findings</h2>
 
       <a href="/Beta/submit-s12-statement/V2/s12-statement/reservoir-details/choose-a-reservoir"
-        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-6">Version
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
         2</a>
 
-      <p class="govuk-!-font-weight-bold">Assumptions</p>
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-      <ul class="govuk-list govuk-list--bullet  govuk-list--spaced govuk-!-margin-bottom-4">
+            <li>Confirm reservoir details removed Dam catergory</li>
 
-        <li>can a user complete the end-to-end-journey</li>
+            <li>Review operator details changed H1</li>
 
-        <li class="govuk-!-margin-bottom-6">do they understand the contnent and the questions</li>
-      </ul>
+            <li>Review or amend the last inspecting engineer details</li>
+
+            <li>Alternative supervising engineer answer by radio inputs</li>
+
+            <li>New alternative supervising engineer details</li>
+
+            <li>Confirm date of the last inspection report and certificate and if date is wrong</li>
+
+            <li>Confirm the date of the next inspection and if date is wrong</li>
+
+            <li>Recommended an inspection by an engineer answer by radio inputs</li>
+
+            <li>Reason to bring inspection forward answer by text area</li>
+
+            <li>Operator inspection activities answer by text area</li>
+
+            <li>Operator visual inspection answer by radio inputs</li>
+
+            <li>Operator inspection activities answer by text area</li>
+
+            <li>Operator inspection activities and date required answer by text area</li>
+
+            <li>List of the measures in the interest of safety displayed in a table</li>
+
+            <li>Issues supervising engineer needs to watch answer by radio inputs?</li>
+
+            <li>What issues engineer needs to be watch answer by text area</li>
+
+            <li>Operator maintenance actions answer by radio inputs?</li>
+
+            <li>What are maintenance actions answer by text area?</li>
+
+            <li>Operator records and monitoring answer by radio inputs?</li>
+
+            <li>What operator needs to do for records and monitoring answer by text area?</li>
+
+            <li>Flood plan for reservoir answer by radio inputs?</li>
+
+            <li>Flood plan certificate date answer by date input fields?</li>
+
+            <li>Flood plan been tested answer by radio inputs?</li>
+
+            <li>Revise flood plan answer by radio inputs?</li>
+
+            <li>What revisions to flood plan answer by text input?</li>
+
+            <li>New reservoir or the re-use of an abandoned one answer by radio inputs?</li>
+
+            <li>Actions for the operator in the final certificate answer by radio inputs?</li>
+
+            <li>What are the actions for the operator answer by text area?</li>
+
+            <li>Supporting documents upload a file</li>
+
+            <li>Check your answers for Section 1: General information</li>
+
+            <li>Check your answers for Reservoir inspection details</li>
+
+            <li>Check your answers for Reservoir flood plan details</li>
+
+            <li>Confirmation statement sent</li>
+
+
+          </ul>
+        </div>
+      </details>
 
 
       <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">What we tested</h3>
@@ -94,24 +179,94 @@
         class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
         3</a>
 
-        <details class="govuk-details govuk-!-margin-bottom-9">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              Design iterations
-            </span>
-          </summary>
-          <div class="govuk-details__text">
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-              <li>new account sign in solution</li>
-              <li>content on our Service start page</li>
-              <li>typeahead search</li>
-              <li>create an itemised list pattern</li>
-            </ul>
-          </div>
-        </details>
 
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-padding-bottom-6">Not tested</h3>
+            <li>Start page</li>
+
+            <li>Enter email address and password</li>
+
+            <li>Create password</li>
+
+            <li>Search for a reservoir statement by autocomplete</li>
+
+            <li>Reservoir details change H1, removed postcode and replaced with nearest town</li>
+
+            <li>Operator details changed H1 and added radio inputs for add another operator</li>
+
+            <li>Removed last inspecting engineer details</li>
+
+            <li>Alt supervising engineer details changed H1</li>
+
+            <li>Confirm date of the last inspection report and certificate changed H1</li>
+
+            <li>Confirm the date of the next inspection change H1 and removed 'Inspection' subhead</li>
+
+            <li>Recommended an inspection by an engineer changed H1</li>
+
+            <li>Reason for inspection added a list of input fields for 'Reason', 'Description' and 'Comments'</li>
+
+            <li>Reasons for inspection forward added a summary table of the first reason and added radio inputs to add
+              another reason</li>
+
+            <li>Operator visual inspection changed H1</li>
+
+            <li>Reason for visual inspection added a list of input fields for 'What to inspect', 'What to do' 'How
+              often' and 'Comments'</li>
+
+            <li>Reasons for visual inspection added a summary table of the first item and added radio inputs to add
+              another item</li>
+
+            <li>Measures in the interest of safety changed H1, replaced 'Activity' with 'Measure' added 'Outstanding'
+              and displayed each measure as a summary card</li>
+
+            <li>Issues to watch added a list of input fields for 'Issue to watch', 'Description' and 'Comments'</li>
+
+            <li>Issues to watch added a summary table of the first issue and added radio inputs to add another issue
+            </li>
+
+            <li>Operator maintenance actions changed H1 and added some hint text</li>
+
+            <li>Operator maintenance action added a list of input fields for 'Action', 'What to do' 'Are they compliant'
+              and 'Comments'</li>
+
+            <li>Operator maintenance actions added a summary table of the first action and added radio inputs to add
+              another action</li>
+
+            <li>Operator records and monitoring split into 2 individual question pages</li>
+
+            <li>What updates for records added a list of input fields for 'Update', 'Description' 'Date by' and
+              'Comments'</li>
+
+            <li>Record updates added a summary table of the first update and added radio inputs to add another update
+            </li>
+
+            <li>What needs monitoring added a list of input fields for 'Action', 'Description' and 'Comments'</li>
+
+            <li>Monitoring actions added a summary table of the first action and added radio inputs to add another
+              action</li>
+
+            <li>Revise flood plan added section guidance as hint text</li>
+
+            <li>What revisions to flood plan added a list of input fields for 'Part of plan', 'What to revise' and
+              'Timing'</li>
+
+            <li>Supporting documents changed H1</li>
+
+            <li>Check you answers changed to only one page</li>
+
+          </ul>
+        </div>
+      </details>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-padding-bottom-8">Not tested</h3>
 
     </div>
 
@@ -132,8 +287,28 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-            <li>new account sign in solution</li>
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <li>Start page added a service name</li>
+
+            <li>Sign in page for email and password</li>
+
+            <li>Your annual statements showing 'Submitted' and 'Drafts' views</li>
+
+            <li>Search for a reservoir statement changed H1</li>
+
+            <li>Operator details changed details from a table into a summary card</li>
+
+            <li>Confirm date of the last inspection report and certificate removed page</li>
+
+            <li>Confirm the date of the next inspection &ndash; changed H1 and added radio inputs for does engineer need
+              to
+              inspect before date</li>
+
+            <li>Recommended an inspection by an engineer &ndash; removed page and incorporated question into next
+              inspection
+              page</li>
+
           </ul>
         </div>
       </details>
@@ -141,25 +316,46 @@
 
       <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">What we tested</h3>
 
-      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-2">
+      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-6">
+
         <li>How might the prototype fit with their current ways of working?
         </li>
-        <li>What impact do they anticipate from using the new system? (positive and negative)</li>
-        <li>What challenges do they see with integrating the new process into the way they do things?</li>
-        <li>What might improve the prototype?</li>
-        <li>What opportunities do they see for a digital service (future thinking)?</li>
-        <li>Does the prototype allow for them to include all the information they would want to? (anything
-          missing)</li>
-        <li>What information might they want to attach? (site visit reports)</li>
-        <li>What order does the information make most sense?</li>
+
+        <li>What impact do they anticipate from using the new system? (positive and negative)
+        </li>
+
+        <li>What challenges do they see with integrating the new process into the way they do things?
+        </li>
+
+        <li>What might improve the prototype?
+        </li>
+
+        <li>What opportunities do they see for a digital service (future thinking)?
+        </li>
+
+        <li>Does the prototype allow for them to include all the information they would want to? (anything missing)
+        </li>
+
+        <li>What information might they want to attach? (site visit reports)
+        </li>
+
+        <li>What order does the information make most sense?
+        </li>
+
         <li>What are their thoughts on the quality of the service output for owners vs the report they would have
-          originally
-          created?</li>
-        <li>How well do they feel the output represents their work?</li>
-        <li>Are their concerns about the output that the owner will receive?</li>
+          originally created?
+        </li>
+
+        <li>How well do they feel the output represents their work?
+        </li>
+
+        <li>Are their concerns about the output that the owner will receive?
+        </li>
+
       </ul>
 
     </div>
+
 
     <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
@@ -178,39 +374,55 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-            <li>new account sign in solution</li>
-          </ul>
+
+          <p class="govuk-body govuk-!-padding-bottom-0">Changed order of the questions in Section 2: Status
+            and findings:</p>
+
+          <ol class="govuk-list govuk-list--number govuk-list--spaced">
+
+            <li>Operator maintenace actions.</li>
+
+            <li>Operator records updates.</li>
+
+            <li><strong>New design:</strong> Flood plan &ndash; changed H1 and introduced more radio input options.
+              Reduced section from 5 pages to 3 pages.</li>
+
+            <li>Safety measures &ndash; included an area for 'Comments'.</li>
+
+            <li>Operator monitoring.</li>
+
+            <li>Next inspection.</li>
+
+            <li>Visual inspection.</li>
+
+            <li>Issues to watch.</li>
+
+            <li>Supporting information.</li>
+
+            <li>Check your answers.</li>
+
+            <li><strong>New page:</strong> Send draft or submit statement.</li>
+
+            <li><strong>New page:</strong> Send draft what's the email address.</li>
+
+            <li><strong>New page:</strong> Confirmation draft of statement sent.</li>
+
+            <li>Confirmation statement sent &ndash; added in new content and link to user account.</li>
+
+
+
+          </ol>
+
         </div>
       </details>
 
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-padding-bottom-6">Not tested</h3>
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-padding-bottom-8">Not tested</h3>
 
     </div>
 
     <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
 
       <p class="govuk-body govuk-!-padding-bottom-0">Sprint 11 &ndash; 12</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Summary statement</h2>
-
-      <a href="/Beta/submit-s12-statement/V7/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
-        7</a>
-
-      <details class="govuk-details govuk-!-padding-bottom-2">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Design iterations
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-            <li>TBC
-            </li>
-          </ul>
-        </div>
-      </details>
-
 
       <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Full statement</h2>
 
@@ -227,23 +439,95 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-            <li>TBC
-            </li>
-          </ul>
+
+          <p class="govuk-body govuk-!-padding-bottom-0">Changed order of the questions in Section 2: Status
+            and findings:</p>
+
+          <ol class="govuk-list govuk-list--number govuk-list--spaced">
+
+            <li><strong>New design:</strong> Operator maintenace actions &ndash; Showed engineers a list of actions and
+              provided a space for them to 'Comment' on each action.</li>
+
+            <li><strong>New design:</strong> Issues to watch &ndash; showed engineers a list of issues and provided a
+              space for them to 'Comment' on each issue.</li>
+
+            <li>Operator records updates &ndash; added hint text to show which section of the Reservoir Act</li>
+
+            <li><strong>New design:</strong> Operator monitoring &ndash; showed engineers a list of actions and provided
+              a
+              space for them to 'Comment' on each action.</li>
+
+            <li>Safety measures &ndash; added hint text to show which section of the Reservoir Act</li>
+
+            <li>Visual inspection &ndash; added hint text to show which section of the Reservoir Act</li>
+
+            <li>Flood plan &ndash; changed H1 and reduced to two radio input options.</li>
+
+            <li>Flood plan date of certificate &ndash; added page back into section.</li>
+
+            <li>Flood plan tested &ndash; change H1 and added page back into section.</li>
+
+            <li>Flood plan revised &ndash; added page back into section.</li>
+
+          </ol>
+        </div>
+      </details>
+
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Summary statement</h2>
+
+      <a href="/Beta/submit-s12-statement/V7/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        7</a>
+
+      <details class="govuk-details govuk-!-padding-bottom-2">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <p class="govuk-body govuk-!-padding-bottom-0">Concentrated only on statutory compliance questions</p>
+
+          <ol class="govuk-list govuk-list--number govuk-list--spaced">
+
+            <li>Search for a reservoir statement by autocomplete</li>
+
+            <li><strong>New design:</strong> Summary statement &ndash; introduced a series of radio and checkbox inputs
+              for the engineer to fill out and submit.</li>
+
+            <li><strong>New design:</strong> Upload statement &ndash; seperate function for engineer to upload their
+              additional personal statement supporting document.</li>
+
+          </ol>
         </div>
       </details>
 
       <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">What we tested</h3>
 
-      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-2">
-        <li>TBC
+      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-6">
+
+        <li>What benefits they see for each of the prototypes? Why?
         </li>
+
+        <li>What challenges they see for each of the prototypes? Why?
+        </li>
+
+        <li>What elements of the prototypes do they like? Why?
+        </li>
+
+        <li>What elements of the prototypes do they dislike? Why?
+        </li>
+
+        <li>What would be their preferred approach for an online service? Why?
+        </li>
+
       </ul>
 
     </div>
-
   </div>
+
 </div>
 
 {% endblock %}
