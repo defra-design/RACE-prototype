@@ -3,6 +3,7 @@
 {% block content %}
 
 <div class="govuk-grid-row">
+
   <div class="govuk-grid-column-two-thirds">
 
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
@@ -10,28 +11,26 @@
       Submit an annual statement
     </h1>
 
-    <p class="govuk-body-l">
+    <p class="govuk-body-l govuk-!-padding-bottom-5">
       <span class="govuk-body-l govuk-!-font-weight-bold">User group:</span>
       Supervising engineers
     </p>
 
-  </div>
-
-</div>
 
 
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 0</p>
 
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
 
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 21</p>
+      <strong class="first-capital govuk-tag govuk-tag--green govuk-!-margin-top-4">
+        Tested
+      </strong>
 
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Search and upload a new statement</h2>
+      <a href="/Beta/Private/submit-s12/V8/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        8</a>
 
-
-      <a href="/Beta/Private/submit-s12/V20/annual-statements-search" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version 20</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -41,99 +40,189 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <p class="govuk-body govuk-!-padding-bottom-0">Changed the service from being all questions filled out online, to the user being able to download a Word template to fill out offline.</p>
 
-                  <p class="govuk-body">Service start</p>
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
+            <li>Sign in &ndash; Enter email address and password</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page showing user the statement has been downloaded. What's next section explaining the process and a link back to view their account</li>
 
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-                  <p class="govuk-body">Download annual statement</p>
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+          </ul>
 
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </details>
+
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">What we tested</h3>
+
+      <p class="govuk-body">To evaluate our prototype concept for submitting the section 12 statements online.
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-3">
+
+        <li>What do engineers think of the proposed process?
+        </li>
+
+        <li>What benefits do they see? Why?
+        </li>
+
+        <li>What challenges might occur? Why?
+        </li>
+
+        <li>What might improve this approach? Why?
+        </li>
+
+        <li>What requirements do they have for a template?
+        </li>
+
+        <li>What should it do? Why?
+        </li>
+
+        <li>What should be avoided? Why?
+        </li>
+
+        <li>What, if any, additional information would they want to highlight to the EA when submitting?
+        </li>
+
+      </ul>
+
+      <p class="govuk-body">To evaluate and prioritise some additional features that might be included in the service.
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-6">
+        
+
+        <li>What benefits would occur from having these features?
+        </li>
+
+        <li>How would they rank/prioritise the features?
+        </li>
+
+        <li>Which of the features would encourage them to use the service?
+        </li>
+
+      </ul>
+
     </div>
-  </div>
-</div>
 
 
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 3</p>
 
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
 
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 20</p>
+      <strong class="first-capital govuk-tag govuk-tag--green govuk-!-margin-top-4">
+        Tested
+      </strong>
 
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Upload a file</h2>
+      <a href="/Beta/Private/submit-s12/V9/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        9</a>
+
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <li>Download an annual statement template for [Named Reservoir] &ndash; replaced 'National Grid reference' with 'Nearest town'</li>
+            
+            <li><strong>New design:</strong> Your annual statements &ndash; to allow the user to see current and previous statements. In the table added 'Town' and an action button for 'Upload'</li>
+
+            <li>Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send another annual statement or view their account</li>
+          
+          </ul>
+
+        </div>
+
+      </details>
 
 
-      <a href="/Beta/Private/submit-s12/upload-a-file/V1/upload-your-statement" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version 1</a>
+      <strong class="first-capital govuk-tag govuk-tag--green">
+        Tested
+      </strong>
+
+      <a href="/Beta/Private/submit-s12/V9-1/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        9.1</a>
+
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <p class="govuk-body govuk-!-padding-bottom-0">Removed the Search for a reservor page and incorporated this fuctionality into the Your annual statements page. Changed the order of Download an annual statement template for [Named Reservoir] page</p>
+
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <li><strong>New design:</strong> Your annual statements &ndash; user can now search download and uplaod a reservoir statement. New status tags usedd to show if something is 'Not started', 'In progress' or 'Sent'</li>
+
+            <li><strong>New design:</strong> Send the annual statement to the undertaker &ndash; showing the undertakers name and contact details. User can then choose to send a copy of the statement directly through the service</li>
+
+          </ul>
+
+        </div>
+
+      </details>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-6 govuk-!-margin-bottom-2">What we tested</h3>
+
+      <p class="govuk-body">To usability test the upload/download process for the template
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-padding-bottom-6">
+
+        <li>Are they able to complete the tasks (upload/download)?
+        </li>
+
+        <li>What challenges do they face when using the service?
+        </li>
+
+        <li>What concerns do they have about using the service?
+        </li>
+
+        <li>Which of the design options do they prefer & why?
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 4</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download statement</h2>
+
+      <strong class="first-capital govuk-tag govuk-tag--green govuk-!-margin-top-4">
+        Dev build
+      </strong>
+
+      <a href="/Beta/Private/submit-s12/V10/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        10</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -143,99 +232,42 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <p class="govuk-body">Service start</p>
+            <li>Sign in &ndash; Enter email address and password</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
 
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 7 &ndash; 8</p>
 
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
 
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 19</p>
+      <strong class="first-capital govuk-tag govuk-tag--green govuk-!-margin-top-4">
+        Dev build
+      </strong>
 
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Send to undertaker</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V19/send-your-statement" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        19</a>
+      <a href="/Beta/Private/submit-s12/V11/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        11</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -245,99 +277,39 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <p class="govuk-body">Service start</p>
+            <li>Sign in &ndash; Enter email address and password</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
+
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 10</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
 
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 19</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Search for a reservoir</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V18/annual-statements-search.html" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        18</a>
+      <a href="/Beta/Private/submit-s12/V12/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        12</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -347,98 +319,40 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 11</p>
 
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 17</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Send to undertaker</h2>
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
 
 
-      <a href="/Beta/Private/submit-s12/V17/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        17</a>
+      <a href="/Beta/Private/submit-s12/V13/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        13</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -448,399 +362,29 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 16</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Resubmit annual statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V16/your-statements-no-search" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        16</a>
-
-
-      <details class="govuk-details govuk-!-margin-bottom-9">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Design iterations
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Service start</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Choose a reservior</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 15</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Send to undertaker</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V15/which-idea" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        15</a>
-
-
-      <details class="govuk-details govuk-!-margin-bottom-9">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Design iterations
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Service start</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Choose a reservior</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
-    </div>
-  </div>
-</div>
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 12 &ndash; 13</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Resubmit annual statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V14/which-idea" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        14</a>
-
-
-      <details class="govuk-details govuk-!-margin-bottom-9">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Design iterations
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Service start</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Choose a reservior</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
 
     <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
 
@@ -852,10 +396,14 @@
 
       <ul class="govuk-list">
         <li>
-          <a href="/Beta/Private/submit-s12/upload-progress/V1/upload-in-progress" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-0">Upload in progress &ndash; V1</a>
+          <a href="/Beta/Private/submit-s12/upload-progress/V1/upload-in-progress"
+            class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-0">Upload in progress &ndash;
+            V1</a>
         </li>
         <li>
-          <a href="/Beta/Private/submit-s12/upload-progress/V1/upload-complete" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-0">Upload is complete &ndash; V1</a>
+          <a href="/Beta/Private/submit-s12/upload-progress/V1/upload-complete"
+            class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-0">Upload is complete &ndash;
+            V1</a>
         </li>
       </ul>
 
@@ -866,100 +414,43 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
 
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
 
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 12 &ndash; 13</p>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Resubmit annual statement</h2>
 
-    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+      <strong class="first-capital govuk-tag govuk-tag--green govuk-!-margin-top-4">
+        Tested
+      </strong>
 
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 11</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V13/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        13</a>
+      <a href="/Beta/Private/submit-s12/V14/which-idea"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        14</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -969,99 +460,40 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
+
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 15</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Send to undertaker</h2>
 
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 10</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V12/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        12</a>
+      <a href="/Beta/Private/submit-s12/V15/which-idea"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        15</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -1071,99 +503,40 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
+
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 16</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Resubmit annual statement</h2>
 
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 7 &ndash; 8</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V11/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        11</a>
+      <a href="/Beta/Private/submit-s12/V16/your-statements-no-search"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        16</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -1173,100 +546,40 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
+
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 17</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Send to undertaker</h2>
 
 
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 4</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V10/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        10</a>
+      <a href="/Beta/Private/submit-s12/V17/service-start"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        17</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -1276,294 +589,40 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
-  </div>
-</div>
+
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 18</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Search for a reservoir</h2>
 
 
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-
-        <p class="govuk-body govuk-!-padding-bottom-0">Sprint 3</p>
-
-        <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
-  
-  
-        <a href="/Beta/Private/submit-s12/V9/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-          9</a>
-  
-        <details class="govuk-details govuk-!-margin-bottom-9">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              Design iterations
-            </span>
-          </summary>
-          <div class="govuk-details__text">
-            <table class="govuk-table govuk-!-width-two-thirds">
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                  <th scope="col" class="govuk-table__header">What we created</th>
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Service start</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>Updated content explaining what the service will do
-                      </li>
-                      <li>Updated content explaining What the service can't do
-                      </li>
-                      <li>Additional email support channel
-                      </li>
-                      <li>Updated content explaining what the user will need before they enter the service
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-  
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Choose a reservior</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>Typeahead search
-                      </li>
-                      <li>Removed the Save button
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-  
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Download annual statement</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>User is shown the National Grid reference for the reservoir
-                      </li>
-                      <li>Allow the user to download an annual statement template for a specific reservoir
-                      </li>
-                      <li>To download a template for another reservoir
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-  
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Template downloaded</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>Confirmation of the template the user downloaded
-                      </li>
-                      <li>What user can do next
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </details>
-
-
-
-        <a href="/Beta/Private/submit-s12/V9-1/service-start" class="govuk-heading-m govuk-link--no-visited-state">Version
-          9.1</a>
-  
-        <details class="govuk-details govuk-!-margin-bottom-9">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              Design iterations
-            </span>
-          </summary>
-          <div class="govuk-details__text">
-            <table class="govuk-table govuk-!-width-two-thirds">
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                  <th scope="col" class="govuk-table__header">What we created</th>
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Service start</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>Updated content explaining what the service will do
-                      </li>
-                      <li>Updated content explaining What the service can't do
-                      </li>
-                      <li>Additional email support channel
-                      </li>
-                      <li>Updated content explaining what the user will need before they enter the service
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-  
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Choose a reservior</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>Typeahead search
-                      </li>
-                      <li>Removed the Save button
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-  
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Download annual statement</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>User is shown the National Grid reference for the reservoir
-                      </li>
-                      <li>Allow the user to download an annual statement template for a specific reservoir
-                      </li>
-                      <li>To download a template for another reservoir
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-  
-  
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">
-  
-                    <p class="govuk-body">Template downloaded</p>
-  
-                    <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                      <li>Confirmation of the template the user downloaded
-                      </li>
-                      <li>What user can do next
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </details>
-  
-
-    </div>
-  </div>
-</div>
-
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
-
-      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 0</p>
-
-      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Download and upload statement</h2>
-
-
-      <a href="/Beta/Private/submit-s12/V8/service-start" class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-6">Version
-        8</a>
+      <a href="/Beta/Private/submit-s12/V18/annual-statements-search.html"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        18</a>
 
 
       <details class="govuk-details govuk-!-margin-bottom-9">
@@ -1573,84 +632,160 @@
           </span>
         </summary>
         <div class="govuk-details__text">
-          <table class="govuk-table govuk-!-width-two-thirds">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">What we created</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
-                  <p class="govuk-body">Service start</p>
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Updated content explaining what the service will do
-                    </li>
-                    <li>Updated content explaining What the service can't do
-                    </li>
-                    <li>Additional email support channel
-                    </li>
-                    <li>Updated content explaining what the user will need before they enter the service
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li>Sign in &ndash; Enter email address and password</li>
 
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
 
-                  <p class="govuk-body">Choose a reservior</p>
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Typeahead search
-                    </li>
-                    <li>Removed the Save button
-                    </li>
-                  </ul>
-                </td>
-              </tr>
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
 
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
 
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
 
-                  <p class="govuk-body">Download annual statement</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>User is shown the National Grid reference for the reservoir
-                    </li>
-                    <li>Allow the user to download an annual statement template for a specific reservoir
-                    </li>
-                    <li>To download a template for another reservoir
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-
-
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">
-
-                  <p class="govuk-body">Template downloaded</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced govuk-!-margin-bottom-6">
-                    <li>Confirmation of the template the user downloaded
-                    </li>
-                    <li>What user can do next
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </ul>
         </div>
       </details>
     </div>
+
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 19</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Send to undertaker</h2>
+
+
+      <a href="/Beta/Private/submit-s12/V19/send-your-statement"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version
+        19</a>
+
+
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
+
+            <li>Sign in &ndash; Enter email address and password</li>
+
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
+
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
+
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
+
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
+
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
+
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
+
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="card govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 20</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Upload a file</h2>
+
+
+      <a href="/Beta/Private/submit-s12/upload-a-file/V1/upload-your-statement"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version 1</a>
+
+
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
+
+            <li>Sign in &ndash; Enter email address and password</li>
+
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
+
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
+
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
+
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
+
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
+
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
+
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="card govuk-!-margin-top-4 govuk-!-margin-bottom-9">
+
+      <p class="govuk-body govuk-!-padding-bottom-0">Sprint 21</p>
+
+      <h2 class="govuk-heading-l govuk-!-padding-top-0 govuk-!-margin-bottom-0">Search and upload a new statement
+      </h2>
+
+
+      <a href="/Beta/Private/submit-s12/V20/annual-statements-search"
+        class="govuk-heading-m govuk-link--no-visited-state govuk-!-padding-top-3 govuk-!-padding-bottom-2">Version 20</a>
+
+
+      <details class="govuk-details govuk-!-margin-bottom-9">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Design iterations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <li><strong>New design:</strong> Start page &ndash; Added new content that explained what the service does</li>
+
+            <li>Sign in &ndash; Enter email address and password</li>
+
+            <li>Choose a reservoir &ndash; Search for a reservoir statement by autocomplete</li>
+
+            <li><strong>New design:</strong> Download an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected, also gave option to download an additional template</li>
+
+            <li><strong>New design:</strong> Template downloaded &ndash; confirmation page</li>
+
+            <li><strong>New design:</strong> Your annual statements &ndash; list of all the reservoirs in your account</li>
+
+            <li><strong>New design:</strong> Upload an annual statement template for [Named Reservoir] &ndash; users could download a template for the reservoir selected</li>
+
+            <li><strong>New design:</strong> Annual statement sent &ndash; confirmation page showing user the statement has been sent. What's next section allowing the user to return to send a nother annual statement or view their account</li>
+
+          </ul>
+        </div>
+      </details>
+    </div>
+
   </div>
 </div>
+
 
 {% endblock %}
